@@ -1,0 +1,382 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "products": "Products",
+    "industries": "Industries",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "home": {
+    "hero": {
+      "title": "Building Intelligent Software for the Future",
+      "subtitle": "We specialize in AI solutions, custom software development, and cutting-edge technology. Transform your business with intelligent automation and innovative applications.",
+      "primaryCTA": "Get a Quote",
+      "secondaryCTA": "View Services"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive solutions tailored to your business needs"
+    },
+    "products": {
+      "title": "Featured Products",
+      "subtitle": "Ready-to-deploy solutions built with cutting-edge technology",
+      "viewAll": "View All Products"
+    },
+    "whyChoose": {
+      "title": "Why Choose Neobyte Technology?",
+      "subtitle": "We combine technical expertise with business acumen to deliver exceptional results"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Don't just take our word for it"
+    },
+    "cta": {
+      "title": "Start Your AI Project Today",
+      "description": "Ready to transform your business with intelligent software? Get in touch and let's discuss your project.",
+      "primaryCTA": "Get Started",
+      "secondaryCTA": "View Services"
+    },
+    "valueProps": {
+      "expertTeam": "Expert team with 10+ years of experience",
+      "cuttingEdge": "Cutting-edge AI and ML technologies",
+      "agile": "Agile development methodology",
+      "support": "24/7 support and maintenance",
+      "proven": "Proven track record of successful projects",
+      "competitive": "Competitive pricing and flexible contracts"
+    }
+  },
+  "products": {
+    "keyFeatures": "Key Features",
+    "hero": {
+      "title": "Our Products",
+      "subtitle": "Ready-to-deploy solutions built with cutting-edge technology",
+      "primaryCTA": "Request Demo",
+      "secondaryCTA": "View Services"
+    },
+    "items": {
+      "chatbot": {
+        "title": "AI-Powered Chatbot Platform",
+        "description": "Enterprise-grade chatbot solution with RAG capabilities, multi-language support, and seamless integrations.",
+        "features": [
+          "Retrieval-Augmented Generation (RAG)",
+          "Multi-channel deployment",
+          "Advanced analytics dashboard",
+          "Custom training & fine-tuning"
+        ]
+      },
+      "agent": {
+        "title": "AI Agent Automation Platform",
+        "description": "Build and deploy intelligent agents that automate complex business workflows and decision-making processes.",
+        "features": [
+          "Workflow automation engine",
+          "Multi-agent orchestration",
+          "Real-time monitoring",
+          "Custom integrations"
+        ]
+      },
+      "faceRecognition": {
+        "title": "Face Recognition Attendance System",
+        "description": "Automated attendance tracking using advanced facial recognition technology. Accurate, fast, and secure.",
+        "features": [
+          "Real-time face detection",
+          "99.9% accuracy rate",
+          "Multi-location support",
+          "Comprehensive reporting"
+        ]
+      },
+      "inventory": {
+        "title": "Inventory Management System",
+        "description": "Complete inventory management solution with AI-powered forecasting, automated reordering, and analytics.",
+        "features": [
+          "AI demand forecasting",
+          "Automated reordering",
+          "Multi-warehouse support",
+          "Real-time tracking"
+        ]
+      },
+      "ecommerce": {
+        "title": "Mobile App Template - E-Commerce",
+        "description": "Ready-to-deploy e-commerce mobile app template with payment integration and product catalog.",
+        "features": [
+          "Product catalog and search",
+          "Shopping cart and checkout",
+          "Payment gateway integration",
+          "Order tracking"
+        ]
+      },
+      "taskManager": {
+        "title": "Desktop App Template - Task Manager",
+        "description": "Cross-platform desktop task management application with team collaboration features.",
+        "features": [
+          "Task and project management",
+          "Team collaboration",
+          "Time tracking",
+          "File attachments"
+        ]
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive solutions for your digital transformation journey",
+      "primaryCTA": "Get a Quote",
+      "secondaryCTA": "View Products"
+    },
+    "items": {
+      "ai": {
+        "title": "AI Software Development",
+        "description": "Custom AI solutions powered by machine learning and deep learning technologies. Build intelligent systems that learn and adapt.",
+        "detailedDescription": "We develop custom AI software solutions tailored to your specific business needs. Our expertise spans machine learning, deep learning, natural language processing, computer vision, and predictive analytics.",
+        "technologiesLabel": "Technologies Used",
+        "useCasesLabel": "Example Use Cases",
+        "useCases": [
+          "Predictive analytics and forecasting",
+          "Image and video recognition",
+          "Natural language processing",
+          "Recommendation systems",
+          "Fraud detection and prevention"
+        ]
+      },
+      "chatbots": {
+        "title": "AI Chatbots with RAG",
+        "description": "Intelligent conversational AI with Retrieval-Augmented Generation. Context-aware chatbots that understand your business.",
+        "detailedDescription": "Our AI chatbots leverage Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses. They can access your company's knowledge base, documents, and databases to answer questions intelligently.",
+        "technologiesLabel": "Technologies Used",
+        "useCasesLabel": "Example Use Cases",
+        "useCases": [
+          "24/7 customer support",
+          "Lead qualification and nurturing",
+          "Internal knowledge base queries",
+          "E-commerce product recommendations",
+          "Appointment scheduling"
+        ]
+      },
+      "agents": {
+        "title": "AI Agents & Workflow Automation",
+        "description": "Automate complex workflows with intelligent AI agents. Streamline operations and boost productivity.",
+        "detailedDescription": "Build intelligent agents that can perform complex tasks autonomously. Our AI agents can handle data processing, decision-making, API integrations, and multi-step workflows.",
+        "technologiesLabel": "Technologies Used",
+        "useCasesLabel": "Example Use Cases",
+        "useCases": [
+          "Data processing and ETL pipelines",
+          "Automated report generation",
+          "Multi-system integrations",
+          "Intelligent task routing",
+          "Process automation"
+        ]
+      },
+      "mobile": {
+        "title": "Mobile App Development",
+        "description": "Native and cross-platform mobile applications for iOS and Android. Beautiful, performant, and user-friendly.",
+        "detailedDescription": "We build native and cross-platform mobile applications that deliver exceptional user experiences. From concept to deployment, we handle every aspect of mobile app development.",
+        "technologiesLabel": "Technologies Used",
+        "useCasesLabel": "Example Use Cases",
+        "useCases": [
+          "Consumer mobile apps",
+          "Enterprise mobile solutions",
+          "E-commerce applications",
+          "Social networking apps",
+          "IoT device control apps"
+        ]
+      },
+      "web": {
+        "title": "Web App Development",
+        "description": "Modern web applications built with cutting-edge technologies. Scalable, secure, and lightning-fast.",
+        "detailedDescription": "We create modern, responsive web applications using the latest frameworks and best practices. Our web apps are built for scale, security, and performance.",
+        "technologiesLabel": "Technologies Used",
+        "useCasesLabel": "Example Use Cases",
+        "useCases": [
+          "SaaS platforms",
+          "E-commerce websites",
+          "Content management systems",
+          "Dashboard and analytics platforms",
+          "Progressive web apps (PWAs)"
+        ]
+      },
+      "desktop": {
+        "title": "Desktop App Development",
+        "description": "Native desktop applications for Windows and macOS. Powerful, efficient, and platform-optimized.",
+        "detailedDescription": "We develop native desktop applications that leverage platform-specific features for optimal performance. Whether you need a Windows application, macOS app, or cross-platform solution.",
+        "technologiesLabel": "Technologies Used",
+        "useCasesLabel": "Example Use Cases",
+        "useCases": [
+          "Productivity tools",
+          "Design and creative software",
+          "Data analysis applications",
+          "System utilities",
+          "Enterprise desktop solutions"
+        ]
+      },
+      "security": {
+        "title": "Security Camera Installation & Monitoring",
+        "description": "Comprehensive security camera installation and monitoring systems. Protect your assets with advanced surveillance.",
+        "detailedDescription": "We provide end-to-end security camera solutions including installation, configuration, and monitoring systems. Our solutions include AI-powered motion detection, facial recognition, cloud storage, and mobile access.",
+        "technologiesLabel": "Technologies Used",
+        "useCasesLabel": "Example Use Cases",
+        "useCases": [
+          "Office building security",
+          "Retail store surveillance",
+          "Warehouse monitoring",
+          "Residential security",
+          "Access control integration"
+        ]
+      },
+      "cloud": {
+        "title": "Cloud Architecture & DevOps",
+        "description": "Cloud architecture, microservices, and DevOps solutions. Deploy and scale with confidence.",
+        "detailedDescription": "We design and implement scalable cloud architectures using AWS, Azure, and GCP. Our DevOps services include CI/CD pipeline setup, containerization, orchestration, monitoring, and infrastructure as code.",
+        "technologiesLabel": "Technologies Used",
+        "useCasesLabel": "Example Use Cases",
+        "useCases": [
+          "Cloud migration",
+          "Microservices architecture",
+          "CI/CD pipeline setup",
+          "Container orchestration",
+          "Infrastructure automation"
+        ]
+      }
+    },
+    "requestQuote": "Request a Quote",
+    "overview": "Overview"
+  },
+  "industries": {
+    "hero": {
+      "title": "Industries We Serve",
+      "subtitle": "We provide cutting-edge technology solutions tailored to diverse industries, helping businesses transform and thrive in the digital age.",
+      "primaryCTA": "Get in Touch",
+      "secondaryCTA": "View Services"
+    },
+    "description": "Tailored solutions for {industry} industry needs.",
+    "items": {
+      "fintech": "Fintech",
+      "transportation": "Transportation and Logistics",
+      "ecommerce": "E-commerce",
+      "bank": "Bank",
+      "hotel": "Hotel",
+      "egovernment": "E-government",
+      "travel": "Travel",
+      "healthcare": "Healthcare",
+      "retail": "Retail",
+      "manufacturing": "Manufacturing",
+      "education": "Education",
+      "agriculture": "Agriculture",
+      "iot": "IoT",
+      "media": "Media & Communication",
+      "ai": "Artificial intelligence",
+      "insurance": "Insurance"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Get In Touch",
+      "subtitle": "Ready to start your project? Let's discuss how we can help transform your business.",
+      "primaryCTA": "Schedule a Call"
+    },
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill out the form below and we'll get back to you within 24 hours.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "service": "Service Needed",
+      "selectService": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "sendMessage": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you for your message! We'll get back to you soon.",
+      "error": "Failed to send message. Please try again.",
+      "networkError": "Network error. Please check your connection and try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address"
+    },
+    "services": {
+      "aiSoftware": "AI Software Development",
+      "aiChatbots": "AI Chatbots with RAG",
+      "aiAgents": "AI Agents & Automation",
+      "mobile": "Mobile App Development",
+      "web": "Web App Development",
+      "desktop": "Desktop App Development",
+      "security": "Security Systems",
+      "cloud": "Cloud & DevOps",
+      "other": "Other"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Neobyte Technology",
+      "subtitle": "We're a team of passionate engineers, designers, and AI experts dedicated to building intelligent software solutions.",
+      "primaryCTA": "Get in Touch",
+      "secondaryCTA": "View Services"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "At Neobyte Technology, we believe in the power of artificial intelligence and innovative software to solve complex business challenges. Our mission is to democratize AI technology and make it accessible to businesses of all sizes, enabling them to automate processes, enhance customer experiences, and drive growth."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation First",
+        "description": "We stay ahead of the curve by embracing cutting-edge technologies and innovative solutions."
+      },
+      "clientCentric": {
+        "title": "Client-Centric",
+        "description": "Your success is our success. We build long-term partnerships based on trust and results."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for perfection in every project, delivering high-quality solutions that exceed expectations."
+      },
+      "agility": {
+        "title": "Agility",
+        "description": "Fast-paced development with agile methodologies to deliver value quickly and iteratively."
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "We love what we do, and it shows in the quality and dedication we bring to every project."
+      },
+      "security": {
+        "title": "Security",
+        "description": "Security is built into every solution from the ground up, protecting your data and users."
+      }
+    }
+  },
+  "footer": {
+    "company": {
+      "aboutUs": "About Us",
+      "services": "Services",
+      "products": "Products",
+      "industries": "Industries"
+    },
+    "services": {
+      "aiDevelopment": "AI Development",
+      "mobileApps": "Mobile Apps",
+      "webDevelopment": "Web Development",
+      "securitySystems": "Security Systems",
+      "desktopApps": "Desktop Apps"
+    },
+    "legal": {
+      "termsAndPolicy": "Terms and Policy"
+    },
+    "description": "Neobyte Technology - Building intelligent software for the future. We specialize in AI solutions, custom development, and cutting-edge technology.",
+    "copyright": "All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View"
+  }
+}

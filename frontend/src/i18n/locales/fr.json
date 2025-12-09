@@ -1,0 +1,382 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "products": "Produits",
+    "industries": "Industries",
+    "contact": "Contact",
+    "getQuote": "Obtenir un devis"
+  },
+  "home": {
+    "hero": {
+      "title": "Création de logiciels intelligents pour l'avenir",
+      "subtitle": "Nous sommes spécialisés dans les solutions d'IA, le développement de logiciels personnalisés et les technologies de pointe. Transformez votre entreprise avec l'automatisation intelligente et des applications innovantes.",
+      "primaryCTA": "Obtenir un devis",
+      "secondaryCTA": "Voir les services"
+    },
+    "services": {
+      "title": "Nos services",
+      "subtitle": "Solutions complètes adaptées à vos besoins commerciaux"
+    },
+    "products": {
+      "title": "Produits vedettes",
+      "subtitle": "Solutions prêtes à déployer construites avec des technologies de pointe",
+      "viewAll": "Voir tous les produits"
+    },
+    "whyChoose": {
+      "title": "Pourquoi choisir Neobyte Technology?",
+      "subtitle": "Nous combinons l'expertise technique avec le sens des affaires pour livrer des résultats exceptionnels"
+    },
+    "testimonials": {
+      "title": "Ce que disent nos clients",
+      "subtitle": "Ne vous fiez pas seulement à notre parole"
+    },
+    "cta": {
+      "title": "Démarrez votre projet IA aujourd'hui",
+      "description": "Prêt à transformer votre entreprise avec des logiciels intelligents? Contactez-nous et discutons de votre projet.",
+      "primaryCTA": "Commencer",
+      "secondaryCTA": "Voir les services"
+    },
+    "valueProps": {
+      "expertTeam": "Équipe d'experts avec plus de 10 ans d'expérience",
+      "cuttingEdge": "Technologies d'IA et d'apprentissage automatique de pointe",
+      "agile": "Méthodologie de développement agile",
+      "support": "Support et maintenance 24/7",
+      "proven": "Historique éprouvé de projets réussis",
+      "competitive": "Tarifs compétitifs et contrats flexibles"
+    }
+  },
+  "products": {
+    "keyFeatures": "Caractéristiques clés",
+    "hero": {
+      "title": "Nos produits",
+      "subtitle": "Solutions prêtes à déployer construites avec des technologies de pointe",
+      "primaryCTA": "Demander une démo",
+      "secondaryCTA": "Voir les services"
+    },
+    "items": {
+      "chatbot": {
+        "title": "Plateforme de chatbot alimentée par l'IA",
+        "description": "Solution de chatbot de niveau entreprise avec capacités RAG, support multilingue et intégrations transparentes.",
+        "features": [
+          "Génération augmentée par récupération (RAG)",
+          "Déploiement multi-canal",
+          "Tableau de bord d'analyses avancées",
+          "Formation et affinage personnalisés"
+        ]
+      },
+      "agent": {
+        "title": "Plateforme d'automatisation d'agents IA",
+        "description": "Créez et déployez des agents intelligents qui automatisent des flux de travail commerciaux complexes et des processus de prise de décision.",
+        "features": [
+          "Moteur d'automatisation de flux de travail",
+          "Orchestration multi-agents",
+          "Surveillance en temps réel",
+          "Intégrations personnalisées"
+        ]
+      },
+      "faceRecognition": {
+        "title": "Système de présence par reconnaissance faciale",
+        "description": "Suivi automatique de la présence utilisant une technologie de reconnaissance faciale avancée. Précis, rapide et sécurisé.",
+        "features": [
+          "Détection faciale en temps réel",
+          "Taux de précision de 99,9%",
+          "Support multi-lieux",
+          "Rapports complets"
+        ]
+      },
+      "inventory": {
+        "title": "Système de gestion des stocks",
+        "description": "Solution complète de gestion des stocks avec prévisions alimentées par l'IA, réapprovisionnement automatisé et analyses.",
+        "features": [
+          "Prévisions de demande par IA",
+          "Réapprovisionnement automatisé",
+          "Support multi-entrepôts",
+          "Suivi en temps réel"
+        ]
+      },
+      "ecommerce": {
+        "title": "Modèle d'application mobile - Commerce électronique",
+        "description": "Modèle d'application mobile de commerce électronique prêt à déployer avec intégration de paiement et catalogue de produits.",
+        "features": [
+          "Catalogue et recherche de produits",
+          "Panier et paiement",
+          "Intégration de passerelle de paiement",
+          "Suivi des commandes"
+        ]
+      },
+      "taskManager": {
+        "title": "Modèle d'application de bureau - Gestionnaire de tâches",
+        "description": "Application de gestion de tâches de bureau multiplateforme avec fonctionnalités de collaboration d'équipe.",
+        "features": [
+          "Gestion de tâches et de projets",
+          "Collaboration d'équipe",
+          "Suivi du temps",
+          "Pièces jointes de fichiers"
+        ]
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Nos services",
+      "subtitle": "Solutions complètes pour votre parcours de transformation numérique",
+      "primaryCTA": "Obtenir un devis",
+      "secondaryCTA": "Voir les produits"
+    },
+    "items": {
+      "ai": {
+        "title": "Développement de logiciels IA",
+        "description": "Solutions d'IA personnalisées alimentées par des technologies d'apprentissage automatique et d'apprentissage approfondi. Créez des systèmes intelligents qui apprennent et s'adaptent.",
+        "detailedDescription": "Nous développons des solutions logicielles IA personnalisées adaptées à vos besoins commerciaux spécifiques. Notre expertise couvre l'apprentissage automatique, l'apprentissage approfondi, le traitement du langage naturel, la vision par ordinateur et l'analyse prédictive.",
+        "technologiesLabel": "Technologies utilisées",
+        "useCasesLabel": "Cas d'utilisation exemplaires",
+        "useCases": [
+          "Analyse prédictive et prévision",
+          "Reconnaissance d'images et de vidéos",
+          "Traitement du langage naturel",
+          "Systèmes de recommandation",
+          "Détection et prévention de la fraude"
+        ]
+      },
+      "chatbots": {
+        "title": "Chatbots IA avec RAG",
+        "description": "IA conversationnelle intelligente avec génération augmentée par récupération. Chatbots conscients du contexte qui comprennent votre entreprise.",
+        "detailedDescription": "Nos chatbots IA tirent parti de la génération augmentée par récupération (RAG) pour fournir des réponses précises et contextuelles. Ils peuvent accéder à votre base de connaissances d'entreprise, documents et bases de données pour répondre intelligemment aux questions.",
+        "technologiesLabel": "Technologies utilisées",
+        "useCasesLabel": "Cas d'utilisation exemplaires",
+        "useCases": [
+          "Support client 24/7",
+          "Qualification et développement des prospects",
+          "Requêtes de base de connaissances interne",
+          "Recommandations de produits de commerce électronique",
+          "Planification de rendez-vous"
+        ]
+      },
+      "agents": {
+        "title": "Agents IA et automatisation de flux de travail",
+        "description": "Automatisez les flux de travail complexes avec des agents IA intelligents. Rationalisez les opérations et augmentez la productivité.",
+        "detailedDescription": "Créez des agents intelligents capables d'effectuer des tâches complexes de manière autonome. Nos agents IA peuvent gérer le traitement des données, la prise de décision, les intégrations API et les flux de travail multi-étapes.",
+        "technologiesLabel": "Technologies utilisées",
+        "useCasesLabel": "Cas d'utilisation exemplaires",
+        "useCases": [
+          "Traitement des données et pipelines ETL",
+          "Génération automatisée de rapports",
+          "Intégrations multi-systèmes",
+          "Routage intelligent des tâches",
+          "Automatisation des processus"
+        ]
+      },
+      "mobile": {
+        "title": "Développement d'applications mobiles",
+        "description": "Applications mobiles natives et multiplateformes pour iOS et Android. Belles, performantes et conviviales.",
+        "detailedDescription": "Nous créons des applications mobiles natives et multiplateformes qui offrent des expériences utilisateur exceptionnelles. Du concept au déploiement, nous gérons chaque aspect du développement d'applications mobiles.",
+        "technologiesLabel": "Technologies utilisées",
+        "useCasesLabel": "Cas d'utilisation exemplaires",
+        "useCases": [
+          "Applications mobiles grand public",
+          "Solutions mobiles d'entreprise",
+          "Applications de commerce électronique",
+          "Applications de réseaux sociaux",
+          "Applications de contrôle d'appareils IoT"
+        ]
+      },
+      "web": {
+        "title": "Développement d'applications Web",
+        "description": "Applications Web modernes construites avec des technologies de pointe. Évolutifs, sécurisés et ultra-rapides.",
+        "detailedDescription": "Nous créons des applications Web modernes et réactives en utilisant les derniers frameworks et meilleures pratiques. Nos applications Web sont construites pour l'évolutivité, la sécurité et les performances.",
+        "technologiesLabel": "Technologies utilisées",
+        "useCasesLabel": "Cas d'utilisation exemplaires",
+        "useCases": [
+          "Plateformes SaaS",
+          "Sites Web de commerce électronique",
+          "Systèmes de gestion de contenu",
+          "Plateformes de tableau de bord et d'analyses",
+          "Applications Web progressives (PWA)"
+        ]
+      },
+      "desktop": {
+        "title": "Développement d'applications de bureau",
+        "description": "Applications de bureau natives pour Windows et macOS. Puissantes, efficaces et optimisées pour la plateforme.",
+        "detailedDescription": "Nous développons des applications de bureau natives qui tirent parti des fonctionnalités spécifiques à la plateforme pour des performances optimales. Que vous ayez besoin d'une application Windows, d'une application macOS ou d'une solution multiplateforme.",
+        "technologiesLabel": "Technologies utilisées",
+        "useCasesLabel": "Cas d'utilisation exemplaires",
+        "useCases": [
+          "Outils de productivité",
+          "Logiciels de conception et créatifs",
+          "Applications d'analyse de données",
+          "Utilitaires système",
+          "Solutions de bureau d'entreprise"
+        ]
+      },
+      "security": {
+        "title": "Installation et surveillance de caméras de sécurité",
+        "description": "Systèmes complets d'installation et de surveillance de caméras de sécurité. Protégez vos actifs avec une surveillance avancée.",
+        "detailedDescription": "Nous fournissons des solutions complètes de caméras de sécurité incluant l'installation, la configuration et les systèmes de surveillance. Nos solutions incluent la détection de mouvement alimentée par l'IA, la reconnaissance faciale, le stockage cloud et l'accès mobile.",
+        "technologiesLabel": "Technologies utilisées",
+        "useCasesLabel": "Cas d'utilisation exemplaires",
+        "useCases": [
+          "Sécurité des bâtiments de bureaux",
+          "Surveillance des magasins de détail",
+          "Surveillance des entrepôts",
+          "Sécurité résidentielle",
+          "Intégration du contrôle d'accès"
+        ]
+      },
+      "cloud": {
+        "title": "Architecture cloud et DevOps",
+        "description": "Architecture cloud, microservices et solutions DevOps. Déployez et évoluez en toute confiance.",
+        "detailedDescription": "Nous concevons et mettons en œuvre des architectures cloud évolutives utilisant AWS, Azure et GCP. Nos services DevOps incluent la configuration de pipelines CI/CD, la conteneurisation, l'orchestration, la surveillance et l'infrastructure en tant que code.",
+        "technologiesLabel": "Technologies utilisées",
+        "useCasesLabel": "Cas d'utilisation exemplaires",
+        "useCases": [
+          "Migration cloud",
+          "Architecture de microservices",
+          "Configuration de pipelines CI/CD",
+          "Orchestration de conteneurs",
+          "Automatisation de l'infrastructure"
+        ]
+      }
+    },
+    "requestQuote": "Demander un devis",
+    "overview": "Vue d'ensemble"
+  },
+  "industries": {
+    "hero": {
+      "title": "Industries que nous servons",
+      "subtitle": "Nous fournissons des solutions technologiques de pointe adaptées à diverses industries, aidant les entreprises à se transformer et à prospérer à l'ère numérique.",
+      "primaryCTA": "Nous contacter",
+      "secondaryCTA": "Voir les services"
+    },
+    "description": "Solutions personnalisées pour les besoins de l'industrie {industry}.",
+    "items": {
+      "fintech": "Fintech",
+      "transportation": "Transport et logistique",
+      "ecommerce": "Commerce électronique",
+      "bank": "Banque",
+      "hotel": "Hôtel",
+      "egovernment": "E-gouvernement",
+      "travel": "Voyage",
+      "healthcare": "Santé",
+      "retail": "Commerce de détail",
+      "manufacturing": "Fabrication",
+      "education": "Éducation",
+      "agriculture": "Agriculture",
+      "iot": "IoT",
+      "media": "Médias et communication",
+      "ai": "Intelligence artificielle",
+      "insurance": "Assurance"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Nous contacter",
+      "subtitle": "Prêt à démarrer votre projet? Discutons de la façon dont nous pouvons aider à transformer votre entreprise.",
+      "primaryCTA": "Planifier un appel"
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "description": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures.",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "service": "Service nécessaire",
+      "selectService": "Sélectionner un service",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "sendMessage": "Envoyer le message",
+      "sending": "Envoi...",
+      "success": "Merci pour votre message! Nous vous répondrons bientôt.",
+      "error": "Échec de l'envoi du message. Veuillez réessayer.",
+      "networkError": "Erreur réseau. Veuillez vérifier votre connexion et réessayer."
+    },
+    "info": {
+      "title": "Informations de contact",
+      "email": "Email",
+      "phone": "Téléphone",
+      "address": "Adresse"
+    },
+    "services": {
+      "aiSoftware": "Développement de logiciels IA",
+      "aiChatbots": "Chatbots IA avec RAG",
+      "aiAgents": "Agents IA et automatisation",
+      "mobile": "Développement d'applications mobiles",
+      "web": "Développement d'applications Web",
+      "desktop": "Développement d'applications de bureau",
+      "security": "Systèmes de sécurité",
+      "cloud": "Cloud et DevOps",
+      "other": "Autre"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "À propos de Neobyte Technology",
+      "subtitle": "Nous sommes une équipe d'ingénieurs, de designers et d'experts en IA passionnés, dédiés à la création de solutions logicielles intelligentes.",
+      "primaryCTA": "Nous contacter",
+      "secondaryCTA": "Voir les services"
+    },
+    "mission": {
+      "title": "Notre mission",
+      "description": "Chez Neobyte Technology, nous croyons en la puissance de l'intelligence artificielle et des logiciels innovants pour résoudre des défis commerciaux complexes. Notre mission est de démocratiser la technologie IA et de la rendre accessible aux entreprises de toutes tailles, leur permettant d'automatiser les processus, d'améliorer les expériences clients et de stimuler la croissance."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "innovation": {
+        "title": "Innovation d'abord",
+        "description": "Nous restons en avance sur la courbe en adoptant des technologies de pointe et des solutions innovantes."
+      },
+      "clientCentric": {
+        "title": "Axé sur le client",
+        "description": "Votre succès est notre succès. Nous construisons des partenariats à long terme basés sur la confiance et les résultats."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Nous visons la perfection dans chaque projet, en livrant des solutions de haute qualité qui dépassent les attentes."
+      },
+      "agility": {
+        "title": "Agilité",
+        "description": "Développement rapide avec des méthodologies agiles pour livrer de la valeur rapidement et de manière itérative."
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "Nous aimons ce que nous faisons, et cela se voit dans la qualité et le dévouement que nous apportons à chaque projet."
+      },
+      "security": {
+        "title": "Sécurité",
+        "description": "La sécurité est intégrée à chaque solution dès le départ, protégeant vos données et vos utilisateurs."
+      }
+    }
+  },
+  "footer": {
+    "company": {
+      "aboutUs": "À propos de nous",
+      "services": "Services",
+      "products": "Produits",
+      "industries": "Industries"
+    },
+    "services": {
+      "aiDevelopment": "Développement IA",
+      "mobileApps": "Applications mobiles",
+      "webDevelopment": "Développement Web",
+      "securitySystems": "Systèmes de sécurité",
+      "desktopApps": "Applications de bureau"
+    },
+    "legal": {
+      "termsAndPolicy": "Termes et politique"
+    },
+    "description": "Neobyte Technology - Création de logiciels intelligents pour l'avenir. Nous sommes spécialisés dans les solutions d'IA, le développement personnalisé et les technologies de pointe.",
+    "copyright": "Tous droits réservés."
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir"
+  }
+}
