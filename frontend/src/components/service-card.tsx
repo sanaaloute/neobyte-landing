@@ -8,7 +8,6 @@ interface ServiceCardProps {
   title: string;
   description: string;
   href?: string;
-  delay?: number;
 }
 
 export function ServiceCard({
@@ -16,7 +15,6 @@ export function ServiceCard({
   title,
   description,
   href = "/services",
-  delay = 0,
 }: ServiceCardProps) {
   const Icon = getIcon(iconName);
   

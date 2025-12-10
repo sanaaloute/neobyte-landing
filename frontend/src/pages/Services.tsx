@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Hero } from "@/components/hero";
 import { ServiceCard } from "@/components/service-card";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { getIcon } from "@/lib/icon-map";
 
 export default function Services() {
@@ -51,14 +51,13 @@ export default function Services() {
       <section className="py-16 lg:py-24 bg-white dark:bg-black">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <ServiceCard
                 key={service.id}
                 icon={service.icon}
                 title={service.title}
                 description={service.description}
                 href={`/services#${service.id}`}
-                delay={index * 0.1}
               />
             ))}
           </div>

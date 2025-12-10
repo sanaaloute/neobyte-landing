@@ -6,7 +6,6 @@ interface ProductCardProps {
   description: string;
   image: string;
   features: string[];
-  delay?: number;
 }
 
 export function ProductCard({
@@ -14,7 +13,6 @@ export function ProductCard({
   description,
   image,
   features,
-  delay = 0,
 }: ProductCardProps) {
   const { t } = useTranslation();
   

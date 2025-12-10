@@ -1,6 +1,4 @@
-import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
 
 interface HeroProps {
   title: string;

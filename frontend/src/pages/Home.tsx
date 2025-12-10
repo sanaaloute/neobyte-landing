@@ -147,14 +147,13 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <ServiceCard
                 key={service.title}
                 icon={service.icon}
                 title={service.title}
                 description={service.description}
                 href={service.href}
-                delay={index * 0.1}
               />
             ))}
           </div>
@@ -172,8 +171,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {products.map((product, index) => (
-              <ProductCard key={product.title} {...product} delay={index * 0.1} />
+            {products.map((product) => (
+              <ProductCard key={product.title} {...product} />
             ))}
           </div>
           <div className="text-center mt-12">
@@ -221,8 +220,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={testimonial.name} {...testimonial} delay={index * 0.1} />
+            {testimonials.map((testimonial) => (
+              <TestimonialCard key={testimonial.name} {...testimonial} />
             ))}
           </div>
         </div>

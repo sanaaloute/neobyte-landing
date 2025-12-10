@@ -7,7 +7,6 @@ interface TestimonialCardProps {
   company: string;
   content: string;
   avatar: string;
-  delay?: number;
 }
 
 export function TestimonialCard({
@@ -16,7 +15,6 @@ export function TestimonialCard({
   company,
   content,
   avatar,
-  delay = 0,
 }: TestimonialCardProps) {
   return (
     <Card className="h-full">
