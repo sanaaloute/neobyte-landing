@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
@@ -17,8 +17,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        gradient:
-          "bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-600 dark:to-blue-800 text-white",
+        brand: "bg-brand text-brand-foreground hover:bg-brand/90",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -37,17 +36,19 @@ const buttonVariants = cva(
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
-  asChild?: boolean;
   to?: string;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, to, children, ...props }, ref) => {
+  ({ className, variant, size, to, children, onClick, ...props }, ref) => {
     if (to) {
       return (
         <Link
-          to={to}
+          href={to}
           className={cn(buttonVariants({ variant, size, className }))}
+          onClick={
+            onClick as React.MouseEventHandler<HTMLAnchorElement> | undefined
+          }
         >
           {children}
         </Link>
@@ -57,6 +58,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
+        onClick={onClick}
         {...props}
       >
         {children}
@@ -67,4 +69,3 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = "Button";
 
 export { Button, buttonVariants };
-

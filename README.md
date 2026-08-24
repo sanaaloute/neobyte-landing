@@ -6,7 +6,7 @@ Full-stack website for Neobyte Technology - AI Software Development & Solutions.
 
 ```
 Neobyte/
-├── frontend/       # React + Vite frontend
+├── frontend/       # Next.js (App Router) frontend
 ├── backend/        # Express.js backend API
 ├── .gitignore
 └── README.md
@@ -15,11 +15,11 @@ Neobyte/
 ## Tech Stack
 
 ### Frontend
-- React 18 + Vite
+- Next.js 15 (App Router) + React 19
 - TypeScript
 - TailwindCSS
-- Framer Motion
-- React Router
+- react-i18next (EN/FR)
+- Lucide React
 
 ### Backend
 - Node.js + Express
@@ -46,11 +46,11 @@ Backend runs on `http://localhost:5000`
 cd frontend
 npm install
 cp .env.example .env
-# Edit .env if needed (default: http://localhost:5000/api)
+# Edit .env if needed (default BACKEND_URL: http://localhost:5000)
 npm run dev
 ```
 
-Frontend runs on `http://localhost:3000`
+Frontend runs on `http://localhost:3000` and proxies `/api/*` to the backend.
 
 ## Features
 

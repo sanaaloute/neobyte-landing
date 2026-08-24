@@ -1,75 +1,93 @@
-import { Link } from "react-router-dom";
-import { Github, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+"use client";
+
+import Link from "next/link";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Button } from "./ui/button";
+import { Logo } from "./logo";
+import { contactInfo } from "@/data/contact";
 
-const footerLinks = {
-  company: [
-    { key: "aboutUs", href: "/about" },
-    { key: "services", href: "/services" },
-    { key: "products", href: "/products" },
-    { key: "industries", href: "/industries" },
-  ],
-  services: [
-    { key: "aiDevelopment", href: "/services#ai" },
-    { key: "mobileApps", href: "/services#mobile" },
-    { key: "webDevelopment", href: "/services#web" },
-    { key: "securitySystems", href: "/services#security" },
-    { key: "desktopApps", href: "/services#desktop" },
-  ],
-  legal: [
-    { key: "termsAndPolicy", href: "/policy" },
-  ],
-};
+const solutionLinks = [
+  { key: "ai", href: "/services#ai" },
+  { key: "software", href: "/services#software" },
+  { key: "cloud", href: "/services#cloud" },
+  { key: "commerce", href: "/services#commerce" },
+];
 
-const socialLinks = [
-  { name: "Twitter", icon: Twitter, href: "#" },
-  { name: "LinkedIn", icon: Linkedin, href: "#" },
-  { name: "GitHub", icon: Github, href: "#" },
+const companyLinks = [
+  { key: "about", href: "/about" },
+  { key: "products", href: "/products" },
+  { key: "industries", href: "/#industries" },
+  { key: "contact", href: "/contact" },
 ];
 
 export function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className="border-t border-border bg-card">
+    <footer className="border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          <div className="space-y-4">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-black dark:bg-white rounded-lg flex items-center justify-center">
-                <span className="text-white dark:text-black font-bold text-lg">N</span>
-              </div>
-              <span className="font-display text-xl font-bold text-black dark:text-white">
-                Neobyte Technology
-              </span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+          <div className="space-y-5">
+            <Link href="/" aria-label="NeoByte Technology — home">
+              <Logo />
             </Link>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground leading-relaxed">
               {t("footer.description")}
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.name}
-                    href={social.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={social.name}
-                  >
-                    <Icon className="h-5 w-5" />
-                  </a>
-                );
-              })}
-            </div>
+            <ul className="space-y-2.5">
+              <li>
+                <a
+                  href={`mailto:${contactInfo.email}`}
+                  className="flex items-center gap-2.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Mail className="h-4 w-4 shrink-0" />
+                  {contactInfo.email}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`tel:${contactInfo.phoneHref}`}
+                  className="flex items-center gap-2.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Phone className="h-4 w-4 shrink-0" />
+                  {contactInfo.phone}
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5 text-sm text-muted-foreground">
+                <MapPin className="h-4 w-4 shrink-0" />
+                {contactInfo.address}
+              </li>
+            </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Company</h3>
-            <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
+            <h3 className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              {t("footer.solutions.title")}
+            </h3>
+            <ul className="space-y-2.5">
+              {solutionLinks.map((link) => (
                 <li key={link.href}>
                   <Link
-                    to={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    href={link.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t(`footer.solutions.${link.key}`)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              {t("footer.company.title")}
+            </h3>
+            <ul className="space-y-2.5">
+              {companyLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t(`footer.company.${link.key}`)}
                   </Link>
@@ -79,72 +97,33 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              {footerLinks.services.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {t(`footer.services.${link.key}`)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start space-x-2">
-                <MapPin className="h-4 w-4 text-muted-foreground mt-0.5" />
-                <span className="text-sm text-muted-foreground">
-                  Saaba, Ouagadougou, Burkina Faso
-                </span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-muted-foreground" />
-                <a
-                  href="mailto:neobytech.ai@gmail.com"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  neobytech.ai@gmail.com
-                </a>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-muted-foreground" />
-                <a
-                  href="tel:+22673528252"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  +226 73528252
-                </a>
-              </li>
-            </ul>
+            <h3 className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              {t("footer.contact.title")}
+            </h3>
+            <p className="font-display text-lg font-semibold tracking-tight mb-4">
+              {t("nav.cta")}
+            </p>
+            <Button variant="outline" size="sm" to="/contact">
+              {t("contact.hero.primaryCTA")}
+            </Button>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Neobyte Technology. {t("footer.copyright")}
+              © {new Date().getFullYear()} NeoByte Technology.{" "}
+              {t("footer.copyright")}
             </p>
-            <div className="flex space-x-6">
-              {footerLinks.legal.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {t(`footer.legal.${link.key}`)}
-                </Link>
-              ))}
-            </div>
+            <Link
+              href="/policy"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {t("footer.legal.termsAndPolicy")}
+            </Link>
           </div>
         </div>
       </div>
     </footer>
   );
 }
-

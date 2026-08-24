@@ -1,382 +1,512 @@
 {
   "nav": {
-    "home": "Accueil",
-    "about": "À propos",
-    "services": "Services",
+    "solutions": "Solutions",
     "products": "Produits",
-    "industries": "Industries",
+    "about": "À propos",
     "contact": "Contact",
-    "getQuote": "Obtenir un devis"
+    "cta": "Construisons ensemble",
+    "industries": "Industries"
   },
   "home": {
     "hero": {
-      "title": "Création de logiciels intelligents pour l'avenir",
-      "subtitle": "Nous sommes spécialisés dans les solutions d'IA, le développement de logiciels personnalisés et les technologies de pointe. Transformez votre entreprise avec l'automatisation intelligente et des applications innovantes.",
-      "primaryCTA": "Obtenir un devis",
-      "secondaryCTA": "Voir les services"
+      "eyebrow": "NeoByte Technology",
+      "title": "Nous construisons des systèmes intelligents qui résolvent de vrais problèmes.",
+      "subtitle": "NeoByte conçoit et déploie des produits d'intelligence artificielle, des agents intelligents et des systèmes logiciels évolutifs pour les entreprises et les marchés émergents — de l'idée à la production.",
+      "primaryCTA": "Découvrir nos réalisations",
+      "secondaryCTA": "Construire avec NeoByte"
     },
-    "services": {
-      "title": "Nos services",
-      "subtitle": "Solutions complètes adaptées à vos besoins commerciaux"
+    "positioning": {
+      "eyebrow": "Qui nous sommes",
+      "title": "La technologie est notre fondation. L'intelligence est notre avantage.",
+      "body": "NeoByte travaille à l’intersection de l’IA, de l’ingénierie logicielle, du cloud et des produits numériques. Nous développons nos propres produits et ceux d’organisations — toujours avec la production en tête.",
+      "points": [
+        "Des systèmes d'IA déployés en production, pas des démos",
+        "Ingénierie produit full-stack",
+        "Une infrastructure conçue pour évoluer"
+      ]
+    },
+    "pillars": {
+      "eyebrow": "Ce que nous faisons",
+      "title": "Quatre piliers technologiques. Un même niveau d'exigence.",
+      "subtitle": "Quatre piliers technologiques, une seule pratique d’ingénierie.",
+      "cta": "Découvrir nos solutions"
     },
     "products": {
-      "title": "Produits vedettes",
-      "subtitle": "Solutions prêtes à déployer construites avec des technologies de pointe",
-      "viewAll": "Voir tous les produits"
+      "eyebrow": "Produits & Projets",
+      "title": "Nous développons nos propres produits",
+      "subtitle": "Nos propres produits — conçus, développés et exploités par NeoByte.",
+      "cta": "Voir tous les produits"
     },
-    "whyChoose": {
-      "title": "Pourquoi choisir Neobyte Technology?",
-      "subtitle": "Nous combinons l'expertise technique avec le sens des affaires pour livrer des résultats exceptionnels"
+    "process": {
+      "eyebrow": "Comment nous construisons",
+      "title": "Du problème à la production",
+      "subtitle": ""
     },
-    "testimonials": {
-      "title": "Ce que disent nos clients",
-      "subtitle": "Ne vous fiez pas seulement à notre parole"
+    "industries": {
+      "eyebrow": "Secteurs",
+      "title": "Là où la technologie crée du levier",
+      "subtitle": ""
     },
     "cta": {
-      "title": "Démarrez votre projet IA aujourd'hui",
-      "description": "Prêt à transformer votre entreprise avec des logiciels intelligents? Contactez-nous et discutons de votre projet.",
-      "primaryCTA": "Commencer",
-      "secondaryCTA": "Voir les services"
-    },
-    "valueProps": {
-      "expertTeam": "Équipe d'experts avec plus de 10 ans d'expérience",
-      "cuttingEdge": "Technologies d'IA et d'apprentissage automatique de pointe",
-      "agile": "Méthodologie de développement agile",
-      "support": "Support et maintenance 24/7",
-      "proven": "Historique éprouvé de projets réussis",
-      "competitive": "Tarifs compétitifs et contrats flexibles"
+      "title": "Un problème qui mérite d'être résolu ?",
+      "highlight": "Construisons le système qui le résout.",
+      "description": "Parlez-nous de votre projet — nous vous dirons franchement comment nous le construirions.",
+      "primaryCTA": "Démarrer une conversation",
+      "secondaryCTA": "Découvrir nos réalisations"
     }
   },
-  "products": {
-    "keyFeatures": "Caractéristiques clés",
+  "solutions": {
     "hero": {
-      "title": "Nos produits",
-      "subtitle": "Solutions prêtes à déployer construites avec des technologies de pointe",
-      "primaryCTA": "Demander une démo",
-      "secondaryCTA": "Voir les services"
+      "eyebrow": "Solutions",
+      "title": "Ce que nous construisons",
+      "subtitle": "Quatre piliers technologiques. Pas un catalogue de services — une pratique d’ingénierie."
     },
-    "items": {
-      "chatbot": {
-        "title": "Plateforme de chatbot alimentée par l'IA",
-        "description": "Solution de chatbot de niveau entreprise avec capacités RAG, support multilingue et intégrations transparentes.",
-        "features": [
-          "Génération augmentée par récupération (RAG)",
-          "Déploiement multi-canal",
-          "Tableau de bord d'analyses avancées",
-          "Formation et affinage personnalisés"
-        ]
-      },
-      "agent": {
-        "title": "Plateforme d'automatisation d'agents IA",
-        "description": "Créez et déployez des agents intelligents qui automatisent des flux de travail commerciaux complexes et des processus de prise de décision.",
-        "features": [
-          "Moteur d'automatisation de flux de travail",
-          "Orchestration multi-agents",
-          "Surveillance en temps réel",
-          "Intégrations personnalisées"
-        ]
-      },
-      "faceRecognition": {
-        "title": "Système de présence par reconnaissance faciale",
-        "description": "Suivi automatique de la présence utilisant une technologie de reconnaissance faciale avancée. Précis, rapide et sécurisé.",
-        "features": [
-          "Détection faciale en temps réel",
-          "Taux de précision de 99,9%",
-          "Support multi-lieux",
-          "Rapports complets"
-        ]
-      },
-      "inventory": {
-        "title": "Système de gestion des stocks",
-        "description": "Solution complète de gestion des stocks avec prévisions alimentées par l'IA, réapprovisionnement automatisé et analyses.",
-        "features": [
-          "Prévisions de demande par IA",
-          "Réapprovisionnement automatisé",
-          "Support multi-entrepôts",
-          "Suivi en temps réel"
-        ]
-      },
-      "ecommerce": {
-        "title": "Modèle d'application mobile - Commerce électronique",
-        "description": "Modèle d'application mobile de commerce électronique prêt à déployer avec intégration de paiement et catalogue de produits.",
-        "features": [
-          "Catalogue et recherche de produits",
-          "Panier et paiement",
-          "Intégration de passerelle de paiement",
-          "Suivi des commandes"
-        ]
-      },
-      "taskManager": {
-        "title": "Modèle d'application de bureau - Gestionnaire de tâches",
-        "description": "Application de gestion de tâches de bureau multiplateforme avec fonctionnalités de collaboration d'équipe.",
-        "features": [
-          "Gestion de tâches et de projets",
-          "Collaboration d'équipe",
-          "Suivi du temps",
-          "Pièces jointes de fichiers"
-        ]
-      }
-    }
-  },
-  "services": {
-    "hero": {
-      "title": "Nos services",
-      "subtitle": "Solutions complètes pour votre parcours de transformation numérique",
-      "primaryCTA": "Obtenir un devis",
-      "secondaryCTA": "Voir les produits"
-    },
-    "items": {
+    "pillars": {
       "ai": {
-        "title": "Développement de logiciels IA",
-        "description": "Solutions d'IA personnalisées alimentées par des technologies d'apprentissage automatique et d'apprentissage approfondi. Créez des systèmes intelligents qui apprennent et s'adaptent.",
-        "detailedDescription": "Nous développons des solutions logicielles IA personnalisées adaptées à vos besoins commerciaux spécifiques. Notre expertise couvre l'apprentissage automatique, l'apprentissage approfondi, le traitement du langage naturel, la vision par ordinateur et l'analyse prédictive.",
-        "technologiesLabel": "Technologies utilisées",
-        "useCasesLabel": "Cas d'utilisation exemplaires",
-        "useCases": [
-          "Analyse prédictive et prévision",
-          "Reconnaissance d'images et de vidéos",
-          "Traitement du langage naturel",
-          "Systèmes de recommandation",
-          "Détection et prévention de la fraude"
+        "title": "IA & Systèmes intelligents",
+        "description": "Nous concevons et déployons des systèmes d'IA qui automatisent des tâches complexes et transforment les données en décisions utiles — des applications LLM à la vision par ordinateur.",
+        "items": [
+          "Applications LLM",
+          "Systèmes RAG",
+          "Agents IA",
+          "Automatisation par l'IA",
+          "Apprentissage automatique",
+          "Vision par ordinateur",
+          "Traitement du langage naturel (NLP)"
         ]
       },
-      "chatbots": {
-        "title": "Chatbots IA avec RAG",
-        "description": "IA conversationnelle intelligente avec génération augmentée par récupération. Chatbots conscients du contexte qui comprennent votre entreprise.",
-        "detailedDescription": "Nos chatbots IA tirent parti de la génération augmentée par récupération (RAG) pour fournir des réponses précises et contextuelles. Ils peuvent accéder à votre base de connaissances d'entreprise, documents et bases de données pour répondre intelligemment aux questions.",
-        "technologiesLabel": "Technologies utilisées",
-        "useCasesLabel": "Cas d'utilisation exemplaires",
-        "useCases": [
-          "Support client 24/7",
-          "Qualification et développement des prospects",
-          "Requêtes de base de connaissances interne",
-          "Recommandations de produits de commerce électronique",
-          "Planification de rendez-vous"
-        ]
-      },
-      "agents": {
-        "title": "Agents IA et automatisation de flux de travail",
-        "description": "Automatisez les flux de travail complexes avec des agents IA intelligents. Rationalisez les opérations et augmentez la productivité.",
-        "detailedDescription": "Créez des agents intelligents capables d'effectuer des tâches complexes de manière autonome. Nos agents IA peuvent gérer le traitement des données, la prise de décision, les intégrations API et les flux de travail multi-étapes.",
-        "technologiesLabel": "Technologies utilisées",
-        "useCasesLabel": "Cas d'utilisation exemplaires",
-        "useCases": [
-          "Traitement des données et pipelines ETL",
-          "Génération automatisée de rapports",
-          "Intégrations multi-systèmes",
-          "Routage intelligent des tâches",
-          "Automatisation des processus"
-        ]
-      },
-      "mobile": {
-        "title": "Développement d'applications mobiles",
-        "description": "Applications mobiles natives et multiplateformes pour iOS et Android. Belles, performantes et conviviales.",
-        "detailedDescription": "Nous créons des applications mobiles natives et multiplateformes qui offrent des expériences utilisateur exceptionnelles. Du concept au déploiement, nous gérons chaque aspect du développement d'applications mobiles.",
-        "technologiesLabel": "Technologies utilisées",
-        "useCasesLabel": "Cas d'utilisation exemplaires",
-        "useCases": [
-          "Applications mobiles grand public",
-          "Solutions mobiles d'entreprise",
-          "Applications de commerce électronique",
-          "Applications de réseaux sociaux",
-          "Applications de contrôle d'appareils IoT"
-        ]
-      },
-      "web": {
-        "title": "Développement d'applications Web",
-        "description": "Applications Web modernes construites avec des technologies de pointe. Évolutifs, sécurisés et ultra-rapides.",
-        "detailedDescription": "Nous créons des applications Web modernes et réactives en utilisant les derniers frameworks et meilleures pratiques. Nos applications Web sont construites pour l'évolutivité, la sécurité et les performances.",
-        "technologiesLabel": "Technologies utilisées",
-        "useCasesLabel": "Cas d'utilisation exemplaires",
-        "useCases": [
+      "software": {
+        "title": "Logiciels & Produits numériques",
+        "description": "Nous développons des plateformes logicielles de l'idée à la production — produits SaaS, applications web et mobiles, et les API qui les font fonctionner.",
+        "items": [
           "Plateformes SaaS",
-          "Sites Web de commerce électronique",
-          "Systèmes de gestion de contenu",
-          "Plateformes de tableau de bord et d'analyses",
-          "Applications Web progressives (PWA)"
-        ]
-      },
-      "desktop": {
-        "title": "Développement d'applications de bureau",
-        "description": "Applications de bureau natives pour Windows et macOS. Puissantes, efficaces et optimisées pour la plateforme.",
-        "detailedDescription": "Nous développons des applications de bureau natives qui tirent parti des fonctionnalités spécifiques à la plateforme pour des performances optimales. Que vous ayez besoin d'une application Windows, d'une application macOS ou d'une solution multiplateforme.",
-        "technologiesLabel": "Technologies utilisées",
-        "useCasesLabel": "Cas d'utilisation exemplaires",
-        "useCases": [
-          "Outils de productivité",
-          "Logiciels de conception et créatifs",
-          "Applications d'analyse de données",
-          "Utilitaires système",
-          "Solutions de bureau d'entreprise"
-        ]
-      },
-      "security": {
-        "title": "Installation et surveillance de caméras de sécurité",
-        "description": "Systèmes complets d'installation et de surveillance de caméras de sécurité. Protégez vos actifs avec une surveillance avancée.",
-        "detailedDescription": "Nous fournissons des solutions complètes de caméras de sécurité incluant l'installation, la configuration et les systèmes de surveillance. Nos solutions incluent la détection de mouvement alimentée par l'IA, la reconnaissance faciale, le stockage cloud et l'accès mobile.",
-        "technologiesLabel": "Technologies utilisées",
-        "useCasesLabel": "Cas d'utilisation exemplaires",
-        "useCases": [
-          "Sécurité des bâtiments de bureaux",
-          "Surveillance des magasins de détail",
-          "Surveillance des entrepôts",
-          "Sécurité résidentielle",
-          "Intégration du contrôle d'accès"
+          "Applications web",
+          "Applications mobiles",
+          "Logiciels d'entreprise",
+          "API & systèmes backend"
         ]
       },
       "cloud": {
-        "title": "Architecture cloud et DevOps",
-        "description": "Architecture cloud, microservices et solutions DevOps. Déployez et évoluez en toute confiance.",
-        "detailedDescription": "Nous concevons et mettons en œuvre des architectures cloud évolutives utilisant AWS, Azure et GCP. Nos services DevOps incluent la configuration de pipelines CI/CD, la conteneurisation, l'orchestration, la surveillance et l'infrastructure en tant que code.",
-        "technologiesLabel": "Technologies utilisées",
-        "useCasesLabel": "Cas d'utilisation exemplaires",
-        "useCases": [
-          "Migration cloud",
-          "Architecture de microservices",
-          "Configuration de pipelines CI/CD",
-          "Orchestration de conteneurs",
-          "Automatisation de l'infrastructure"
+        "title": "Cloud & Infrastructure",
+        "description": "Nous architecturons et exploitons l'infrastructure sur laquelle tournent nos systèmes — conteneurisée, observable et conçue pour évoluer.",
+        "items": [
+          "Architecture cloud",
+          "Docker & conteneurs",
+          "Microservices",
+          "DevOps & CI/CD",
+          "Déploiement & supervision",
+          "Infrastructure évolutive"
+        ]
+      },
+      "commerce": {
+        "title": "Commerce numérique",
+        "description": "Nous développons des plateformes de commerce qui relient fournisseurs, clients et paiements — y compris pour le commerce transfrontalier entre la Chine et les marchés africains.",
+        "items": [
+          "Plateformes e-commerce",
+          "Systèmes de marketplace",
+          "Intégrations de paiement",
+          "Plateformes fournisseurs & clients"
         ]
       }
     },
-    "requestQuote": "Demander un devis",
-    "overview": "Vue d'ensemble"
-  },
-  "industries": {
-    "hero": {
-      "title": "Industries que nous servons",
-      "subtitle": "Nous fournissons des solutions technologiques de pointe adaptées à diverses industries, aidant les entreprises à se transformer et à prospérer à l'ère numérique.",
-      "primaryCTA": "Nous contacter",
-      "secondaryCTA": "Voir les services"
-    },
-    "description": "Solutions personnalisées pour les besoins de l'industrie {industry}.",
-    "items": {
-      "fintech": "Fintech",
-      "transportation": "Transport et logistique",
-      "ecommerce": "Commerce électronique",
-      "bank": "Banque",
-      "hotel": "Hôtel",
-      "egovernment": "E-gouvernement",
-      "travel": "Voyage",
-      "healthcare": "Santé",
-      "retail": "Commerce de détail",
-      "manufacturing": "Fabrication",
-      "education": "Éducation",
-      "agriculture": "Agriculture",
-      "iot": "IoT",
-      "media": "Médias et communication",
-      "ai": "Intelligence artificielle",
-      "insurance": "Assurance"
+    "cta": {
+      "title": "Besoin d'un système qui n'existe pas encore ?",
+      "description": "Parlez-nous du problème. Nous concevrons l'architecture et nous la construirons avec vous.",
+      "button": "Construire avec NeoByte"
     }
   },
-  "contact": {
+  "products": {
     "hero": {
-      "title": "Nous contacter",
-      "subtitle": "Prêt à démarrer votre projet? Discutons de la façon dont nous pouvons aider à transformer votre entreprise.",
-      "primaryCTA": "Planifier un appel"
+      "eyebrow": "Produits & Projets",
+      "title": "Des produits que nous construisons — et exploitons",
+      "subtitle": "Des produits que nous concevons, livrons et exploitons nous-mêmes."
     },
-    "form": {
-      "title": "Envoyez-nous un message",
-      "description": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures.",
-      "name": "Nom",
-      "email": "Email",
-      "phone": "Téléphone",
-      "company": "Entreprise",
-      "service": "Service nécessaire",
-      "selectService": "Sélectionner un service",
-      "message": "Message",
-      "messagePlaceholder": "Parlez-nous de votre projet...",
-      "sendMessage": "Envoyer le message",
-      "sending": "Envoi...",
-      "success": "Merci pour votre message! Nous vous répondrons bientôt.",
-      "error": "Échec de l'envoi du message. Veuillez réessayer.",
-      "networkError": "Erreur réseau. Veuillez vérifier votre connexion et réessayer."
+    "statusLive": "En ligne",
+    "statusDev": "En développement",
+    "items": {
+      "yawoto": {
+        "name": "Yawoto",
+        "tagline": "Assistant juridique agentique pour l'Afrique de l'Ouest",
+        "description": "Un assistant juridique par IA pour l'Afrique de l'Ouest : recherche juridique fondée sur des sources vérifiées — OHADA et droits nationaux — avec rédaction de documents et suivi d'usage.",
+        "features": [
+          "Recherche juridique fondée sur des sources vérifiées",
+          "Couverture du droit OHADA et des législations nationales",
+          "Réponses contextuelles avec références citées",
+          "Assistance à la rédaction de documents",
+          "Suivi d'usage pour les équipes et organisations"
+        ],
+        "stack": [
+          "LLM",
+          "RAG",
+          "Base juridique",
+          "Intelligence documentaire",
+          "Agents IA"
+        ]
+      },
+      "barkosem": {
+        "name": "Barkosem",
+        "tagline": "Le commerce entre la Chine et l'Afrique de l'Ouest",
+        "description": "Une plateforme de commerce numérique conçue pour simplifier l'approvisionnement, la vérification, la logistique et le commerce entre la Chine et les marchés africains.",
+        "features": [
+          "Approvisionnement et vérification des fournisseurs",
+          "Marketplace pour le commerce transfrontalier",
+          "Paiements intégrés",
+          "Traduction par IA entre les langues",
+          "Outils de gestion des fournisseurs et des clients"
+        ],
+        "stack": [
+          "E-commerce",
+          "Marketplace",
+          "Mobile",
+          "Paiements",
+          "Traduction IA",
+          "Gestion fournisseurs"
+        ]
+      },
+      "brvmAgent": {
+        "name": "Agent IA BRVM",
+        "tagline": "L'intelligence du marché BRVM dans vos messageries",
+        "description": "Un agent IA qui rend la BRVM — la Bourse Régionale des Valeurs Mobilières — accessible par la conversation, sur Telegram et WhatsApp.",
+        "features": [
+          "Accès conversationnel aux informations du marché BRVM",
+          "Questions en langage naturel sur les entreprises cotées",
+          "Fonctionne dans Telegram et WhatsApp — aucune application à installer",
+          "Conçu pour les investisseurs de la zone UEMOA et au-delà"
+        ],
+        "stack": [
+          "Agents IA",
+          "LLM",
+          "Données de marché",
+          "Telegram",
+          "WhatsApp"
+        ]
+      },
+      "aiWebBuilder": {
+        "name": "AI Web Builder",
+        "tagline": "Votre site web, construit à partir d'un seul prompt",
+        "description": "Décrivez votre idée — l’IA la conçoit, la code et la met en ligne. Un seul prompt devient un site web complet et déployé.",
+        "features": [
+          "Génération de site web à partir d'un prompt",
+          "Design et code générés par IA",
+          "Des sites complets, pas des templates",
+          "Déploiement intégré au processus"
+        ],
+        "stack": [
+          "LLM",
+          "Génération de code",
+          "Agents IA",
+          "Déploiement automatisé"
+        ]
+      }
     },
-    "info": {
-      "title": "Informations de contact",
-      "email": "Email",
-      "phone": "Téléphone",
-      "address": "Adresse"
+    "cta": {
+      "title": "Envie de construire sur nos produits ?",
+      "description": "Nos produits sont des systèmes en production, pas des démos. Parlons de leur utilisation, de leur extension ou de votre propre produit.",
+      "button": "Démarrer une conversation"
     },
-    "services": {
-      "aiSoftware": "Développement de logiciels IA",
-      "aiChatbots": "Chatbots IA avec RAG",
-      "aiAgents": "Agents IA et automatisation",
-      "mobile": "Développement d'applications mobiles",
-      "web": "Développement d'applications Web",
-      "desktop": "Développement d'applications de bureau",
-      "security": "Systèmes de sécurité",
-      "cloud": "Cloud et DevOps",
-      "other": "Autre"
+    "visitSite": "Visiter le site"
+  },
+  "process": {
+    "steps": {
+      "understand": {
+        "title": "Comprendre",
+        "description": "Nous partons du problème — vos utilisateurs, vos contraintes et les besoins réels de l'entreprise. Pas d'architecture avant la compréhension."
+      },
+      "architect": {
+        "title": "Concevoir",
+        "description": "Nous concevons l'architecture technique et la stratégie IA : flux de données, modèles, intégrations et l'infrastructure pour les faire tourner."
+      },
+      "build": {
+        "title": "Construire",
+        "description": "Nous développons, intégrons et testons par itérations courtes — un logiciel fonctionnel tôt, affiné en continu."
+      },
+      "deploy": {
+        "title": "Déployer",
+        "description": "Nous mettons en production avec supervision, journaux et alertes dès le premier jour."
+      },
+      "evolve": {
+        "title": "Faire évoluer",
+        "description": "Nous mesurons l'usage réel et améliorons le système en continu après le lancement."
+      }
+    }
+  },
+  "industries": {
+    "items": {
+      "financial": "Services financiers",
+      "commerce": "Commerce",
+      "education": "Éducation",
+      "legal": "Technologies juridiques",
+      "agriculture": "Agriculture",
+      "enterprise": "Opérations d'entreprise",
+      "security": "Sécurité",
+      "emerging": "Marchés numériques émergents"
     }
   },
   "about": {
     "hero": {
-      "title": "À propos de Neobyte Technology",
-      "subtitle": "Nous sommes une équipe d'ingénieurs, de designers et d'experts en IA passionnés, dédiés à la création de solutions logicielles intelligentes.",
-      "primaryCTA": "Nous contacter",
-      "secondaryCTA": "Voir les services"
+      "eyebrow": "À propos de NeoByte",
+      "title": "Une entreprise technologique qui construit des produits et des systèmes intelligents",
+      "subtitle": "Nous concevons et développons des systèmes IA, des plateformes logicielles et des produits numériques — les nôtres, et ceux d’organisations."
     },
-    "mission": {
-      "title": "Notre mission",
-      "description": "Chez Neobyte Technology, nous croyons en la puissance de l'intelligence artificielle et des logiciels innovants pour résoudre des défis commerciaux complexes. Notre mission est de démocratiser la technologie IA et de la rendre accessible aux entreprises de toutes tailles, leur permettant d'automatiser les processus, d'améliorer les expériences clients et de stimuler la croissance."
+    "story": {
+      "eyebrow": "Notre histoire",
+      "title": "Pourquoi nous construisons",
+      "body": [
+        "NeoByte Technology a été fondée par des ingénieurs qui voulaient construire de vrais systèmes, pas des présentations. Dès le départ, l'objectif était simple : s'attaquer à des problèmes difficiles et livrer des logiciels qui fonctionnent.",
+        "Nos racines sont au Burkina Faso, avec une exposition directe aux écosystèmes technologiques mondiaux — des communautés de recherche en IA aux réseaux de production et de commerce chinois. Cette position façonne ce que nous construisons : une technologie adaptée aux réalités des marchés émergents, développée selon les standards internationaux.",
+        "Nous développons nos propres produits parce que construire pour de vrais utilisateurs est la meilleure discipline d'ingénierie qui soit. Des produits comme Yawoto et Barkosem sont nés de problèmes que nous avons constatés nous-mêmes — et tout ce que nous apprenons en les exploitant nourrit les systèmes que nous construisons pour les organisations."
+      ]
     },
-    "values": {
-      "title": "Nos valeurs",
-      "innovation": {
-        "title": "Innovation d'abord",
-        "description": "Nous restons en avance sur la courbe en adoptant des technologies de pointe et des solutions innovantes."
-      },
-      "clientCentric": {
-        "title": "Axé sur le client",
-        "description": "Votre succès est notre succès. Nous construisons des partenariats à long terme basés sur la confiance et les résultats."
-      },
-      "excellence": {
-        "title": "Excellence",
-        "description": "Nous visons la perfection dans chaque projet, en livrant des solutions de haute qualité qui dépassent les attentes."
-      },
-      "agility": {
-        "title": "Agilité",
-        "description": "Développement rapide avec des méthodologies agiles pour livrer de la valeur rapidement et de manière itérative."
-      },
-      "passion": {
-        "title": "Passion",
-        "description": "Nous aimons ce que nous faisons, et cela se voit dans la qualité et le dévouement que nous apportons à chaque projet."
-      },
-      "security": {
-        "title": "Sécurité",
-        "description": "La sécurité est intégrée à chaque solution dès le départ, protégeant vos données et vos utilisateurs."
-      }
+    "geo": {
+      "title": "Construit depuis l'Afrique. Connecté à la technologie mondiale.",
+      "body": "Nos racines sont en Afrique ; notre ingénierie est connectée aux écosystèmes technologiques du monde entier. Nous construisons des systèmes ancrés localement, aux standards mondiaux."
+    },
+    "principles": {
+      "eyebrow": "Notre façon de travailler",
+      "title": "Principes d'ingénierie",
+      "items": [
+        {
+          "title": "La production avant les prototypes",
+          "description": "Une démo ne prouve rien. Nous construisons des systèmes qui tournent dans le monde réel, avec de vrais utilisateurs et de vraies données."
+        },
+        {
+          "title": "Maîtriser toute la stack",
+          "description": "Des modèles et des API jusqu'aux interfaces et à l'infrastructure, nous comprenons chaque couche de ce que nous livrons."
+        },
+        {
+          "title": "Mesurer par l'usage réel",
+          "description": "Le succès, c'est ce que les utilisateurs font du système, pas son score dans un benchmark."
+        },
+        {
+          "title": "Des systèmes simples, bien construits",
+          "description": "Nous choisissons des technologies éprouvées là où elles suffisent — et nous n'investissons dans la complexité que là où elle rapporte."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Construisons ensemble",
+      "description": "Qu'il s'agisse de l'un de nos produits ou d'un système qui vous est propre, la conversation commence toujours de la même façon : par le problème.",
+      "button": "Démarrer une conversation"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Démarrer une conversation",
+      "subtitle": "Décrivez le problème que vous cherchez à résoudre. Nous répondrons avec des questions honnêtes et un point de vue concret — sans processus commercial, sans pression.",
+      "primaryCTA": "Envoyer un message"
+    },
+    "form": {
+      "title": "Parlez-nous de votre projet",
+      "description": "Quelques phrases suffisent. Nous lisons tout nous-mêmes et nous répondons directement.",
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "service": "De quoi avez-vous besoin ?",
+      "selectService": "Sélectionnez un service",
+      "message": "Message",
+      "messagePlaceholder": "Décrivez le problème, le contexte et ce que serait un succès pour vous...",
+      "sendMessage": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message bien reçu. Nous vous répondrons rapidement.",
+      "error": "Le message n'a pas pu être envoyé. Veuillez réessayer.",
+      "networkError": "Erreur réseau. Vérifiez votre connexion et réessayez."
+    },
+    "services": {
+      "ai": "IA & Systèmes intelligents",
+      "software": "Logiciels & Produits numériques",
+      "cloud": "Cloud & Infrastructure",
+      "commerce": "Commerce numérique",
+      "other": "Autre"
+    },
+    "info": {
+      "title": "Coordonnées",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "address": "Adresse"
     }
   },
   "footer": {
+    "description": "NeoByte Technology développe des systèmes d'IA, des plateformes logicielles et des produits numériques — de l'architecture à la production.",
+    "solutions": {
+      "title": "Solutions",
+      "ai": "IA & Systèmes intelligents",
+      "software": "Logiciels & Produits numériques",
+      "cloud": "Cloud & Infrastructure",
+      "commerce": "Commerce numérique"
+    },
     "company": {
-      "aboutUs": "À propos de nous",
-      "services": "Services",
+      "title": "Entreprise",
+      "about": "À propos",
       "products": "Produits",
+      "contact": "Contact",
       "industries": "Industries"
     },
-    "services": {
-      "aiDevelopment": "Développement IA",
-      "mobileApps": "Applications mobiles",
-      "webDevelopment": "Développement Web",
-      "securitySystems": "Systèmes de sécurité",
-      "desktopApps": "Applications de bureau"
+    "contact": {
+      "title": "Contact"
     },
     "legal": {
+      "title": "Mentions légales",
       "termsAndPolicy": "Termes et politique"
     },
-    "description": "Neobyte Technology - Création de logiciels intelligents pour l'avenir. Nous sommes spécialisés dans les solutions d'IA, le développement personnalisé et les technologies de pointe.",
     "copyright": "Tous droits réservés."
   },
-  "common": {
-    "loading": "Chargement...",
-    "error": "Une erreur s'est produite",
-    "submit": "Soumettre",
-    "cancel": "Annuler",
-    "save": "Enregistrer",
-    "delete": "Supprimer",
-    "edit": "Modifier",
-    "view": "Voir"
+  "policy": {
+    "companyName": "Neobyte Technology",
+    "title": "Politique de confidentialité, Conditions d'utilisation et Politique relative aux cookies",
+    "privacy": {
+      "title": "1. Politique de confidentialité",
+      "introduction": {
+        "title": "1.1 Introduction",
+        "body": "La présente Politique de confidentialité décrit la manière dont Neobyte Technology (« Neobyte », « nous », « notre » ou « nos ») collecte, utilise, stocke et protège les informations personnelles obtenues par le biais de ses logiciels, plateformes numériques, sites web et services (collectivement, les « Services »). En utilisant nos Services, vous consentez aux pratiques décrites dans la présente Politique de confidentialité."
+      },
+      "collection": {
+        "title": "1.2 Informations que nous collectons",
+        "intro": "Nous pouvons collecter les catégories d'informations suivantes :",
+        "items": [
+          "Informations personnelles : nom, adresse e-mail, numéro de téléphone, coordonnées de l'entreprise, identifiants de compte.",
+          "Données techniques : adresse IP, type de navigateur, informations sur l'appareil, système d'exploitation, journaux d'utilisation et données d'analyse.",
+          "Données de projet et d'entreprise : fichiers, documents, configurations système et informations partagées dans le cadre du développement logiciel ou de l'exécution des services.",
+          "Informations de paiement : données de facturation et métadonnées de transaction (traitées par des prestataires de paiement tiers sécurisés)."
+        ]
+      },
+      "use": {
+        "title": "1.3 Comment nous utilisons les informations",
+        "intro": "Neobyte Technology utilise les données collectées pour :",
+        "items": [
+          "La fourniture des services et le fonctionnement des plateformes.",
+          "L'optimisation des systèmes, l'analyse des performances et la résolution des problèmes.",
+          "Le support client et la communication.",
+          "La sécurité, la prévention de la fraude et la conformité.",
+          "L'amélioration des produits, des fonctionnalités et de l'expérience utilisateur."
+        ]
+      },
+      "sharing": {
+        "title": "1.4 Partage et divulgation des données",
+        "body": "Nous ne vendons pas les données de nos clients ou utilisateurs. Nous pouvons partager des informations avec :",
+        "items": [
+          "Les employés et sous-traitants autorisés, liés par des obligations de confidentialité.",
+          "Les prestataires de services tiers contribuant à l'hébergement, à l'analyse, aux paiements ou à l'infrastructure.",
+          "Les autorités lorsque la loi l'exige."
+        ]
+      },
+      "security": {
+        "title": "1.5 Sécurité des données",
+        "body": "Nous mettons en œuvre des mesures de sécurité conformes aux standards de l'industrie, notamment le chiffrement, la gestion des accès et des pratiques de développement sécurisé, afin de protéger l'intégrité et la confidentialité des données."
+      },
+      "retention": {
+        "title": "1.6 Conservation des données",
+        "body": "Les données sont conservées uniquement le temps nécessaire à des fins opérationnelles, juridiques ou contractuelles."
+      },
+      "rights": {
+        "title": "1.7 Droits des utilisateurs",
+        "intro": "Selon votre juridiction, vous pouvez disposer du droit de :",
+        "items": [
+          "Accéder à vos données, les rectifier ou les supprimer.",
+          "Demander la portabilité de vos données.",
+          "Retirer votre consentement à certaines utilisations des données.",
+          "Demander la limitation du traitement."
+        ]
+      },
+      "contact": {
+        "title": "1.8 Contact",
+        "body": "Pour toute question relative à la confidentialité : privacy@neobyte.tech."
+      }
+    },
+    "terms": {
+      "title": "2. Conditions d'utilisation",
+      "acceptance": {
+        "title": "2.1 Acceptation des conditions",
+        "body": "En accédant aux Services de Neobyte Technology ou en les utilisant, vous acceptez les présentes Conditions d'utilisation (les « Conditions »). Si vous ne les acceptez pas, vous devez cesser d'utiliser les Services."
+      },
+      "description": {
+        "title": "2.2 Description des services",
+        "body": "Neobyte fournit des services de développement logiciel, de conseil informatique, de déploiement cloud, d'intégration de systèmes et des solutions numériques associées. Les livrables et les délais réels sont définis dans les contrats de projet, propositions, cahiers des charges (SOW) ou accords de niveau de service (SLA)."
+      },
+      "obligations": {
+        "title": "2.3 Obligations des utilisateurs",
+        "intro": "Les utilisateurs s'engagent à :",
+        "items": [
+          "Respecter toutes les lois applicables.",
+          "S'abstenir de tout accès non autorisé, de toute altération ou utilisation abusive des systèmes.",
+          "Fournir des informations exactes nécessaires à la fourniture des services.",
+          "Maintenir la sécurité de leurs identifiants d'accès."
+        ]
+      },
+      "ip": {
+        "title": "2.4 Propriété intellectuelle",
+        "body": "L'ensemble des logiciels, codes, documentations et éléments développés par Neobyte demeure notre propriété intellectuelle, sauf disposition contractuelle contraire. Les clients bénéficient d'une licence limitée à des fins d'utilisation professionnelle."
+      },
+      "payments": {
+        "title": "2.5 Paiements",
+        "items": [
+          "Les échéanciers de paiement, acomptes et jalons sont définis dans les accords de service.",
+          "Les retards de paiement peuvent entraîner des pénalités ou une suspension des services."
+        ]
+      },
+      "availability": {
+        "title": "2.6 Disponibilité des services",
+        "body": "Neobyte s'efforce d'assurer une disponibilité constante, mais ne garantit pas un service ininterrompu en raison de la maintenance, des mises à niveau ou de conditions externes."
+      },
+      "liability": {
+        "title": "2.7 Limitation de responsabilité",
+        "body": "Nous ne sommes pas responsables des dommages indirects, consécutifs, accessoires ou spéciaux. Notre responsabilité est limitée aux frais payés pour le service spécifique à l'origine de la réclamation."
+      },
+      "termination": {
+        "title": "2.8 Résiliation",
+        "body": "Chaque partie peut résilier les services par notification écrite en cas de manquement substantiel non résolu dans le délai convenu."
+      },
+      "amendments": {
+        "title": "2.9 Modifications",
+        "body": "Neobyte peut mettre à jour les présentes Conditions à tout moment. La poursuite de l'utilisation vaut acceptation des Conditions mises à jour."
+      },
+      "law": {
+        "title": "2.10 Droit applicable",
+        "body": "Les présentes Conditions sont régies par les lois de la juridiction du siège principal d'immatriculation de Neobyte Technology."
+      }
+    },
+    "cookies": {
+      "title": "3. Politique relative aux cookies",
+      "introduction": {
+        "title": "3.1 Introduction",
+        "body": "La présente Politique relative aux cookies explique comment Neobyte Technology utilise les cookies et technologies de suivi similaires sur ses sites web et plateformes numériques."
+      },
+      "what": {
+        "title": "3.2 Que sont les cookies ?",
+        "body": "Les cookies sont de petits fichiers texte stockés sur votre appareil afin d'améliorer l'expérience de navigation, d'analyser l'utilisation du site et de permettre le fonctionnement des plateformes."
+      },
+      "types": {
+        "title": "3.3 Types de cookies que nous utilisons",
+        "items": [
+          "Cookies essentiels : nécessaires au fonctionnement du site web, à l'authentification et à la sécurité.",
+          "Cookies d'analyse : mesurent l'utilisation, les performances et les interactions des utilisateurs.",
+          "Cookies de préférences : conservent les paramètres et préférences de l'utilisateur.",
+          "Cookies tiers : utilisés par des prestataires de services (par exemple, outils d'analyse ou outils intégrés)."
+        ]
+      },
+      "use": {
+        "title": "3.4 Comment nous utilisons les cookies",
+        "intro": "Nous utilisons les cookies pour :",
+        "items": [
+          "Assurer le fonctionnement des plateformes et la sécurité des sessions.",
+          "Améliorer les performances du site web.",
+          "Analyser le trafic et le comportement des utilisateurs.",
+          "Personnaliser l'expérience utilisateur."
+        ]
+      },
+      "managing": {
+        "title": "3.5 Gestion des cookies",
+        "body": "Les utilisateurs peuvent désactiver les cookies dans les paramètres de leur navigateur. Cela peut toutefois affecter le fonctionnement et l'accès à certaines fonctionnalités."
+      },
+      "updates": {
+        "title": "3.6 Mises à jour",
+        "body": "Nous pouvons mettre à jour la présente Politique relative aux cookies périodiquement. Les modifications prennent effet dès leur publication."
+      },
+      "contact": {
+        "title": "3.7 Contact",
+        "body": "Pour toute question : privacy@neobyte.tech."
+      }
+    }
   }
 }

@@ -1,23 +1,13 @@
 import * as React from "react";
-import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
-  children: React.ReactNode;
-  onValueChange?: (value: string) => void;
-}
+export type SelectProps = React.SelectHTMLAttributes<HTMLSelectElement>;
 
+// Simple styled wrapper around a native <select>. Children are plain
+// <option> elements.
 const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
-  ({ className, children, onValueChange, onChange, ...props }, ref) => {
-    const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-      if (onValueChange) {
-        onValueChange(e.target.value);
-      }
-      if (onChange) {
-        onChange(e);
-      }
-    };
-
+  ({ className, children, ...props }, ref) => {
     return (
       <div className="relative">
         <select
@@ -26,7 +16,6 @@ const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
             "flex h-10 w-full appearance-none items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
             className
           )}
-          onChange={handleChange}
           {...props}
         >
           {children}
@@ -38,44 +27,4 @@ const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
 );
 Select.displayName = "Select";
 
-const SelectTrigger = React.forwardRef<
-  HTMLSelectElement,
-  React.SelectHTMLAttributes<HTMLSelectElement>
->(({ className, children, ...props }, ref) => {
-  return (
-    <select
-      ref={ref}
-      className={cn(
-        "flex h-10 w-full appearance-none items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
-        className
-      )}
-      {...props}
-    >
-      {children}
-    </select>
-  );
-});
-SelectTrigger.displayName = "SelectTrigger";
-
-const SelectValue = ({ placeholder }: { placeholder?: string }) => {
-  return <>{placeholder}</>;
-};
-
-const SelectContent = ({ children }: { children: React.ReactNode }) => {
-  return <>{children}</>;
-};
-
-const SelectItem = React.forwardRef<
-  HTMLOptionElement,
-  React.OptionHTMLAttributes<HTMLOptionElement>
->(({ className, children, ...props }, ref) => {
-  return (
-    <option ref={ref} className={cn(className)} {...props}>
-      {children}
-    </option>
-  );
-});
-SelectItem.displayName = "SelectItem";
-
-export { Select, SelectTrigger, SelectValue, SelectContent, SelectItem };
-
+export { Select };

@@ -1,117 +1,53 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phone?: string;
+  company?: string;
+  service: string;
+  message: string;
+  website?: string; // honeypot — must stay empty
+  lang?: "en" | "fr"; // site language, used for the auto-confirmation email
+}
 
-interface ApiResponse<T> {
+export interface ContactResponse {
   success: boolean;
-  data?: T;
+  message?: string;
   error?: string;
   errors?: Array<{ msg: string; param: string }>;
-  message?: string;
 }
 
-class ApiClient {
-  private baseUrl: string;
-
-  constructor(baseUrl: string) {
-    this.baseUrl = baseUrl;
-  }
-
-  private async request<T>(
-    endpoint: string,
-    options: RequestInit = {}
-  ): Promise<ApiResponse<T>> {
-    const url = `${this.baseUrl}${endpoint}`;
-    
-    const config: RequestInit = {
+// Posts to the relative /api/contact path; Next.js rewrites proxy it to the
+// backend (see next.config.ts).
+export async function submitContact(
+  formData: ContactFormData
+): Promise<ContactResponse> {
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
-        ...options.headers,
       },
-      ...options,
-    };
-
-    try {
-      const response = await fetch(url, config);
-      const data = await response.json();
-
-      if (!response.ok) {
-        return {
-          success: false,
-          error: data.error || "Request failed",
-          errors: data.errors,
-        };
-      }
-
-      return {
-        success: true,
-        ...data,
-      };
-    } catch (error) {
-      return {
-        success: false,
-        error: error instanceof Error ? error.message : "Network error",
-      };
-    }
-  }
-
-  async submitContact(formData: {
-    name: string;
-    email: string;
-    phone?: string;
-    company?: string;
-    service: string;
-    message: string;
-  }) {
-    return this.request<{ id: number; timestamp: string }>("/contact", {
-      method: "POST",
       body: JSON.stringify(formData),
     });
-  }
 
-  async getServices() {
-    return this.request<Array<any>>("/services");
-  }
+    const data = await response.json();
 
-  async getService(id: string) {
-    return this.request<any>(`/services/${id}`);
-  }
+    if (!response.ok) {
+      return {
+        success: false,
+        error: data.error || "Request failed",
+        errors: data.errors,
+      };
+    }
 
-  async getProducts(category?: string) {
-    const query = category ? `?category=${encodeURIComponent(category)}` : "";
-    return this.request<Array<any>>(`/products${query}`);
-  }
-
-  async getProduct(id: string) {
-    return this.request<any>(`/products/${id}`);
-  }
-
-  async getProjects(category?: string, year?: number) {
-    const params = new URLSearchParams();
-    if (category) params.append("category", category);
-    if (year) params.append("year", year.toString());
-    const query = params.toString() ? `?${params.toString()}` : "";
-    return this.request<Array<any>>(`/projects${query}`);
-  }
-
-  async getProject(id: string) {
-    return this.request<any>(`/projects/${id}`);
-  }
-
-  async getBlogPosts(category?: string, author?: string) {
-    const params = new URLSearchParams();
-    if (category) params.append("category", category);
-    if (author) params.append("author", author);
-    const query = params.toString() ? `?${params.toString()}` : "";
-    return this.request<Array<any>>(`/blog${query}`);
-  }
-
-  async getBlogPost(slug: string) {
-    return this.request<any>(`/blog/${slug}`);
+    return {
+      success: true,
+      ...data,
+    };
+  } catch {
+    return {
+      success: false,
+      error: "Network error",
+    };
   }
 }
-
-export const apiClient = new ApiClient(API_BASE_URL);
-export default apiClient;
-
-
-
-

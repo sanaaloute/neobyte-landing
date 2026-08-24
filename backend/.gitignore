@@ -26,6 +26,9 @@ Thumbs.db
 dist/
 build/
 
+# Contact form submissions (local persistence)
+data/
+
 
 
 

@@ -1,382 +1,512 @@
 {
   "nav": {
-    "home": "Home",
-    "about": "About",
-    "services": "Services",
+    "solutions": "Solutions",
     "products": "Products",
-    "industries": "Industries",
+    "about": "About",
     "contact": "Contact",
-    "getQuote": "Get a Quote"
+    "cta": "Let's build",
+    "industries": "Industries"
   },
   "home": {
     "hero": {
-      "title": "Building Intelligent Software for the Future",
-      "subtitle": "We specialize in AI solutions, custom software development, and cutting-edge technology. Transform your business with intelligent automation and innovative applications.",
-      "primaryCTA": "Get a Quote",
-      "secondaryCTA": "View Services"
+      "eyebrow": "NeoByte Technology",
+      "title": "We build intelligent systems that solve real problems.",
+      "subtitle": "NeoByte designs and deploys AI-powered products, intelligent agents, and scalable software systems for businesses and emerging markets — from idea to production.",
+      "primaryCTA": "Explore our work",
+      "secondaryCTA": "Build with NeoByte"
     },
-    "services": {
-      "title": "Our Services",
-      "subtitle": "Comprehensive solutions tailored to your business needs"
+    "positioning": {
+      "eyebrow": "Who we are",
+      "title": "Technology is our foundation. Intelligence is our advantage.",
+      "body": "NeoByte works across AI, software engineering, cloud infrastructure, and digital products. We build our own products, and we build for organizations — always with production in mind.",
+      "points": [
+        "AI systems deployed to production, not demos",
+        "Full-stack product engineering",
+        "Infrastructure designed to scale"
+      ]
+    },
+    "pillars": {
+      "eyebrow": "What we do",
+      "title": "Four technology pillars. One engineering standard.",
+      "subtitle": "Four technology pillars, one engineering practice.",
+      "cta": "Explore our solutions"
     },
     "products": {
-      "title": "Featured Products",
-      "subtitle": "Ready-to-deploy solutions built with cutting-edge technology",
-      "viewAll": "View All Products"
+      "eyebrow": "Products & Projects",
+      "title": "We build our own products",
+      "subtitle": "Our own products — designed, built, and run by NeoByte.",
+      "cta": "View all products"
     },
-    "whyChoose": {
-      "title": "Why Choose Neobyte Technology?",
-      "subtitle": "We combine technical expertise with business acumen to deliver exceptional results"
+    "process": {
+      "eyebrow": "How we build",
+      "title": "From problem to production",
+      "subtitle": ""
     },
-    "testimonials": {
-      "title": "What Our Clients Say",
-      "subtitle": "Don't just take our word for it"
+    "industries": {
+      "eyebrow": "Industries",
+      "title": "Where technology creates leverage",
+      "subtitle": ""
     },
     "cta": {
-      "title": "Start Your AI Project Today",
-      "description": "Ready to transform your business with intelligent software? Get in touch and let's discuss your project.",
-      "primaryCTA": "Get Started",
-      "secondaryCTA": "View Services"
-    },
-    "valueProps": {
-      "expertTeam": "Expert team with 10+ years of experience",
-      "cuttingEdge": "Cutting-edge AI and ML technologies",
-      "agile": "Agile development methodology",
-      "support": "24/7 support and maintenance",
-      "proven": "Proven track record of successful projects",
-      "competitive": "Competitive pricing and flexible contracts"
+      "title": "Have a problem worth solving?",
+      "highlight": "Let's build the system behind it.",
+      "description": "Tell us what you're working on — we'll tell you honestly how we'd build it.",
+      "primaryCTA": "Start a conversation",
+      "secondaryCTA": "Explore our work"
     }
   },
-  "products": {
-    "keyFeatures": "Key Features",
+  "solutions": {
     "hero": {
-      "title": "Our Products",
-      "subtitle": "Ready-to-deploy solutions built with cutting-edge technology",
-      "primaryCTA": "Request Demo",
-      "secondaryCTA": "View Services"
+      "eyebrow": "Solutions",
+      "title": "What we build",
+      "subtitle": "Four technology pillars. Not a menu of services — an engineering practice."
     },
-    "items": {
-      "chatbot": {
-        "title": "AI-Powered Chatbot Platform",
-        "description": "Enterprise-grade chatbot solution with RAG capabilities, multi-language support, and seamless integrations.",
-        "features": [
-          "Retrieval-Augmented Generation (RAG)",
-          "Multi-channel deployment",
-          "Advanced analytics dashboard",
-          "Custom training & fine-tuning"
-        ]
-      },
-      "agent": {
-        "title": "AI Agent Automation Platform",
-        "description": "Build and deploy intelligent agents that automate complex business workflows and decision-making processes.",
-        "features": [
-          "Workflow automation engine",
-          "Multi-agent orchestration",
-          "Real-time monitoring",
-          "Custom integrations"
-        ]
-      },
-      "faceRecognition": {
-        "title": "Face Recognition Attendance System",
-        "description": "Automated attendance tracking using advanced facial recognition technology. Accurate, fast, and secure.",
-        "features": [
-          "Real-time face detection",
-          "99.9% accuracy rate",
-          "Multi-location support",
-          "Comprehensive reporting"
-        ]
-      },
-      "inventory": {
-        "title": "Inventory Management System",
-        "description": "Complete inventory management solution with AI-powered forecasting, automated reordering, and analytics.",
-        "features": [
-          "AI demand forecasting",
-          "Automated reordering",
-          "Multi-warehouse support",
-          "Real-time tracking"
-        ]
-      },
-      "ecommerce": {
-        "title": "Mobile App Template - E-Commerce",
-        "description": "Ready-to-deploy e-commerce mobile app template with payment integration and product catalog.",
-        "features": [
-          "Product catalog and search",
-          "Shopping cart and checkout",
-          "Payment gateway integration",
-          "Order tracking"
-        ]
-      },
-      "taskManager": {
-        "title": "Desktop App Template - Task Manager",
-        "description": "Cross-platform desktop task management application with team collaboration features.",
-        "features": [
-          "Task and project management",
-          "Team collaboration",
-          "Time tracking",
-          "File attachments"
-        ]
-      }
-    }
-  },
-  "services": {
-    "hero": {
-      "title": "Our Services",
-      "subtitle": "Comprehensive solutions for your digital transformation journey",
-      "primaryCTA": "Get a Quote",
-      "secondaryCTA": "View Products"
-    },
-    "items": {
+    "pillars": {
       "ai": {
-        "title": "AI Software Development",
-        "description": "Custom AI solutions powered by machine learning and deep learning technologies. Build intelligent systems that learn and adapt.",
-        "detailedDescription": "We develop custom AI software solutions tailored to your specific business needs. Our expertise spans machine learning, deep learning, natural language processing, computer vision, and predictive analytics.",
-        "technologiesLabel": "Technologies Used",
-        "useCasesLabel": "Example Use Cases",
-        "useCases": [
-          "Predictive analytics and forecasting",
-          "Image and video recognition",
-          "Natural language processing",
-          "Recommendation systems",
-          "Fraud detection and prevention"
+        "title": "AI & Intelligent Systems",
+        "description": "We design and deploy AI systems that automate complex work and turn data into useful decisions — from LLM applications to computer vision.",
+        "items": [
+          "LLM applications",
+          "RAG systems",
+          "AI agents",
+          "AI automation",
+          "Machine learning",
+          "Computer vision",
+          "NLP"
         ]
       },
-      "chatbots": {
-        "title": "AI Chatbots with RAG",
-        "description": "Intelligent conversational AI with Retrieval-Augmented Generation. Context-aware chatbots that understand your business.",
-        "detailedDescription": "Our AI chatbots leverage Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses. They can access your company's knowledge base, documents, and databases to answer questions intelligently.",
-        "technologiesLabel": "Technologies Used",
-        "useCasesLabel": "Example Use Cases",
-        "useCases": [
-          "24/7 customer support",
-          "Lead qualification and nurturing",
-          "Internal knowledge base queries",
-          "E-commerce product recommendations",
-          "Appointment scheduling"
-        ]
-      },
-      "agents": {
-        "title": "AI Agents & Workflow Automation",
-        "description": "Automate complex workflows with intelligent AI agents. Streamline operations and boost productivity.",
-        "detailedDescription": "Build intelligent agents that can perform complex tasks autonomously. Our AI agents can handle data processing, decision-making, API integrations, and multi-step workflows.",
-        "technologiesLabel": "Technologies Used",
-        "useCasesLabel": "Example Use Cases",
-        "useCases": [
-          "Data processing and ETL pipelines",
-          "Automated report generation",
-          "Multi-system integrations",
-          "Intelligent task routing",
-          "Process automation"
-        ]
-      },
-      "mobile": {
-        "title": "Mobile App Development",
-        "description": "Native and cross-platform mobile applications for iOS and Android. Beautiful, performant, and user-friendly.",
-        "detailedDescription": "We build native and cross-platform mobile applications that deliver exceptional user experiences. From concept to deployment, we handle every aspect of mobile app development.",
-        "technologiesLabel": "Technologies Used",
-        "useCasesLabel": "Example Use Cases",
-        "useCases": [
-          "Consumer mobile apps",
-          "Enterprise mobile solutions",
-          "E-commerce applications",
-          "Social networking apps",
-          "IoT device control apps"
-        ]
-      },
-      "web": {
-        "title": "Web App Development",
-        "description": "Modern web applications built with cutting-edge technologies. Scalable, secure, and lightning-fast.",
-        "detailedDescription": "We create modern, responsive web applications using the latest frameworks and best practices. Our web apps are built for scale, security, and performance.",
-        "technologiesLabel": "Technologies Used",
-        "useCasesLabel": "Example Use Cases",
-        "useCases": [
+      "software": {
+        "title": "Software & Digital Products",
+        "description": "We build software platforms from idea to production — SaaS products, web and mobile applications, and the APIs behind them.",
+        "items": [
           "SaaS platforms",
-          "E-commerce websites",
-          "Content management systems",
-          "Dashboard and analytics platforms",
-          "Progressive web apps (PWAs)"
-        ]
-      },
-      "desktop": {
-        "title": "Desktop App Development",
-        "description": "Native desktop applications for Windows and macOS. Powerful, efficient, and platform-optimized.",
-        "detailedDescription": "We develop native desktop applications that leverage platform-specific features for optimal performance. Whether you need a Windows application, macOS app, or cross-platform solution.",
-        "technologiesLabel": "Technologies Used",
-        "useCasesLabel": "Example Use Cases",
-        "useCases": [
-          "Productivity tools",
-          "Design and creative software",
-          "Data analysis applications",
-          "System utilities",
-          "Enterprise desktop solutions"
-        ]
-      },
-      "security": {
-        "title": "Security Camera Installation & Monitoring",
-        "description": "Comprehensive security camera installation and monitoring systems. Protect your assets with advanced surveillance.",
-        "detailedDescription": "We provide end-to-end security camera solutions including installation, configuration, and monitoring systems. Our solutions include AI-powered motion detection, facial recognition, cloud storage, and mobile access.",
-        "technologiesLabel": "Technologies Used",
-        "useCasesLabel": "Example Use Cases",
-        "useCases": [
-          "Office building security",
-          "Retail store surveillance",
-          "Warehouse monitoring",
-          "Residential security",
-          "Access control integration"
+          "Web applications",
+          "Mobile applications",
+          "Enterprise software",
+          "APIs & backend systems"
         ]
       },
       "cloud": {
-        "title": "Cloud Architecture & DevOps",
-        "description": "Cloud architecture, microservices, and DevOps solutions. Deploy and scale with confidence.",
-        "detailedDescription": "We design and implement scalable cloud architectures using AWS, Azure, and GCP. Our DevOps services include CI/CD pipeline setup, containerization, orchestration, monitoring, and infrastructure as code.",
-        "technologiesLabel": "Technologies Used",
-        "useCasesLabel": "Example Use Cases",
-        "useCases": [
-          "Cloud migration",
-          "Microservices architecture",
-          "CI/CD pipeline setup",
-          "Container orchestration",
-          "Infrastructure automation"
+        "title": "Cloud & Infrastructure",
+        "description": "We architect and operate the infrastructure our systems run on — containerized, observable, and designed to scale.",
+        "items": [
+          "Cloud architecture",
+          "Docker & containers",
+          "Microservices",
+          "DevOps & CI/CD",
+          "Deployment & monitoring",
+          "Scalable infrastructure"
+        ]
+      },
+      "commerce": {
+        "title": "Digital Commerce",
+        "description": "We build commerce platforms that connect suppliers, customers, and payments — including cross-border trade between China and African markets.",
+        "items": [
+          "E-commerce platforms",
+          "Marketplace systems",
+          "Payment integrations",
+          "Supplier & customer platforms"
         ]
       }
     },
-    "requestQuote": "Request a Quote",
-    "overview": "Overview"
-  },
-  "industries": {
-    "hero": {
-      "title": "Industries We Serve",
-      "subtitle": "We provide cutting-edge technology solutions tailored to diverse industries, helping businesses transform and thrive in the digital age.",
-      "primaryCTA": "Get in Touch",
-      "secondaryCTA": "View Services"
-    },
-    "description": "Tailored solutions for {industry} industry needs.",
-    "items": {
-      "fintech": "Fintech",
-      "transportation": "Transportation and Logistics",
-      "ecommerce": "E-commerce",
-      "bank": "Bank",
-      "hotel": "Hotel",
-      "egovernment": "E-government",
-      "travel": "Travel",
-      "healthcare": "Healthcare",
-      "retail": "Retail",
-      "manufacturing": "Manufacturing",
-      "education": "Education",
-      "agriculture": "Agriculture",
-      "iot": "IoT",
-      "media": "Media & Communication",
-      "ai": "Artificial intelligence",
-      "insurance": "Insurance"
+    "cta": {
+      "title": "Need a system that doesn't exist yet?",
+      "description": "Tell us about the problem. We'll design the architecture and build it with you.",
+      "button": "Build with NeoByte"
     }
   },
-  "contact": {
+  "products": {
     "hero": {
-      "title": "Get In Touch",
-      "subtitle": "Ready to start your project? Let's discuss how we can help transform your business.",
-      "primaryCTA": "Schedule a Call"
+      "eyebrow": "Products & Projects",
+      "title": "Things we build — and run",
+      "subtitle": "Products we design, ship, and run ourselves."
     },
-    "form": {
-      "title": "Send us a message",
-      "description": "Fill out the form below and we'll get back to you within 24 hours.",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "company": "Company",
-      "service": "Service Needed",
-      "selectService": "Select a service",
-      "message": "Message",
-      "messagePlaceholder": "Tell us about your project...",
-      "sendMessage": "Send Message",
-      "sending": "Sending...",
-      "success": "Thank you for your message! We'll get back to you soon.",
-      "error": "Failed to send message. Please try again.",
-      "networkError": "Network error. Please check your connection and try again."
+    "statusLive": "Live",
+    "statusDev": "In development",
+    "items": {
+      "yawoto": {
+        "name": "Yawoto",
+        "tagline": "Agentic legal assistant for West Africa",
+        "description": "An AI legal assistant for West Africa: legal research grounded in verified sources — OHADA and national legislation — with document drafting and usage tracking.",
+        "features": [
+          "Legal research grounded in verified sources",
+          "Coverage of OHADA law and national legislation",
+          "Contextual answers with cited references",
+          "Document drafting assistance",
+          "Usage tracking for teams and organizations"
+        ],
+        "stack": [
+          "LLM",
+          "RAG",
+          "Legal knowledge base",
+          "Document intelligence",
+          "AI agents"
+        ]
+      },
+      "barkosem": {
+        "name": "Barkosem",
+        "tagline": "Commerce between China and West Africa",
+        "description": "A digital commerce platform designed to simplify sourcing, verification, logistics, and commerce between China and African markets.",
+        "features": [
+          "Supplier sourcing and verification",
+          "Marketplace for cross-border trade",
+          "Integrated payments",
+          "AI translation across languages",
+          "Supplier and customer management tools"
+        ],
+        "stack": [
+          "E-commerce",
+          "Marketplace",
+          "Mobile",
+          "Payments",
+          "AI translation",
+          "Supplier management"
+        ]
+      },
+      "brvmAgent": {
+        "name": "BRVM Stock AI Agent",
+        "tagline": "BRVM market intelligence in your messaging apps",
+        "description": "An AI agent that makes the BRVM — the West African regional stock exchange — accessible through conversation, on Telegram and WhatsApp.",
+        "features": [
+          "Conversational access to BRVM market information",
+          "Natural-language questions about listed companies",
+          "Works inside Telegram and WhatsApp — no app to install",
+          "Built for investors in the WAEMU region and beyond"
+        ],
+        "stack": [
+          "AI agents",
+          "LLM",
+          "Market data",
+          "Telegram",
+          "WhatsApp"
+        ]
+      },
+      "aiWebBuilder": {
+        "name": "AI Web Builder",
+        "tagline": "Your website, built from a single prompt",
+        "description": "Describe your idea — AI designs, codes, and ships it. A single prompt becomes a complete, deployed website.",
+        "features": [
+          "Prompt-to-website generation",
+          "AI-driven design and code generation",
+          "Complete sites, not templates",
+          "Deployment built into the flow"
+        ],
+        "stack": [
+          "LLM",
+          "Code generation",
+          "AI agents",
+          "Automated deployment"
+        ]
+      }
     },
-    "info": {
-      "title": "Contact Information",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address"
+    "cta": {
+      "title": "Want to build on what we've built?",
+      "description": "Our products are live systems, not demos. Talk to us about using them, extending them, or building your own.",
+      "button": "Start a conversation"
     },
-    "services": {
-      "aiSoftware": "AI Software Development",
-      "aiChatbots": "AI Chatbots with RAG",
-      "aiAgents": "AI Agents & Automation",
-      "mobile": "Mobile App Development",
-      "web": "Web App Development",
-      "desktop": "Desktop App Development",
-      "security": "Security Systems",
-      "cloud": "Cloud & DevOps",
-      "other": "Other"
+    "visitSite": "Visit site"
+  },
+  "process": {
+    "steps": {
+      "understand": {
+        "title": "Understand",
+        "description": "We start with the problem — your users, your constraints, and what the business actually needs. No architecture before understanding."
+      },
+      "architect": {
+        "title": "Architect",
+        "description": "We design the technical architecture and the AI strategy: data flows, models, integrations, and the infrastructure to run them."
+      },
+      "build": {
+        "title": "Build",
+        "description": "We develop, integrate, and test in short iterations — working software early, refined continuously."
+      },
+      "deploy": {
+        "title": "Deploy",
+        "description": "We ship to production with monitoring, logging, and alerting in place from day one."
+      },
+      "evolve": {
+        "title": "Evolve",
+        "description": "We measure real-world usage and keep improving the system after launch."
+      }
+    }
+  },
+  "industries": {
+    "items": {
+      "financial": "Financial services",
+      "commerce": "Commerce",
+      "education": "Education",
+      "legal": "Legal technology",
+      "agriculture": "Agriculture",
+      "enterprise": "Enterprise operations",
+      "security": "Security",
+      "emerging": "Emerging digital markets"
     }
   },
   "about": {
     "hero": {
-      "title": "About Neobyte Technology",
-      "subtitle": "We're a team of passionate engineers, designers, and AI experts dedicated to building intelligent software solutions.",
-      "primaryCTA": "Get in Touch",
-      "secondaryCTA": "View Services"
+      "eyebrow": "About NeoByte",
+      "title": "A technology company building intelligent products and systems",
+      "subtitle": "We design and build AI systems, software platforms, and digital products — our own, and for organizations."
     },
-    "mission": {
-      "title": "Our Mission",
-      "description": "At Neobyte Technology, we believe in the power of artificial intelligence and innovative software to solve complex business challenges. Our mission is to democratize AI technology and make it accessible to businesses of all sizes, enabling them to automate processes, enhance customer experiences, and drive growth."
+    "story": {
+      "eyebrow": "Our story",
+      "title": "Why we build",
+      "body": [
+        "NeoByte Technology was founded by engineers who wanted to build real systems, not presentations. From the start, the goal was simple: take on hard problems and ship working software that solves them.",
+        "We are rooted in Burkina Faso, with direct exposure to global technology ecosystems — from AI research communities to China's manufacturing and commerce networks. That position shapes what we build: technology adapted to the realities of emerging markets, engineered to international standards.",
+        "We develop our own products because building for real users is the best engineering discipline there is. Products like Yawoto and Barkosem came out of problems we saw firsthand — and everything we learn from running them goes back into the systems we build for organizations."
+      ]
     },
-    "values": {
-      "title": "Our Values",
-      "innovation": {
-        "title": "Innovation First",
-        "description": "We stay ahead of the curve by embracing cutting-edge technologies and innovative solutions."
-      },
-      "clientCentric": {
-        "title": "Client-Centric",
-        "description": "Your success is our success. We build long-term partnerships based on trust and results."
-      },
-      "excellence": {
-        "title": "Excellence",
-        "description": "We strive for perfection in every project, delivering high-quality solutions that exceed expectations."
-      },
-      "agility": {
-        "title": "Agility",
-        "description": "Fast-paced development with agile methodologies to deliver value quickly and iteratively."
-      },
-      "passion": {
-        "title": "Passion",
-        "description": "We love what we do, and it shows in the quality and dedication we bring to every project."
-      },
-      "security": {
-        "title": "Security",
-        "description": "Security is built into every solution from the ground up, protecting your data and users."
-      }
+    "geo": {
+      "title": "Built from Africa. Connected to global technology.",
+      "body": "Our roots are in Africa; our engineering connects to technology ecosystems around the world. We build locally grounded systems to global standards."
+    },
+    "principles": {
+      "eyebrow": "How we work",
+      "title": "Engineering principles",
+      "items": [
+        {
+          "title": "Production over prototypes",
+          "description": "A demo proves nothing. We build systems that run in the real world, with real users and real data."
+        },
+        {
+          "title": "Own the full stack",
+          "description": "From models and APIs to interfaces and infrastructure, we understand every layer we ship."
+        },
+        {
+          "title": "Measure by real usage",
+          "description": "Success is what users do with the system, not what it scores in a benchmark."
+        },
+        {
+          "title": "Simple systems, well built",
+          "description": "We choose proven technology where it works, and invest in complexity only where it pays off."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Build with us",
+      "description": "Whether it's one of our products or a system of your own, the conversation starts the same way: with the problem.",
+      "button": "Start a conversation"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Start a conversation",
+      "subtitle": "Describe the problem you're trying to solve. We'll reply with honest questions and a concrete point of view — no sales process, no pressure.",
+      "primaryCTA": "Send a message"
+    },
+    "form": {
+      "title": "Tell us about your project",
+      "description": "A few sentences are enough. We read everything ourselves and reply directly.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "service": "What do you need?",
+      "selectService": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Describe the problem, the context, and what success looks like...",
+      "sendMessage": "Send message",
+      "sending": "Sending...",
+      "success": "Message received. We'll get back to you shortly.",
+      "error": "The message could not be sent. Please try again.",
+      "networkError": "Network error. Check your connection and try again."
+    },
+    "services": {
+      "ai": "AI & Intelligent Systems",
+      "software": "Software & Digital Products",
+      "cloud": "Cloud & Infrastructure",
+      "commerce": "Digital Commerce",
+      "other": "Other"
+    },
+    "info": {
+      "title": "Contact information",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address"
     }
   },
   "footer": {
+    "description": "NeoByte Technology builds AI systems, software platforms, and digital products — from architecture to production.",
+    "solutions": {
+      "title": "Solutions",
+      "ai": "AI & Intelligent Systems",
+      "software": "Software & Digital Products",
+      "cloud": "Cloud & Infrastructure",
+      "commerce": "Digital Commerce"
+    },
     "company": {
-      "aboutUs": "About Us",
-      "services": "Services",
+      "title": "Company",
+      "about": "About",
       "products": "Products",
+      "contact": "Contact",
       "industries": "Industries"
     },
-    "services": {
-      "aiDevelopment": "AI Development",
-      "mobileApps": "Mobile Apps",
-      "webDevelopment": "Web Development",
-      "securitySystems": "Security Systems",
-      "desktopApps": "Desktop Apps"
+    "contact": {
+      "title": "Contact"
     },
     "legal": {
+      "title": "Legal",
       "termsAndPolicy": "Terms and Policy"
     },
-    "description": "Neobyte Technology - Building intelligent software for the future. We specialize in AI solutions, custom development, and cutting-edge technology.",
     "copyright": "All rights reserved."
   },
-  "common": {
-    "loading": "Loading...",
-    "error": "An error occurred",
-    "submit": "Submit",
-    "cancel": "Cancel",
-    "save": "Save",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View"
+  "policy": {
+    "companyName": "Neobyte Technology",
+    "title": "Privacy Policy, Terms of Service, and Cookie Policy",
+    "privacy": {
+      "title": "1. Privacy Policy",
+      "introduction": {
+        "title": "1.1 Introduction",
+        "body": "This Privacy Policy describes how Neobyte Technology (\"Neobyte,\" \"we,\" \"our,\" or \"us\") collects, uses, stores, and protects personal information obtained through our software, digital platforms, websites, and services (collectively, the \"Services\"). By using our Services, you consent to the practices described in this Privacy Policy."
+      },
+      "collection": {
+        "title": "1.2 Information We Collect",
+        "intro": "We may collect the following categories of information:",
+        "items": [
+          "Personal Information: Name, email address, phone number, company details, account credentials.",
+          "Technical Data: IP address, browser type, device information, operating system, usage logs, and analytics data.",
+          "Project and Business Data: Files, documents, system configurations, and information shared for software development or service execution.",
+          "Payment Information: Billing details and transaction metadata (processed through secure third-party payment providers)."
+        ]
+      },
+      "use": {
+        "title": "1.3 How We Use Information",
+        "intro": "Neobyte Technology uses collected data for:",
+        "items": [
+          "Service delivery and platform functionality.",
+          "System optimization, performance analysis, and troubleshooting.",
+          "Customer support and communication.",
+          "Security, fraud prevention, and compliance.",
+          "Improving products, features, and user experience."
+        ]
+      },
+      "sharing": {
+        "title": "1.4 Data Sharing and Disclosure",
+        "body": "We do not sell client or user data. We may share information with:",
+        "items": [
+          "Authorized employees and subcontractors bound by confidentiality.",
+          "Third-party service providers assisting in hosting, analytics, payments, or infrastructure.",
+          "Authorities when required by law."
+        ]
+      },
+      "security": {
+        "title": "1.5 Data Security",
+        "body": "We implement industry-standard security controls including encryption, access management, and secure development practices to protect data integrity and confidentiality."
+      },
+      "retention": {
+        "title": "1.6 Data Retention",
+        "body": "Data is retained only as long as necessary for operational, legal, or contractual purposes."
+      },
+      "rights": {
+        "title": "1.7 User Rights",
+        "intro": "Depending on your jurisdiction, you may have the right to:",
+        "items": [
+          "Access, correct, or delete your data.",
+          "Request data portability.",
+          "Withdraw consent for specific data usage.",
+          "Request limitations on processing."
+        ]
+      },
+      "contact": {
+        "title": "1.8 Contact",
+        "body": "For privacy-related inquiries: privacy@neobyte.tech."
+      }
+    },
+    "terms": {
+      "title": "2. Terms of Service",
+      "acceptance": {
+        "title": "2.1 Acceptance of Terms",
+        "body": "By accessing or using Neobyte Technology Services, you agree to these Terms of Service (the \"Terms\"). If you do not agree, you must discontinue use of the Services."
+      },
+      "description": {
+        "title": "2.2 Service Description",
+        "body": "Neobyte provides software development, IT consulting, cloud deployment, system integration, and related digital solutions. Actual deliverables and timelines are defined in project contracts, proposals, statements of work (SOWs), or service-level agreements (SLAs)."
+      },
+      "obligations": {
+        "title": "2.3 User Obligations",
+        "intro": "Users agree to:",
+        "items": [
+          "Comply with all applicable laws.",
+          "Refrain from unauthorized access, tampering, or misuse of systems.",
+          "Provide accurate information required for service delivery.",
+          "Maintain secure access credentials."
+        ]
+      },
+      "ip": {
+        "title": "2.4 Intellectual Property",
+        "body": "All software, code, documentation, and materials developed by Neobyte remain our intellectual property unless otherwise stated by contract. Clients receive a limited license for business-use purposes."
+      },
+      "payments": {
+        "title": "2.5 Payments",
+        "items": [
+          "Payment schedules, deposits, and milestones are outlined in service agreements.",
+          "Late payments may incur penalties or service suspension."
+        ]
+      },
+      "availability": {
+        "title": "2.6 Service Availability",
+        "body": "Neobyte strives for consistent availability but does not guarantee uninterrupted service due to maintenance, upgrades, or external conditions."
+      },
+      "liability": {
+        "title": "2.7 Limitation of Liability",
+        "body": "We are not liable for indirect, consequential, incidental, or special damages. Liability is limited to the fees paid for the specific service giving rise to the claim."
+      },
+      "termination": {
+        "title": "2.8 Termination",
+        "body": "Either party may terminate services with written notice for material breach not resolved within the agreed timeframe."
+      },
+      "amendments": {
+        "title": "2.9 Amendments",
+        "body": "Neobyte may update these Terms at any time. Continued use constitutes acceptance of the updated Terms."
+      },
+      "law": {
+        "title": "2.10 Governing Law",
+        "body": "Terms are governed by the laws of the jurisdiction of Neobyte Technology's primary registration."
+      }
+    },
+    "cookies": {
+      "title": "3. Cookie Policy",
+      "introduction": {
+        "title": "3.1 Introduction",
+        "body": "This Cookie Policy explains how Neobyte Technology uses cookies and similar tracking technologies on our websites and digital platforms."
+      },
+      "what": {
+        "title": "3.2 What Are Cookies?",
+        "body": "Cookies are small text files stored on your device to enhance browsing experience, analyze site usage, and enable platform functionality."
+      },
+      "types": {
+        "title": "3.3 Types of Cookies We Use",
+        "items": [
+          "Essential Cookies: Required for website functionality, authentication, and security.",
+          "Analytics Cookies: Measure usage, performance, and user interactions.",
+          "Preference Cookies: Store user settings and preferences.",
+          "Third-Party Cookies: Used by service providers (e.g., analytics or embedded tools)."
+        ]
+      },
+      "use": {
+        "title": "3.4 How We Use Cookies",
+        "intro": "We use cookies to:",
+        "items": [
+          "Ensure platform functionality and secure sessions.",
+          "Improve website performance.",
+          "Analyze traffic and user behavior.",
+          "Customize user experience."
+        ]
+      },
+      "managing": {
+        "title": "3.5 Managing Cookies",
+        "body": "Users may disable cookies through browser settings. However, doing so may impact functionality and access to certain features."
+      },
+      "updates": {
+        "title": "3.6 Updates",
+        "body": "We may update this Cookie Policy periodically. Changes take effect once posted."
+      },
+      "contact": {
+        "title": "3.7 Contact",
+        "body": "For questions: privacy@neobyte.tech."
+      }
+    }
   }
 }
