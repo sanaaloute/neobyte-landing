@@ -1,56 +1,48 @@
 # Neobyte Technology
 
-Full-stack website for Neobyte Technology - AI Software Development & Solutions.
+Website for Neobyte Technology - AI Software Development & Solutions.
 
 ## Project Structure
 
 ```
 Neobyte/
-├── frontend/       # Next.js (App Router) frontend
-├── backend/        # Express.js backend API
+├── frontend/       # Next.js app: UI + API routes (contact form)
+├── scripts/
 ├── .gitignore
 └── README.md
 ```
 
 ## Tech Stack
 
-### Frontend
 - Next.js 15 (App Router) + React 19
 - TypeScript
 - TailwindCSS
 - react-i18next (EN/FR)
 - Lucide React
-
-### Backend
-- Node.js + Express
-- Nodemailer (for contact form)
-- CORS, Helmet, Morgan
+- Nodemailer (contact form API route, with Resend or SMTP)
 
 ## Quick Start
 
-### Backend
-
 ```bash
-cd backend
-npm install
-cp env.example .env
-# Edit .env with your configuration
-npm run dev
-```
-
-Backend runs on `http://localhost:5000`
-
-### Frontend
-
-```bash
+cp .env.example .env   # at the repository root
+# Edit .env with your email configuration
 cd frontend
 npm install
-cp .env.example .env
-# Edit .env if needed (default BACKEND_URL: http://localhost:5000)
 npm run dev
 ```
 
-Frontend runs on `http://localhost:3000` and proxies `/api/*` to the backend.
+The site runs on `http://localhost:3000`. The contact form posts to the
+same-origin API route `/api/contact` — there is no separate backend server,
+and a single `.env` file at the repository root configures everything.
+
+## Deployment (Vercel)
+
+1. Import the repository in Vercel and set the **Root Directory** to `frontend`.
+2. Add the environment variables from `.env.example` (repository root) in
+   **Project Settings → Environment Variables** (at minimum, one email
+   provider: `RESEND_API_KEY`, or the `SMTP_*` set).
+3. Deploy — Vercel builds the Next.js app and serves `/api/contact` as a
+   Node.js serverless function.
 
 ## Features
 
@@ -60,12 +52,6 @@ Frontend runs on `http://localhost:3000` and proxies `/api/*` to the backend.
 - ✅ Contact form with email integration
 - ✅ SEO-friendly
 - ✅ Type-safe codebase
-
-## Development
-
-1. Start backend: `cd backend && npm run dev`
-2. Start frontend: `cd frontend && npm run dev`
-3. Open `http://localhost:3000` in your browser
 
 ## License
 

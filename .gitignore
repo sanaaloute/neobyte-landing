@@ -51,13 +51,8 @@ next-env.d.ts
 # Vite
 .vite/
 
-# Backend specific
-backend/node_modules/
-backend/.env
-backend/dist/
-
 # Frontend specific
 frontend/node_modules/
-frontend/.env
 frontend/.next/
 frontend/dist/
+frontend/data/

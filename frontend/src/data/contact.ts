@@ -11,9 +11,9 @@ export interface ServiceOption {
   labelKey: string;
 }
 
-// The value is a stable key sent to the backend; the label is localized
+// The value is a stable key sent to the API; the label is localized
 // via `labelKey` at render time. Keys must stay in sync with
-// SERVICE_LABELS in the backend contact route.
+// SERVICE_LABELS in src/app/api/contact/route.ts.
 export const serviceOptions: ServiceOption[] = [
   { value: "ai-intelligent-systems", labelKey: "contact.services.ai" },
   { value: "software-digital-products", labelKey: "contact.services.software" },

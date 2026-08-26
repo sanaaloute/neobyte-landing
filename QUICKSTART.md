@@ -2,58 +2,37 @@
 
 ## Prerequisites
 
-- Node.js 18+ installed
+- Node.js 18.18+ installed
 - npm installed
 
 ## Setup Steps
 
-### 1. Install Backend Dependencies
-
-```bash
-cd backend
-npm install
-```
-
-### 2. Configure Backend Environment
-
-```bash
-cp env.example .env
-```
-
-Edit `.env` and add your email configuration for the contact form.
-
-### 3. Start Backend Server
-
-```bash
-npm run dev
-```
-
-Backend will run on `http://localhost:5000`
-
-### 4. Install Frontend Dependencies
-
-Open a new terminal:
+### 1. Install Dependencies
 
 ```bash
 cd frontend
 npm install
 ```
 
-### 5. Configure Frontend Environment (Optional)
+### 2. Configure Environment
 
 ```bash
 cp .env.example .env
 ```
 
-Default API URL is `http://localhost:5000/api` - only change if your backend runs on a different port.
+Run this at the **repository root** (one level above `frontend/`). Edit `.env`
+and add your email configuration for the contact form (`RESEND_API_KEY` or the
+`SMTP_*` variables). This single `.env` file configures the whole site — UI
+and API routes.
 
-### 6. Start Frontend Development Server
+### 3. Start the Development Server
 
 ```bash
+cd frontend
 npm run dev
 ```
 
-Frontend will run on `http://localhost:3000`
+The site will run on `http://localhost:3000`
 
 ## Access the Website
 
@@ -61,26 +40,20 @@ Open your browser and navigate to: `http://localhost:3000`
 
 ## Troubleshooting
 
-- **Port already in use**: Change the port in `vite.config.ts` (frontend) or `.env` (backend)
-- **API connection errors**: Make sure backend is running and `VITE_API_URL` in frontend `.env` matches backend URL
-- **Email not sending**: Check SMTP configuration in backend `.env`
+- **Port already in use**: run on another port with `npm run dev -- -p 3001`
+- **Email not sending**: check `RESEND_API_KEY` / `SMTP_*` values in `frontend/.env`
+- **Contact form errors**: check the terminal running `npm run dev` for API route logs
 
 ## Build for Production
-
-### Frontend
 
 ```bash
 cd frontend
 npm run build
+npm run start
 ```
 
-Output will be in `frontend/dist/`
+## Deploy to Vercel
 
-### Backend
-
-```bash
-cd backend
-npm start
-```
-
-Make sure `NODE_ENV=production` in `.env`
+1. Import the repository in Vercel and set the **Root Directory** to `frontend`.
+2. Add the environment variables from `.env.example` in the Vercel project settings.
+3. Deploy. The contact form API (`/api/contact`) runs as a Node.js serverless function.

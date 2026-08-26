@@ -1,6 +1,8 @@
 # Neobyte Technology - Frontend
 
 Company landing page built with Next.js 15 (App Router), React 19, TypeScript, and TailwindCSS.
+The contact form API (`/api/contact`) is implemented as a Next.js route handler in the same app,
+so the frontend and backend share a single `.env` file and deploy as one Vercel project.
 
 ## Tech Stack
 
@@ -51,15 +53,25 @@ npm run lint
 
 ## Environment Variables
 
-Create a `.env` file from `.env.example`:
+Create a `.env` file from `.env.example` **at the repository root**
+(one level above this directory):
 
 ```env
-BACKEND_URL=http://localhost:5000
+# At least one email provider is required for the contact form.
+RESEND_API_KEY=re_xxxxxxxxxxxx
+# or generic SMTP fallback:
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
+SMTP_FROM=contact@barkosem.com
+CONTACT_EMAIL=contact@barkosem.com
 ```
 
-`BACKEND_URL` is the Express backend URL. The Next.js server proxies all
-`/api/*` requests to it via a rewrite in `next.config.ts`, so the browser only
-ever calls relative paths (no CORS involved).
+This is the only env file in the project — the API route handler loads it
+from the repository root via `@next/env` (see `src/app/api/contact/route.ts`).
+On Vercel, set the same variables in
+**Project Settings → Environment Variables**.
 
 ## Project Structure
 
@@ -89,8 +101,8 @@ src/
 ## API Integration
 
 The contact form posts to the relative path `/api/contact` (see
-`src/lib/api.ts`). Make sure the backend server is running on port 5000 (or set
-`BACKEND_URL`).
+`src/lib/api.ts`), handled by the route handler in
+`src/app/api/contact/route.ts` — same origin, no CORS involved.
 
 ## License
 

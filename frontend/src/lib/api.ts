@@ -16,8 +16,8 @@ export interface ContactResponse {
   errors?: Array<{ msg: string; param: string }>;
 }
 
-// Posts to the relative /api/contact path; Next.js rewrites proxy it to the
-// backend (see next.config.ts).
+// Posts to the relative /api/contact path, handled by the Next.js route
+// handler in src/app/api/contact/route.ts (same origin, no CORS involved).
 export async function submitContact(
   formData: ContactFormData
 ): Promise<ContactResponse> {
