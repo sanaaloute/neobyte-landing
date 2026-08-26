@@ -3,6 +3,7 @@
 import { useTranslation } from "react-i18next";
 import { Eyebrow } from "@/components/section";
 import { Button } from "@/components/ui/button";
+import { NetworkCanvas } from "@/components/home/network-canvas";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -14,6 +15,8 @@ export function Hero() {
         aria-hidden="true"
         className="bg-grid bg-grid-animated absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]"
       />
+      {/* AI-style neural network: drifting nodes with connecting edges */}
+      <NetworkCanvas className="[mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_70%)]" />
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <div className="animate-enter" style={{ animationDelay: "0ms" }}>
