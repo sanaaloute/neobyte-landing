@@ -7,15 +7,14 @@ import path from "node:path";
 // Nodemailer requires the Node.js runtime (not Edge).
 export const runtime = "nodejs";
 
-// Load the shared .env from the repository root, so a single file configures
+// Load the shared .env from the project root, so a single file configures
 // the whole site locally. Reads go through a dynamic process.env[key] lookup
 // with the parsed file as fallback, because the dev bundler statically
 // inlines process.env.X references, hiding runtime mutations. Existing
-// process.env values take precedence, so on Vercel (where the file does not
-// exist) the project settings apply unchanged.
+// process.env values take precedence, so on Vercel (where env vars come from
+// the project settings) they apply unchanged.
 const fileEnv =
-  dotenvConfig({ path: path.resolve(process.cwd(), "..", ".env") }).parsed ??
-  {};
+  dotenvConfig({ path: path.resolve(process.cwd(), ".env") }).parsed ?? {};
 const env = (key: string): string | undefined =>
   process.env[key] ?? fileEnv[key];
 

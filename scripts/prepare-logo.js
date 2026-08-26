@@ -6,8 +6,8 @@ const sharp = require("sharp");
 const fs = require("fs");
 const path = require("path");
 
-const OUT = path.join(__dirname, "..", "frontend", "public", "brand");
-const APP = path.join(__dirname, "..", "frontend", "src", "app");
+const OUT = path.join(__dirname, "..", "public", "brand");
+const APP = path.join(__dirname, "..", "src", "app");
 
 // Fraction of the trimmed width occupied by the head mark (rest is wordmark).
 const MARK_SPLIT = 0.36;
