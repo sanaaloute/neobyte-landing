@@ -51,5 +51,6 @@ next-env.d.ts
 # Vite
 .vite/
 
-# Project specific
-data/
+# Project specific (contact form submissions store — root-level only,
+# must not ignore src/data/)
+/data/
