@@ -354,158 +354,192 @@
   },
   "policy": {
     "companyName": "Neobyte Technology",
-    "title": "Privacy Policy, Terms of Service, and Cookie Policy",
+    "title": "Privacy Policy, Terms of Service & Cookie Policy",
+    "lastUpdated": "Last updated: August 26, 2026",
     "privacy": {
       "title": "1. Privacy Policy",
       "introduction": {
         "title": "1.1 Introduction",
-        "body": "This Privacy Policy describes how Neobyte Technology (\"Neobyte,\" \"we,\" \"our,\" or \"us\") collects, uses, stores, and protects personal information obtained through our software, digital platforms, websites, and services (collectively, the \"Services\"). By using our Services, you consent to the practices described in this Privacy Policy."
+        "body": "This Privacy Policy describes how Neobyte Technology (\"Neobyte\", \"we\", \"our\", or \"us\") collects, uses, stores, and protects personal information when you use our websites, mobile applications (including applications distributed through the Apple App Store), software, and related services (collectively, the \"Services\"). By accessing or using the Services, you acknowledge that you have read and understood this Privacy Policy. This Policy is designed to comply with applicable data protection laws and with the requirements of the Apple Developer Program and the App Store Review Guidelines."
       },
       "collection": {
         "title": "1.2 Information We Collect",
-        "intro": "We may collect the following categories of information:",
+        "intro": "We collect only the information necessary to provide, secure, and improve the Services:",
         "items": [
-          "Personal Information: Name, email address, phone number, company details, account credentials.",
-          "Technical Data: IP address, browser type, device information, operating system, usage logs, and analytics data.",
-          "Project and Business Data: Files, documents, system configurations, and information shared for software development or service execution.",
-          "Payment Information: Billing details and transaction metadata (processed through secure third-party payment providers)."
+          "Information you provide: name, email address, phone number, company details, account credentials, and the content of your inquiries or support requests.",
+          "Technical and usage data: IP address, device model, operating system version, browser type, application version, usage logs, and diagnostic or crash data.",
+          "Project and business data: files, documents, and system configurations you share with us in the context of software development or service delivery.",
+          "Payment data: purchases made within our mobile applications are processed by Apple through the App Store; we do not collect or store your payment card details. For other services, billing information is processed by secure third-party payment providers."
         ]
       },
       "use": {
-        "title": "1.3 How We Use Information",
-        "intro": "Neobyte Technology uses collected data for:",
+        "title": "1.3 How We Use Your Information",
+        "intro": "We use the information we collect to:",
         "items": [
-          "Service delivery and platform functionality.",
-          "System optimization, performance analysis, and troubleshooting.",
-          "Customer support and communication.",
-          "Security, fraud prevention, and compliance.",
-          "Improving products, features, and user experience."
+          "Provide, operate, and maintain the Services.",
+          "Process transactions and deliver purchased features, content, or subscriptions.",
+          "Optimize performance, diagnose technical issues, and improve the user experience.",
+          "Respond to support requests and send service-related communications.",
+          "Ensure security, prevent fraud and abuse, and comply with our legal obligations."
         ]
       },
       "sharing": {
         "title": "1.4 Data Sharing and Disclosure",
-        "body": "We do not sell client or user data. We may share information with:",
+        "body": "We do not sell, rent, or trade your personal information. We may share information only in the following circumstances:",
         "items": [
-          "Authorized employees and subcontractors bound by confidentiality.",
-          "Third-party service providers assisting in hosting, analytics, payments, or infrastructure.",
-          "Authorities when required by law."
+          "With authorized employees and subcontractors bound by confidentiality obligations.",
+          "With trusted third-party providers that support hosting, analytics, payment processing, or infrastructure, subject to appropriate data protection safeguards.",
+          "With Apple, to the extent required for the operation, review, or distribution of our applications on the App Store.",
+          "With public authorities when required by applicable law or to protect our legal rights."
         ]
-      },
-      "security": {
-        "title": "1.5 Data Security",
-        "body": "We implement industry-standard security controls including encryption, access management, and secure development practices to protect data integrity and confidentiality."
       },
       "retention": {
-        "title": "1.6 Data Retention",
-        "body": "Data is retained only as long as necessary for operational, legal, or contractual purposes."
+        "title": "1.5 Data Retention",
+        "body": "We retain personal information only for as long as necessary to fulfill the purposes described in this Policy, to comply with legal, accounting, or reporting obligations, or to resolve disputes. When data is no longer required, it is securely deleted or anonymized."
+      },
+      "security": {
+        "title": "1.6 Data Security",
+        "body": "We implement industry-standard technical and organizational measures, including encryption in transit, access controls, and secure development practices, to protect your information against unauthorized access, alteration, disclosure, or destruction. No method of transmission or storage is completely secure, but we continuously work to strengthen our safeguards."
       },
       "rights": {
-        "title": "1.7 User Rights",
-        "intro": "Depending on your jurisdiction, you may have the right to:",
+        "title": "1.7 Your Rights and Choices",
+        "intro": "Depending on your jurisdiction, you may exercise the following rights by contacting us at contact@barkosem.com. We respond to verified requests within the timeframes required by applicable law:",
         "items": [
-          "Access, correct, or delete your data.",
-          "Request data portability.",
-          "Withdraw consent for specific data usage.",
-          "Request limitations on processing."
+          "Access, correct, or request the deletion of your personal information.",
+          "Request a portable copy of your data.",
+          "Withdraw your consent to specific processing activities at any time.",
+          "Object to or request the restriction of certain processing.",
+          "Delete your account and associated data."
         ]
       },
+      "children": {
+        "title": "1.8 Children's Privacy",
+        "body": "The Services are not directed to children under the age of 13 (or the minimum age required in your jurisdiction), and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will promptly delete it."
+      },
+      "transfers": {
+        "title": "1.9 International Data Transfers",
+        "body": "Your information may be processed in countries other than your own, where data protection laws may differ. Where required, we apply appropriate safeguards to ensure your information remains protected in accordance with this Policy."
+      },
+      "changes": {
+        "title": "1.10 Changes to This Privacy Policy",
+        "body": "We may update this Privacy Policy from time to time. Material changes will be announced by posting the updated Policy on this page with a revised \"Last updated\" date. Your continued use of the Services after the changes take effect constitutes acceptance of the updated Policy."
+      },
       "contact": {
-        "title": "1.8 Contact",
-        "body": "For privacy-related inquiries: privacy@neobyte.tech."
+        "title": "1.11 Contact Us",
+        "body": "For any question, request, or concern regarding this Privacy Policy or our data practices, contact us at contact@barkosem.com."
       }
     },
     "terms": {
       "title": "2. Terms of Service",
       "acceptance": {
         "title": "2.1 Acceptance of Terms",
-        "body": "By accessing or using Neobyte Technology Services, you agree to these Terms of Service (the \"Terms\"). If you do not agree, you must discontinue use of the Services."
+        "body": "By accessing or using the Services of Neobyte Technology, you agree to be bound by these Terms of Service (the \"Terms\") and our Privacy Policy. If you do not agree with these Terms, you must not access or use the Services."
       },
       "description": {
-        "title": "2.2 Service Description",
-        "body": "Neobyte provides software development, IT consulting, cloud deployment, system integration, and related digital solutions. Actual deliverables and timelines are defined in project contracts, proposals, statements of work (SOWs), or service-level agreements (SLAs)."
+        "title": "2.2 Description of the Services",
+        "body": "Neobyte provides software development, IT consulting, cloud deployment, system integration, mobile applications, and related digital solutions. Specific deliverables, timelines, and service levels are defined in project contracts, proposals, statements of work (SOWs), or service-level agreements (SLAs)."
       },
       "obligations": {
         "title": "2.3 User Obligations",
-        "intro": "Users agree to:",
+        "intro": "By using the Services, you agree to:",
         "items": [
-          "Comply with all applicable laws.",
-          "Refrain from unauthorized access, tampering, or misuse of systems.",
-          "Provide accurate information required for service delivery.",
-          "Maintain secure access credentials."
+          "Comply with all applicable laws and regulations.",
+          "Refrain from any unauthorized access, reverse engineering, tampering, or misuse of the Services.",
+          "Provide accurate and complete information required for service delivery.",
+          "Maintain the confidentiality and security of your access credentials.",
+          "Not use the Services to store, distribute, or process unlawful, harmful, or infringing content."
         ]
       },
       "ip": {
         "title": "2.4 Intellectual Property",
-        "body": "All software, code, documentation, and materials developed by Neobyte remain our intellectual property unless otherwise stated by contract. Clients receive a limited license for business-use purposes."
+        "body": "All software, source code, documentation, designs, and materials developed by Neobyte remain our exclusive intellectual property unless otherwise agreed in a written contract. Subject to these Terms, clients and end users receive a limited, non-exclusive, non-transferable license to use the deliverables and applications for their intended business or personal purposes."
       },
       "payments": {
-        "title": "2.5 Payments",
-        "items": [
-          "Payment schedules, deposits, and milestones are outlined in service agreements.",
-          "Late payments may incur penalties or service suspension."
-        ]
+        "title": "2.5 Payments, Subscriptions, and In-App Purchases",
+        "body": "Purchases, subscriptions, and in-app purchases made within our mobile applications are processed and billed by Apple through the App Store and are governed by the Apple Media Services Terms and Conditions. Pricing, renewal, cancellation, and refund requests for such purchases are managed by Apple in accordance with its own policies. For all other services, payment schedules, deposits, and milestones are defined in the applicable service agreements, and late payments may result in penalties or suspension of services."
       },
       "availability": {
         "title": "2.6 Service Availability",
-        "body": "Neobyte strives for consistent availability but does not guarantee uninterrupted service due to maintenance, upgrades, or external conditions."
+        "body": "We strive to provide reliable and continuously available Services, but we do not guarantee uninterrupted operation. The Services may be temporarily unavailable due to maintenance, upgrades, or circumstances beyond our reasonable control."
+      },
+      "disclaimer": {
+        "title": "2.7 Disclaimer of Warranties",
+        "body": "Except as expressly stated in a written agreement, the Services are provided \"as is\" and \"as available\", without warranties of any kind, whether express, implied, or statutory, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement."
       },
       "liability": {
-        "title": "2.7 Limitation of Liability",
-        "body": "We are not liable for indirect, consequential, incidental, or special damages. Liability is limited to the fees paid for the specific service giving rise to the claim."
+        "title": "2.8 Limitation of Liability",
+        "body": "To the maximum extent permitted by law, Neobyte shall not be liable for any indirect, consequential, incidental, or special damages, including loss of profits, data, or business opportunities. Our total liability shall not exceed the fees paid for the specific service giving rise to the claim."
       },
       "termination": {
-        "title": "2.8 Termination",
-        "body": "Either party may terminate services with written notice for material breach not resolved within the agreed timeframe."
+        "title": "2.9 Termination",
+        "body": "Either party may terminate a service engagement by written notice in the event of a material breach that is not remedied within the agreed cure period. We may also suspend or terminate access to the Services in the event of a violation of these Terms or of applicable law."
       },
       "amendments": {
-        "title": "2.9 Amendments",
-        "body": "Neobyte may update these Terms at any time. Continued use constitutes acceptance of the updated Terms."
+        "title": "2.10 Amendments",
+        "body": "We may update these Terms at any time. The updated version takes effect upon publication on this page. Your continued use of the Services after that date constitutes acceptance of the amended Terms."
       },
       "law": {
-        "title": "2.10 Governing Law",
-        "body": "Terms are governed by the laws of the jurisdiction of Neobyte Technology's primary registration."
+        "title": "2.11 Governing Law",
+        "body": "These Terms are governed by the laws of the jurisdiction in which Neobyte Technology is primarily registered, without regard to conflict-of-law principles. Any dispute shall be submitted to the competent courts of that jurisdiction, unless mandatory consumer protection laws provide otherwise."
+      },
+      "apple": {
+        "title": "2.12 Additional Terms for Applications Distributed via the Apple App Store",
+        "intro": "For any application distributed through the Apple App Store, the following terms apply:",
+        "items": [
+          "These Terms are concluded between you and Neobyte only, and not with Apple. Neobyte, not Apple, is solely responsible for the application and its content.",
+          "Apple has no obligation to provide any maintenance or support services for the application.",
+          "In the event of any failure of the application to conform to an applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) in accordance with its policies; to the maximum extent permitted by law, Apple has no other warranty obligation with respect to the application.",
+          "Apple is not responsible for addressing any claims relating to the application or your use of it, including product liability claims, claims that the application fails to conform to legal or regulatory requirements, and consumer protection claims.",
+          "Apple is not responsible for the investigation, defense, settlement, or discharge of any third-party claim that the application infringes intellectual property rights.",
+          "You represent and warrant that you are not located in a country subject to an embargo or designated as a terrorist-supporting country by the applicable government, and that you are not listed on any restricted or prohibited party list.",
+          "Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you as they relate to your license of the application."
+        ]
+      },
+      "contact": {
+        "title": "2.13 Contact",
+        "body": "For any question regarding these Terms, contact us at contact@barkosem.com."
       }
     },
     "cookies": {
       "title": "3. Cookie Policy",
       "introduction": {
         "title": "3.1 Introduction",
-        "body": "This Cookie Policy explains how Neobyte Technology uses cookies and similar tracking technologies on our websites and digital platforms."
+        "body": "This Cookie Policy explains how Neobyte Technology uses cookies and similar tracking technologies on its websites and digital platforms, and the choices available to you regarding their use."
       },
       "what": {
         "title": "3.2 What Are Cookies?",
-        "body": "Cookies are small text files stored on your device to enhance browsing experience, analyze site usage, and enable platform functionality."
+        "body": "Cookies are small text files stored on your device when you visit a website. They allow the website to function properly, remember your preferences, and help us understand how the site is used."
       },
       "types": {
         "title": "3.3 Types of Cookies We Use",
         "items": [
-          "Essential Cookies: Required for website functionality, authentication, and security.",
-          "Analytics Cookies: Measure usage, performance, and user interactions.",
-          "Preference Cookies: Store user settings and preferences.",
-          "Third-Party Cookies: Used by service providers (e.g., analytics or embedded tools)."
+          "Strictly necessary cookies: required for the operation, authentication, and security of the website. These cannot be disabled.",
+          "Analytics cookies: used to measure audience, performance, and user interactions in an aggregated manner.",
+          "Preference cookies: used to remember your settings, such as language and display preferences.",
+          "Third-party cookies: set by external service providers (for example, analytics or embedded tools) under their own privacy policies."
         ]
       },
       "use": {
         "title": "3.4 How We Use Cookies",
         "intro": "We use cookies to:",
         "items": [
-          "Ensure platform functionality and secure sessions.",
-          "Improve website performance.",
-          "Analyze traffic and user behavior.",
-          "Customize user experience."
+          "Ensure the proper functioning of the website and the security of your sessions.",
+          "Improve the performance and reliability of the website.",
+          "Analyze traffic and usage patterns to improve our Services.",
+          "Remember your preferences and personalize your experience."
         ]
       },
       "managing": {
         "title": "3.5 Managing Cookies",
-        "body": "Users may disable cookies through browser settings. However, doing so may impact functionality and access to certain features."
+        "body": "You can configure or disable cookies at any time through your browser settings. Please note that disabling certain cookies, particularly strictly necessary cookies, may affect the functionality of the website and limit access to some features."
       },
       "updates": {
-        "title": "3.6 Updates",
-        "body": "We may update this Cookie Policy periodically. Changes take effect once posted."
+        "title": "3.6 Updates to This Policy",
+        "body": "We may update this Cookie Policy periodically to reflect technical or legal developments. Changes take effect upon publication on this page."
       },
       "contact": {
         "title": "3.7 Contact",
-        "body": "For questions: privacy@neobyte.tech."
+        "body": "For any question regarding this Cookie Policy, contact us at contact@barkosem.com."
       }
     }
   }

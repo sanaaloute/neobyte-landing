@@ -1,5 +1,5 @@
 export const contactInfo = {
-  email: "neobytech.ai@gmail.com",
+  email: "contact@barkosem.com",
   phone: "+226 73528252",
   phoneHref: "+22673528252",
   address: "Saaba, Ouagadougou, Burkina Faso",

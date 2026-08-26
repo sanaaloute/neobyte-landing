@@ -13,9 +13,12 @@ const sections = [
       "collection",
       "use",
       "sharing",
-      "security",
       "retention",
+      "security",
       "rights",
+      "children",
+      "transfers",
+      "changes",
       "contact",
     ],
   },
@@ -29,10 +32,13 @@ const sections = [
       "ip",
       "payments",
       "availability",
+      "disclaimer",
       "liability",
       "termination",
       "amendments",
       "law",
+      "apple",
+      "contact",
     ],
   },
   {
@@ -64,6 +70,9 @@ export default function Policy() {
               <h1 className="mt-4 font-display text-4xl lg:text-5xl font-semibold tracking-tight text-balance">
                 {t("policy.title")}
               </h1>
+              <p className="mt-4 text-sm text-muted-foreground">
+                {t("policy.lastUpdated")}
+              </p>
               <nav aria-label="Policy sections" className="mt-8 flex flex-wrap gap-2">
                 {sections.map((section) => (
                   <a

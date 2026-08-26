@@ -355,157 +355,191 @@
   "policy": {
     "companyName": "Neobyte Technology",
     "title": "Politique de confidentialité, Conditions d'utilisation et Politique relative aux cookies",
+    "lastUpdated": "Dernière mise à jour : 26 août 2026",
     "privacy": {
       "title": "1. Politique de confidentialité",
       "introduction": {
         "title": "1.1 Introduction",
-        "body": "La présente Politique de confidentialité décrit la manière dont Neobyte Technology (« Neobyte », « nous », « notre » ou « nos ») collecte, utilise, stocke et protège les informations personnelles obtenues par le biais de ses logiciels, plateformes numériques, sites web et services (collectivement, les « Services »). En utilisant nos Services, vous consentez aux pratiques décrites dans la présente Politique de confidentialité."
+        "body": "La présente Politique de confidentialité décrit la manière dont Neobyte Technology (« Neobyte », « nous », « notre » ou « nos ») collecte, utilise, stocke et protège les informations personnelles lorsque vous utilisez nos sites web, applications mobiles (y compris les applications distribuées via l'App Store d'Apple), logiciels et services associés (collectivement, les « Services »). En accédant aux Services ou en les utilisant, vous reconnaissez avoir lu et compris la présente Politique de confidentialité. Cette Politique est conçue pour être conforme aux lois applicables en matière de protection des données ainsi qu'aux exigences du Programme des développeurs Apple et des directives de révision de l'App Store."
       },
       "collection": {
         "title": "1.2 Informations que nous collectons",
-        "intro": "Nous pouvons collecter les catégories d'informations suivantes :",
+        "intro": "Nous collectons uniquement les informations nécessaires à la fourniture, à la sécurité et à l'amélioration des Services :",
         "items": [
-          "Informations personnelles : nom, adresse e-mail, numéro de téléphone, coordonnées de l'entreprise, identifiants de compte.",
-          "Données techniques : adresse IP, type de navigateur, informations sur l'appareil, système d'exploitation, journaux d'utilisation et données d'analyse.",
-          "Données de projet et d'entreprise : fichiers, documents, configurations système et informations partagées dans le cadre du développement logiciel ou de l'exécution des services.",
-          "Informations de paiement : données de facturation et métadonnées de transaction (traitées par des prestataires de paiement tiers sécurisés)."
+          "Informations que vous fournissez : nom, adresse e-mail, numéro de téléphone, coordonnées de l'entreprise, identifiants de compte, ainsi que le contenu de vos demandes ou sollicitations d'assistance.",
+          "Données techniques et d'utilisation : adresse IP, modèle de l'appareil, version du système d'exploitation, type de navigateur, version de l'application, journaux d'utilisation et données de diagnostic ou de plantage.",
+          "Données de projet et d'entreprise : fichiers, documents et configurations système que vous partagez avec nous dans le cadre du développement logiciel ou de l'exécution des services.",
+          "Données de paiement : les achats effectués au sein de nos applications mobiles sont traités par Apple via l'App Store ; nous ne collectons ni ne conservons les données de votre carte bancaire. Pour les autres services, les informations de facturation sont traitées par des prestataires de paiement tiers sécurisés."
         ]
       },
       "use": {
-        "title": "1.3 Comment nous utilisons les informations",
-        "intro": "Neobyte Technology utilise les données collectées pour :",
+        "title": "1.3 Comment nous utilisons vos informations",
+        "intro": "Nous utilisons les informations collectées pour :",
         "items": [
-          "La fourniture des services et le fonctionnement des plateformes.",
-          "L'optimisation des systèmes, l'analyse des performances et la résolution des problèmes.",
-          "Le support client et la communication.",
-          "La sécurité, la prévention de la fraude et la conformité.",
-          "L'amélioration des produits, des fonctionnalités et de l'expérience utilisateur."
+          "Fournir, exploiter et maintenir les Services.",
+          "Traiter les transactions et délivrer les fonctionnalités, contenus ou abonnements achetés.",
+          "Optimiser les performances, diagnostiquer les problèmes techniques et améliorer l'expérience utilisateur.",
+          "Répondre aux demandes d'assistance et envoyer des communications relatives aux services.",
+          "Assurer la sécurité, prévenir la fraude et les abus, et respecter nos obligations légales."
         ]
       },
       "sharing": {
         "title": "1.4 Partage et divulgation des données",
-        "body": "Nous ne vendons pas les données de nos clients ou utilisateurs. Nous pouvons partager des informations avec :",
+        "body": "Nous ne vendons, ne louons ni n'échangeons vos informations personnelles. Nous pouvons partager des informations uniquement dans les cas suivants :",
         "items": [
-          "Les employés et sous-traitants autorisés, liés par des obligations de confidentialité.",
-          "Les prestataires de services tiers contribuant à l'hébergement, à l'analyse, aux paiements ou à l'infrastructure.",
-          "Les autorités lorsque la loi l'exige."
+          "Avec les employés et sous-traitants autorisés, liés par des obligations de confidentialité.",
+          "Avec des prestataires tiers de confiance contribuant à l'hébergement, à l'analyse, au traitement des paiements ou à l'infrastructure, sous réserve de garanties appropriées en matière de protection des données.",
+          "Avec Apple, dans la mesure requise pour l'exploitation, la révision ou la distribution de nos applications sur l'App Store.",
+          "Avec les autorités publiques lorsque la loi applicable l'exige ou pour protéger nos droits légitimes."
         ]
-      },
-      "security": {
-        "title": "1.5 Sécurité des données",
-        "body": "Nous mettons en œuvre des mesures de sécurité conformes aux standards de l'industrie, notamment le chiffrement, la gestion des accès et des pratiques de développement sécurisé, afin de protéger l'intégrité et la confidentialité des données."
       },
       "retention": {
-        "title": "1.6 Conservation des données",
-        "body": "Les données sont conservées uniquement le temps nécessaire à des fins opérationnelles, juridiques ou contractuelles."
+        "title": "1.5 Conservation des données",
+        "body": "Nous conservons les informations personnelles uniquement pendant la durée nécessaire aux finalités décrites dans la présente Politique, au respect d'obligations légales, comptables ou de reporting, ou à la résolution de litiges. Lorsque les données ne sont plus nécessaires, elles sont supprimées de manière sécurisée ou anonymisées."
+      },
+      "security": {
+        "title": "1.6 Sécurité des données",
+        "body": "Nous mettons en œuvre des mesures techniques et organisationnelles conformes aux standards de l'industrie, notamment le chiffrement en transit, le contrôle des accès et des pratiques de développement sécurisé, afin de protéger vos informations contre tout accès, altération, divulgation ou destruction non autorisés. Aucune méthode de transmission ou de stockage n'est totalement sécurisée, mais nous renforçons continuellement nos mesures de protection."
       },
       "rights": {
-        "title": "1.7 Droits des utilisateurs",
-        "intro": "Selon votre juridiction, vous pouvez disposer du droit de :",
+        "title": "1.7 Vos droits et vos choix",
+        "intro": "Selon votre juridiction, vous pouvez exercer les droits suivants en nous contactant à contact@barkosem.com. Nous répondons aux demandes vérifiées dans les délais prévus par la loi applicable :",
         "items": [
-          "Accéder à vos données, les rectifier ou les supprimer.",
-          "Demander la portabilité de vos données.",
-          "Retirer votre consentement à certaines utilisations des données.",
-          "Demander la limitation du traitement."
+          "Accéder à vos informations personnelles, les rectifier ou demander leur suppression.",
+          "Demander une copie portable de vos données.",
+          "Retirer votre consentement à certaines activités de traitement à tout moment.",
+          "Vous opposer à certains traitements ou en demander la limitation.",
+          "Supprimer votre compte et les données associées."
         ]
       },
+      "children": {
+        "title": "1.8 Vie privée des enfants",
+        "body": "Les Services ne s'adressent pas aux enfants de moins de 13 ans (ou l'âge minimal requis dans votre juridiction), et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter et nous les supprimerons rapidement."
+      },
+      "transfers": {
+        "title": "1.9 Transferts internationaux de données",
+        "body": "Vos informations peuvent être traitées dans des pays autres que le vôtre, où les lois sur la protection des données peuvent différer. Lorsque cela est requis, nous appliquons des garanties appropriées pour assurer que vos informations restent protégées conformément à la présente Politique."
+      },
+      "changes": {
+        "title": "1.10 Modifications de la présente Politique de confidentialité",
+        "body": "Nous pouvons mettre à jour la présente Politique de confidentialité périodiquement. Toute modification importante sera annoncée par la publication de la Politique mise à jour sur cette page, accompagnée d'une nouvelle date de « Dernière mise à jour ». La poursuite de votre utilisation des Services après l'entrée en vigueur des modifications vaut acceptation de la Politique mise à jour."
+      },
       "contact": {
-        "title": "1.8 Contact",
-        "body": "Pour toute question relative à la confidentialité : privacy@neobyte.tech."
+        "title": "1.11 Nous contacter",
+        "body": "Pour toute question, demande ou préoccupation concernant la présente Politique de confidentialité ou nos pratiques en matière de données, contactez-nous à contact@barkosem.com."
       }
     },
     "terms": {
       "title": "2. Conditions d'utilisation",
       "acceptance": {
         "title": "2.1 Acceptation des conditions",
-        "body": "En accédant aux Services de Neobyte Technology ou en les utilisant, vous acceptez les présentes Conditions d'utilisation (les « Conditions »). Si vous ne les acceptez pas, vous devez cesser d'utiliser les Services."
+        "body": "En accédant aux Services de Neobyte Technology ou en les utilisant, vous acceptez d'être lié par les présentes Conditions d'utilisation (les « Conditions ») ainsi que par notre Politique de confidentialité. Si vous n'acceptez pas ces Conditions, vous ne devez pas accéder aux Services ni les utiliser."
       },
       "description": {
         "title": "2.2 Description des services",
-        "body": "Neobyte fournit des services de développement logiciel, de conseil informatique, de déploiement cloud, d'intégration de systèmes et des solutions numériques associées. Les livrables et les délais réels sont définis dans les contrats de projet, propositions, cahiers des charges (SOW) ou accords de niveau de service (SLA)."
+        "body": "Neobyte fournit des services de développement logiciel, de conseil informatique, de déploiement cloud, d'intégration de systèmes, des applications mobiles et des solutions numériques associées. Les livrables, délais et niveaux de service spécifiques sont définis dans les contrats de projet, propositions, cahiers des charges (SOW) ou accords de niveau de service (SLA)."
       },
       "obligations": {
         "title": "2.3 Obligations des utilisateurs",
-        "intro": "Les utilisateurs s'engagent à :",
+        "intro": "En utilisant les Services, vous vous engagez à :",
         "items": [
-          "Respecter toutes les lois applicables.",
-          "S'abstenir de tout accès non autorisé, de toute altération ou utilisation abusive des systèmes.",
-          "Fournir des informations exactes nécessaires à la fourniture des services.",
-          "Maintenir la sécurité de leurs identifiants d'accès."
+          "Respecter l'ensemble des lois et réglementations applicables.",
+          "Vous abstenir de tout accès non autorisé, rétro-ingénierie, altération ou utilisation abusive des Services.",
+          "Fournir des informations exactes et complètes nécessaires à la fourniture des services.",
+          "Maintenir la confidentialité et la sécurité de vos identifiants d'accès.",
+          "Ne pas utiliser les Services pour stocker, distribuer ou traiter des contenus illicites, nuisibles ou contrefaisants."
         ]
       },
       "ip": {
         "title": "2.4 Propriété intellectuelle",
-        "body": "L'ensemble des logiciels, codes, documentations et éléments développés par Neobyte demeure notre propriété intellectuelle, sauf disposition contractuelle contraire. Les clients bénéficient d'une licence limitée à des fins d'utilisation professionnelle."
+        "body": "L'ensemble des logiciels, codes source, documentations, conceptions et éléments développés par Neobyte demeure notre propriété intellectuelle exclusive, sauf accord écrit contraire. Sous réserve des présentes Conditions, les clients et utilisateurs finaux bénéficient d'une licence limitée, non exclusive et non transférable leur permettant d'utiliser les livrables et applications aux fins professionnelles ou personnelles prévues."
       },
       "payments": {
-        "title": "2.5 Paiements",
-        "items": [
-          "Les échéanciers de paiement, acomptes et jalons sont définis dans les accords de service.",
-          "Les retards de paiement peuvent entraîner des pénalités ou une suspension des services."
-        ]
+        "title": "2.5 Paiements, abonnements et achats intégrés",
+        "body": "Les achats, abonnements et achats intégrés effectués au sein de nos applications mobiles sont traités et facturés par Apple via l'App Store et sont régis par les Conditions générales des services Apple Media. Les tarifs, le renouvellement, l'annulation et les demandes de remboursement relatifs à ces achats sont gérés par Apple conformément à ses propres politiques. Pour tous les autres services, les échéanciers de paiement, acomptes et jalons sont définis dans les accords de service applicables, et les retards de paiement peuvent entraîner des pénalités ou une suspension des services."
       },
       "availability": {
         "title": "2.6 Disponibilité des services",
-        "body": "Neobyte s'efforce d'assurer une disponibilité constante, mais ne garantit pas un service ininterrompu en raison de la maintenance, des mises à niveau ou de conditions externes."
+        "body": "Nous nous efforçons de fournir des Services fiables et disponibles en continu, mais nous ne garantissons pas un fonctionnement ininterrompu. Les Services peuvent être temporairement indisponibles en raison de la maintenance, de mises à niveau ou de circonstances indépendantes de notre volonté raisonnable."
+      },
+      "disclaimer": {
+        "title": "2.7 Exclusion de garanties",
+        "body": "Sauf stipulation expresse dans un accord écrit, les Services sont fournis « en l'état » et « selon disponibilité », sans garantie d'aucune sorte, expresse, implicite ou légale, y compris les garanties implicites de qualité marchande, d'adéquation à un usage particulier et d'absence de contrefaçon."
       },
       "liability": {
-        "title": "2.7 Limitation de responsabilité",
-        "body": "Nous ne sommes pas responsables des dommages indirects, consécutifs, accessoires ou spéciaux. Notre responsabilité est limitée aux frais payés pour le service spécifique à l'origine de la réclamation."
+        "title": "2.8 Limitation de responsabilité",
+        "body": "Dans toute la mesure permise par la loi, Neobyte ne saurait être tenue responsable de dommages indirects, consécutifs, accessoires ou spéciaux, y compris la perte de bénéfices, de données ou d'opportunités commerciales. Notre responsabilité totale est limitée aux frais payés pour le service spécifique à l'origine de la réclamation."
       },
       "termination": {
-        "title": "2.8 Résiliation",
-        "body": "Chaque partie peut résilier les services par notification écrite en cas de manquement substantiel non résolu dans le délai convenu."
+        "title": "2.9 Résiliation",
+        "body": "Chaque partie peut résilier un engagement de service par notification écrite en cas de manquement substantiel non corrigé dans le délai de régularisation convenu. Nous pouvons également suspendre ou résilier l'accès aux Services en cas de violation des présentes Conditions ou de la loi applicable."
       },
       "amendments": {
-        "title": "2.9 Modifications",
-        "body": "Neobyte peut mettre à jour les présentes Conditions à tout moment. La poursuite de l'utilisation vaut acceptation des Conditions mises à jour."
+        "title": "2.10 Modifications",
+        "body": "Nous pouvons mettre à jour les présentes Conditions à tout moment. La version mise à jour entre en vigueur dès sa publication sur cette page. La poursuite de votre utilisation des Services après cette date vaut acceptation des Conditions modifiées."
       },
       "law": {
-        "title": "2.10 Droit applicable",
-        "body": "Les présentes Conditions sont régies par les lois de la juridiction du siège principal d'immatriculation de Neobyte Technology."
+        "title": "2.11 Droit applicable",
+        "body": "Les présentes Conditions sont régies par les lois de la juridiction du siège principal d'immatriculation de Neobyte Technology, sans égard aux principes de conflit de lois. Tout litige sera soumis aux tribunaux compétents de cette juridiction, sauf disposition impérative contraire des lois de protection des consommateurs."
+      },
+      "apple": {
+        "title": "2.12 Conditions supplémentaires pour les applications distribuées via l'App Store d'Apple",
+        "intro": "Pour toute application distribuée via l'App Store d'Apple, les conditions suivantes s'appliquent :",
+        "items": [
+          "Les présentes Conditions sont conclues entre vous et Neobyte uniquement, et non avec Apple. Neobyte, et non Apple, est seule responsable de l'application et de son contenu.",
+          "Apple n'a aucune obligation de fournir des services de maintenance ou d'assistance pour l'application.",
+          "En cas de non-conformité de l'application à une garantie applicable, vous pouvez en informer Apple, qui vous remboursera le prix d'achat (le cas échéant) conformément à ses politiques ; dans toute la mesure permise par la loi, Apple n'a aucune autre obligation de garantie concernant l'application.",
+          "Apple n'est pas responsable du traitement des réclamations relatives à l'application ou à son utilisation, y compris les réclamations en responsabilité produit, les réclamations de non-conformité aux exigences légales ou réglementaires et les réclamations au titre de la protection des consommateurs.",
+          "Apple n'est pas responsable de l'enquête, de la défense, du règlement ou de l'apurement de toute réclamation d'un tiers alléguant que l'application porte atteinte à des droits de propriété intellectuelle.",
+          "Vous déclarez et garantissez que vous ne vous trouvez pas dans un pays soumis à un embargo ou désigné comme soutenant le terrorisme par le gouvernement compétent, et que vous ne figurez sur aucune liste de parties restreintes ou interdites.",
+          "Apple et ses filiales sont des tiers bénéficiaires des présentes Conditions et peuvent les faire valoir à votre encontre pour ce qui concerne votre licence de l'application."
+        ]
+      },
+      "contact": {
+        "title": "2.13 Contact",
+        "body": "Pour toute question concernant les présentes Conditions, contactez-nous à contact@barkosem.com."
       }
     },
     "cookies": {
       "title": "3. Politique relative aux cookies",
       "introduction": {
         "title": "3.1 Introduction",
-        "body": "La présente Politique relative aux cookies explique comment Neobyte Technology utilise les cookies et technologies de suivi similaires sur ses sites web et plateformes numériques."
+        "body": "La présente Politique relative aux cookies explique comment Neobyte Technology utilise les cookies et technologies de suivi similaires sur ses sites web et plateformes numériques, ainsi que les choix dont vous disposez concernant leur utilisation."
       },
       "what": {
         "title": "3.2 Que sont les cookies ?",
-        "body": "Les cookies sont de petits fichiers texte stockés sur votre appareil afin d'améliorer l'expérience de navigation, d'analyser l'utilisation du site et de permettre le fonctionnement des plateformes."
+        "body": "Les cookies sont de petits fichiers texte stockés sur votre appareil lors de votre visite d'un site web. Ils permettent au site de fonctionner correctement, de mémoriser vos préférences et de nous aider à comprendre comment le site est utilisé."
       },
       "types": {
         "title": "3.3 Types de cookies que nous utilisons",
         "items": [
-          "Cookies essentiels : nécessaires au fonctionnement du site web, à l'authentification et à la sécurité.",
-          "Cookies d'analyse : mesurent l'utilisation, les performances et les interactions des utilisateurs.",
-          "Cookies de préférences : conservent les paramètres et préférences de l'utilisateur.",
-          "Cookies tiers : utilisés par des prestataires de services (par exemple, outils d'analyse ou outils intégrés)."
+          "Cookies strictement nécessaires : requis pour le fonctionnement, l'authentification et la sécurité du site web. Ils ne peuvent pas être désactivés.",
+          "Cookies d'analyse : utilisés pour mesurer l'audience, les performances et les interactions des utilisateurs de manière agrégée.",
+          "Cookies de préférences : utilisés pour mémoriser vos paramètres, tels que la langue et les préférences d'affichage.",
+          "Cookies tiers : déposés par des prestataires externes (par exemple, outils d'analyse ou outils intégrés) selon leurs propres politiques de confidentialité."
         ]
       },
       "use": {
         "title": "3.4 Comment nous utilisons les cookies",
         "intro": "Nous utilisons les cookies pour :",
         "items": [
-          "Assurer le fonctionnement des plateformes et la sécurité des sessions.",
-          "Améliorer les performances du site web.",
-          "Analyser le trafic et le comportement des utilisateurs.",
-          "Personnaliser l'expérience utilisateur."
+          "Assurer le bon fonctionnement du site web et la sécurité de vos sessions.",
+          "Améliorer les performances et la fiabilité du site web.",
+          "Analyser le trafic et les habitudes d'utilisation afin d'améliorer nos Services.",
+          "Mémoriser vos préférences et personnaliser votre expérience."
         ]
       },
       "managing": {
         "title": "3.5 Gestion des cookies",
-        "body": "Les utilisateurs peuvent désactiver les cookies dans les paramètres de leur navigateur. Cela peut toutefois affecter le fonctionnement et l'accès à certaines fonctionnalités."
+        "body": "Vous pouvez configurer ou désactiver les cookies à tout moment dans les paramètres de votre navigateur. Veuillez noter que la désactivation de certains cookies, en particulier les cookies strictement nécessaires, peut affecter le fonctionnement du site et limiter l'accès à certaines fonctionnalités."
       },
       "updates": {
-        "title": "3.6 Mises à jour",
-        "body": "Nous pouvons mettre à jour la présente Politique relative aux cookies périodiquement. Les modifications prennent effet dès leur publication."
+        "title": "3.6 Mises à jour de la présente Politique",
+        "body": "Nous pouvons mettre à jour la présente Politique relative aux cookies périodiquement afin de refléter les évolutions techniques ou légales. Les modifications prennent effet dès leur publication sur cette page."
       },
       "contact": {
         "title": "3.7 Contact",
-        "body": "Pour toute question : privacy@neobyte.tech."
+        "body": "Pour toute question concernant la présente Politique relative aux cookies, contactez-nous à contact@barkosem.com."
       }
     }
   }
