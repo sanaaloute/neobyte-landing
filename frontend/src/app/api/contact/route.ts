@@ -1,23 +1,30 @@
 import { NextRequest, NextResponse } from "next/server";
-import { loadEnvConfig } from "@next/env";
+import { config as dotenvConfig } from "dotenv";
 import nodemailer from "nodemailer";
 import { mkdir, appendFile } from "node:fs/promises";
 import path from "node:path";
 
-// Load the shared .env from the repository root, so a single file configures
-// the whole site locally (UI and API routes). On Vercel the file does not
-// exist and env vars come from the project settings — this is a no-op.
-loadEnvConfig(path.resolve(process.cwd(), ".."));
-
 // Nodemailer requires the Node.js runtime (not Edge).
 export const runtime = "nodejs";
+
+// Load the shared .env from the repository root, so a single file configures
+// the whole site locally. Reads go through a dynamic process.env[key] lookup
+// with the parsed file as fallback, because the dev bundler statically
+// inlines process.env.X references, hiding runtime mutations. Existing
+// process.env values take precedence, so on Vercel (where the file does not
+// exist) the project settings apply unchanged.
+const fileEnv =
+  dotenvConfig({ path: path.resolve(process.cwd(), "..", ".env") }).parsed ??
+  {};
+const env = (key: string): string | undefined =>
+  process.env[key] ?? fileEnv[key];
 
 // DATA_DIR can be overridden to relocate the submissions file. On Vercel the
 // project filesystem is read-only, so /tmp is used (ephemeral — see the
 // best-effort persistence note below).
 const DATA_DIR =
-  process.env.DATA_DIR ||
-  (process.env.VERCEL ? "/tmp" : path.join(process.cwd(), "data"));
+  env("DATA_DIR") ||
+  (env("VERCEL") ? "/tmp" : path.join(process.cwd(), "data"));
 const SUBMISSIONS_FILE = path.join(DATA_DIR, "submissions.jsonl");
 
 // Stable service keys accepted from the frontend, mapped to human-readable
@@ -54,7 +61,7 @@ const CONFIRMATION_COPY = {
 // overrides the limit. In-memory store: on serverless platforms each
 // instance keeps its own counters, so this is best-effort protection.
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000;
-const RATE_LIMIT_MAX = Number(process.env.CONTACT_RATE_LIMIT_MAX) || 5;
+const RATE_LIMIT_MAX = Number(env("CONTACT_RATE_LIMIT_MAX")) || 5;
 const submissionsByIp = new Map<string, number[]>();
 
 function isRateLimited(ip: string): boolean {
@@ -91,39 +98,36 @@ const getEmailProviders = () => {
   const providers: { name: string; transporter: nodemailer.Transporter }[] =
     [];
 
-  if (process.env.RESEND_API_KEY) {
+  if (env("RESEND_API_KEY")) {
     providers.push({
       name: "resend",
       transporter: nodemailer.createTransport({
         host: "smtp.resend.com",
         port: 465,
         secure: true,
-        auth: { user: "resend", pass: process.env.RESEND_API_KEY },
+        auth: { user: "resend", pass: env("RESEND_API_KEY") },
       }),
     });
   }
 
   const smtpConfigured = Boolean(
-    process.env.SMTP_HOST &&
-      process.env.SMTP_PORT &&
-      process.env.SMTP_USER &&
-      process.env.SMTP_PASS
+    env("SMTP_HOST") && env("SMTP_PORT") && env("SMTP_USER") && env("SMTP_PASS")
   );
   if (smtpConfigured) {
-    const port = parseInt(process.env.SMTP_PORT as string, 10);
+    const port = parseInt(env("SMTP_PORT") as string, 10);
     const secure =
-      process.env.SMTP_SECURE !== undefined
-        ? process.env.SMTP_SECURE === "true"
+      env("SMTP_SECURE") !== undefined
+        ? env("SMTP_SECURE") === "true"
         : port === 465;
     providers.push({
       name: "smtp",
       transporter: nodemailer.createTransport({
-        host: process.env.SMTP_HOST,
+        host: env("SMTP_HOST"),
         port,
         secure,
         auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASS,
+          user: env("SMTP_USER"),
+          pass: env("SMTP_PASS"),
         },
       }),
     });
@@ -288,8 +292,8 @@ export async function POST(req: NextRequest) {
   const display = (value: string) => escapeHtml(value || "Not provided");
   const mailOptions = {
     from:
-      process.env.SMTP_FROM || process.env.CONTACT_EMAIL || process.env.SMTP_USER,
-    to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
+      env("SMTP_FROM") || env("CONTACT_EMAIL") || env("SMTP_USER"),
+    to: env("CONTACT_EMAIL") || env("SMTP_USER"),
     // Replies to the notification go straight to the visitor, not to us.
     replyTo: sanitizeHeader(`${name} <${email}>`),
     subject: sanitizeHeader(`New Contact Form Submission - ${serviceLabel}`),
