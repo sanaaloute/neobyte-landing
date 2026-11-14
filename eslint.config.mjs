@@ -14,6 +14,14 @@ const eslintConfig = [
   {
     ignores: [".next/", "node_modules/", "out/", "next-env.d.ts"],
   },
+  {
+    // scripts/ holds plain CommonJS Node scripts (no bundler), so require()
+    // is the right module style there.
+    files: ["scripts/**/*.js"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+    },
+  },
 ];
 
 export default eslintConfig;

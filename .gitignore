@@ -54,3 +54,8 @@ next-env.d.ts
 # Project specific (contact form submissions store — root-level only,
 # must not ignore src/data/)
 /data/
+
+# Cloudflare / OpenNext
+.open-next/
+.wrangler/
+.dev.vars

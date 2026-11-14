@@ -1,10 +1,14 @@
 export type ProductStatus = "live" | "in-development";
 export type ProductVisual = "legal" | "commerce" | "stocks" | "builder";
+export type ProductFormFactor = "web" | "phone";
 
 export interface Product {
   id: string;
   // Rendered by ProductMockup — stylized product visuals, not stock photos.
   visual: ProductVisual;
+  // "web" (default) renders browser chrome; "phone" renders a phone frame
+  // for mobile-app products.
+  formFactor?: ProductFormFactor;
   status: ProductStatus;
   // Public URL, shown as an external "visit" link and as the mockup label.
   link?: string;
@@ -12,8 +16,11 @@ export interface Product {
   label?: string;
   // Local screenshots of the real product, shown as a slidable gallery.
   screenshots?: string[];
-  // Distribution channels for products without a web URL (proper nouns).
+  // Availability badges (proper nouns), e.g. mobile platforms for app products.
   channels?: string[];
+  // Store URLs keyed by channel name (e.g. "Android" → Play Store link).
+  // Channels without a link render as static chips.
+  storeLinks?: Partial<Record<string, string>>;
   // Shown on the home page showcase.
   featured?: boolean;
 }
@@ -23,9 +30,10 @@ export const products: Product[] = [
   {
     id: "yawoto",
     visual: "legal",
+    formFactor: "phone",
     status: "live",
     link: "https://yawoto.neobytech.net",
-    screenshots: ["/products/yawoto.png"],
+    channels: ["Android", "iOS"],
     featured: true,
   },
   {
@@ -38,10 +46,11 @@ export const products: Product[] = [
     featured: true,
   },
   {
-    id: "brvmAgent",
+    id: "koraBourse",
     visual: "stocks",
+    formFactor: "phone",
     status: "live",
-    channels: ["Telegram", "WhatsApp"],
+    channels: ["Android", "iOS"],
   },
   {
     id: "aiWebBuilder",

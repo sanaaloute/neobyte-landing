@@ -1,13 +1,19 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { Check, ArrowUpRight } from "lucide-react";
+import { Check, ArrowUpRight, Smartphone, Apple } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Eyebrow } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { ProductVisual } from "@/components/website-preview";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { products } from "@/data/products";
+
+const channelIcons: Record<string, LucideIcon> = {
+  Android: Smartphone,
+  iOS: Apple,
+};
 
 export default function Products() {
   const { t } = useTranslation();
@@ -109,14 +115,37 @@ export default function Products() {
                           <ArrowUpRight className="h-3.5 w-3.5" />
                         </a>
                       )}
-                      {product.channels?.map((channel) => (
-                        <span
-                          key={channel}
-                          className="inline-flex items-center rounded-md border border-brand/40 px-2.5 py-1.5 font-mono text-xs font-medium text-brand"
-                        >
-                          {channel}
-                        </span>
-                      ))}
+                      {product.channels?.map((channel) => {
+                        const ChannelIcon = channelIcons[channel];
+                        const href = product.storeLinks?.[channel];
+                        const chipClass =
+                          "inline-flex items-center gap-1.5 rounded-md border border-brand/40 px-2.5 py-1.5 font-mono text-xs font-medium text-brand";
+                        return href ? (
+                          <a
+                            key={channel}
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={cn(
+                              chipClass,
+                              "transition-colors hover:bg-brand/10"
+                            )}
+                          >
+                            {ChannelIcon && (
+                              <ChannelIcon className="h-3.5 w-3.5" />
+                            )}
+                            {channel}
+                            <ArrowUpRight className="h-3 w-3" />
+                          </a>
+                        ) : (
+                          <span key={channel} className={chipClass}>
+                            {ChannelIcon && (
+                              <ChannelIcon className="h-3.5 w-3.5" />
+                            )}
+                            {channel}
+                          </span>
+                        );
+                      })}
                     </div>
                   )}
                 </Reveal>

@@ -1,26 +1,35 @@
 import { NextRequest, NextResponse } from "next/server";
 import { config as dotenvConfig } from "dotenv";
-import nodemailer from "nodemailer";
-import { mkdir, appendFile } from "node:fs/promises";
 import path from "node:path";
 
-// Nodemailer requires the Node.js runtime (not Edge).
+// SMTP (the optional fallback provider) requires Node APIs; on Cloudflare
+// Workers those are provided by the nodejs_compat compatibility flag.
 export const runtime = "nodejs";
 
 // Load the shared .env from the project root, so a single file configures
 // the whole site locally. Reads go through a dynamic process.env[key] lookup
 // with the parsed file as fallback, because the dev bundler statically
 // inlines process.env.X references, hiding runtime mutations. Existing
-// process.env values take precedence, so on Vercel (where env vars come from
-// the project settings) they apply unchanged.
-const fileEnv =
-  dotenvConfig({ path: path.resolve(process.cwd(), ".env") }).parsed ?? {};
+// process.env values take precedence, so on hosted platforms (where env vars
+// come from the platform settings) they apply unchanged. Guarded because
+// serverless runtimes without a filesystem (Cloudflare Workers) make the
+// dotenv read fail — there, process.env alone is authoritative.
+const fileEnv: Record<string, string> = (() => {
+  try {
+    return (
+      dotenvConfig({ path: path.resolve(process.cwd(), ".env") }).parsed ?? {}
+    );
+  } catch {
+    return {};
+  }
+})();
 const env = (key: string): string | undefined =>
   process.env[key] ?? fileEnv[key];
 
-// DATA_DIR can be overridden to relocate the submissions file. On Vercel the
-// project filesystem is read-only, so /tmp is used (ephemeral — see the
-// best-effort persistence note below).
+// DATA_DIR can be overridden to relocate the submissions file. On serverless
+// platforms the filesystem is read-only or missing, so /tmp is tried on
+// Vercel (ephemeral — see the best-effort persistence note below); elsewhere
+// the write simply fails and is skipped.
 const DATA_DIR =
   env("DATA_DIR") ||
   (env("VERCEL") ? "/tmp" : path.join(process.cwd(), "data"));
@@ -62,9 +71,23 @@ const CONFIRMATION_COPY = {
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000;
 const RATE_LIMIT_MAX = Number(env("CONTACT_RATE_LIMIT_MAX")) || 5;
 const submissionsByIp = new Map<string, number[]>();
+let lastSweep = Date.now();
+
+// Drop IPs whose timestamps have all expired so the map cannot grow
+// unbounded on a long-running server. Runs at most once per window.
+function sweepStaleIps(now: number) {
+  if (now - lastSweep < RATE_LIMIT_WINDOW_MS) return;
+  lastSweep = now;
+  for (const [ip, timestamps] of submissionsByIp) {
+    if (timestamps.every((t) => now - t >= RATE_LIMIT_WINDOW_MS)) {
+      submissionsByIp.delete(ip);
+    }
+  }
+}
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
+  sweepStaleIps(now);
   const timestamps = (submissionsByIp.get(ip) || []).filter(
     (t) => now - t < RATE_LIMIT_WINDOW_MS
   );
@@ -90,22 +113,53 @@ const escapeHtml = (value: string) =>
 const sanitizeHeader = (value: string) =>
   String(value).replace(/[\r\n]+/g, " ").trim();
 
-// Email providers, tried in order: Resend (when RESEND_API_KEY is set),
-// then generic SMTP (Spaceship or any other provider). The first provider
-// that delivers successfully wins; failure only when all of them fail.
-const getEmailProviders = () => {
-  const providers: { name: string; transporter: nodemailer.Transporter }[] =
-    [];
+interface OutgoingMail {
+  from: string;
+  to: string;
+  replyTo?: string;
+  subject: string;
+  text: string;
+  html: string;
+}
 
-  if (env("RESEND_API_KEY")) {
+interface EmailProvider {
+  name: string;
+  send: (mail: OutgoingMail) => Promise<void>;
+}
+
+// Email providers, tried in order: Resend via its HTTPS API (plain fetch —
+// works on Node, Vercel, and Cloudflare Workers alike), then generic SMTP via
+// nodemailer (Spaceship or any other provider). The first provider that
+// delivers successfully wins; failure only when all of them fail.
+const getEmailProviders = (): EmailProvider[] => {
+  const providers: EmailProvider[] = [];
+
+  const resendKey = env("RESEND_API_KEY");
+  if (resendKey) {
     providers.push({
       name: "resend",
-      transporter: nodemailer.createTransport({
-        host: "smtp.resend.com",
-        port: 465,
-        secure: true,
-        auth: { user: "resend", pass: env("RESEND_API_KEY") },
-      }),
+      async send(mail) {
+        const res = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${resendKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: mail.from,
+            to: [mail.to],
+            reply_to: mail.replyTo,
+            subject: mail.subject,
+            text: mail.text,
+            html: mail.html,
+          }),
+        });
+        if (!res.ok) {
+          throw new Error(
+            `Resend API error ${res.status}: ${await res.text()}`
+          );
+        }
+      },
     });
   }
 
@@ -113,22 +167,28 @@ const getEmailProviders = () => {
     env("SMTP_HOST") && env("SMTP_PORT") && env("SMTP_USER") && env("SMTP_PASS")
   );
   if (smtpConfigured) {
-    const port = parseInt(env("SMTP_PORT") as string, 10);
-    const secure =
-      env("SMTP_SECURE") !== undefined
-        ? env("SMTP_SECURE") === "true"
-        : port === 465;
     providers.push({
       name: "smtp",
-      transporter: nodemailer.createTransport({
-        host: env("SMTP_HOST"),
-        port,
-        secure,
-        auth: {
-          user: env("SMTP_USER"),
-          pass: env("SMTP_PASS"),
-        },
-      }),
+      async send(mail) {
+        // Imported lazily: nodemailer pulls in node:net/node:tls, which only
+        // exist under Node.js or Workers with nodejs_compat.
+        const { default: nodemailer } = await import("nodemailer");
+        const port = parseInt(env("SMTP_PORT") as string, 10);
+        const secure =
+          env("SMTP_SECURE") !== undefined
+            ? env("SMTP_SECURE") === "true"
+            : port === 465;
+        const transporter = nodemailer.createTransport({
+          host: env("SMTP_HOST"),
+          port,
+          secure,
+          auth: {
+            user: env("SMTP_USER"),
+            pass: env("SMTP_PASS"),
+          },
+        });
+        await transporter.sendMail(mail);
+      },
     });
   }
 
@@ -248,10 +308,12 @@ export async function POST(req: NextRequest) {
   const { name, email, phone, company, service, message, lang } = data;
   const receivedAt = new Date().toISOString();
 
-  // Best-effort persistence. On serverless platforms (Vercel) the filesystem
-  // is ephemeral, so the notification email below is the durable channel;
-  // a write failure must not lose the lead or fail the request.
+  // Best-effort persistence. On serverless platforms the filesystem is
+  // ephemeral or missing entirely, so the notification email below is the
+  // durable channel; a write failure must not lose the lead or fail the
+  // request.
   try {
+    const { mkdir, appendFile } = await import("node:fs/promises");
     await mkdir(DATA_DIR, { recursive: true });
     await appendFile(
       SUBMISSIONS_FILE,
@@ -289,10 +351,9 @@ export async function POST(req: NextRequest) {
 
   const serviceLabel = SERVICE_LABELS[service];
   const display = (value: string) => escapeHtml(value || "Not provided");
-  const mailOptions = {
-    from:
-      env("SMTP_FROM") || env("CONTACT_EMAIL") || env("SMTP_USER"),
-    to: env("CONTACT_EMAIL") || env("SMTP_USER"),
+  const mailOptions: OutgoingMail = {
+    from: env("SMTP_FROM") || env("CONTACT_EMAIL") || env("SMTP_USER") || "",
+    to: env("CONTACT_EMAIL") || env("SMTP_USER") || "",
     // Replies to the notification go straight to the visitor, not to us.
     replyTo: sanitizeHeader(`${name} <${email}>`),
     subject: sanitizeHeader(`New Contact Form Submission - ${serviceLabel}`),
@@ -326,14 +387,14 @@ export async function POST(req: NextRequest) {
 
   for (const provider of providers) {
     try {
-      await provider.transporter.sendMail(mailOptions);
+      await provider.send(mailOptions);
       console.log(`Contact notification sent via ${provider.name}.`);
 
       // Auto-confirmation to the visitor. Best-effort: a failure here must
       // not fail the request — the team notification already succeeded.
       const copy = CONFIRMATION_COPY[lang];
       try {
-        await provider.transporter.sendMail({
+        await provider.send({
           from: mailOptions.from,
           to: email,
           subject: sanitizeHeader(copy.subject),

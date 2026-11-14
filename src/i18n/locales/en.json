@@ -133,7 +133,8 @@
           "Coverage of OHADA law and national legislation",
           "Contextual answers with cited references",
           "Document drafting assistance",
-          "Usage tracking for teams and organizations"
+          "Usage tracking for teams and organizations",
+          "Available on the web, Android, and iOS"
         ],
         "stack": [
           "LLM",
@@ -163,22 +164,23 @@
           "Supplier management"
         ]
       },
-      "brvmAgent": {
-        "name": "BRVM Stock AI Agent",
-        "tagline": "BRVM market intelligence in your messaging apps",
-        "description": "An AI agent that makes the BRVM — the West African regional stock exchange — accessible through conversation, on Telegram and WhatsApp.",
+      "koraBourse": {
+        "name": "Kora Bourse",
+        "tagline": "BRVM market intelligence, in your pocket",
+        "description": "A mobile app that makes the BRVM — the West African regional stock exchange — accessible through conversation: follow the market, ask questions in natural language, and get AI-powered insights, on Android and iOS.",
         "features": [
           "Conversational access to BRVM market information",
           "Natural-language questions about listed companies",
-          "Works inside Telegram and WhatsApp — no app to install",
+          "AI-powered insights on stocks and the market",
+          "Native Android and iOS apps",
           "Built for investors in the WAEMU region and beyond"
         ],
         "stack": [
           "AI agents",
           "LLM",
           "Market data",
-          "Telegram",
-          "WhatsApp"
+          "Android",
+          "iOS"
         ]
       },
       "aiWebBuilder": {
@@ -353,14 +355,14 @@
     "copyright": "All rights reserved."
   },
   "policy": {
-    "companyName": "Neobyte Technology",
+    "companyName": "NeoByte Technology",
     "title": "Privacy Policy, Terms of Service & Cookie Policy",
     "lastUpdated": "Last updated: August 26, 2026",
     "privacy": {
       "title": "1. Privacy Policy",
       "introduction": {
         "title": "1.1 Introduction",
-        "body": "This Privacy Policy describes how Neobyte Technology (\"Neobyte\", \"we\", \"our\", or \"us\") collects, uses, stores, and protects personal information when you use our websites, mobile applications (including applications distributed through the Apple App Store), software, and related services (collectively, the \"Services\"). By accessing or using the Services, you acknowledge that you have read and understood this Privacy Policy. This Policy is designed to comply with applicable data protection laws and with the requirements of the Apple Developer Program and the App Store Review Guidelines."
+        "body": "This Privacy Policy describes how NeoByte Technology (\"NeoByte\", \"we\", \"our\", or \"us\") collects, uses, stores, and protects personal information when you use our websites, mobile applications (including applications distributed through the Apple App Store), software, and related services (collectively, the \"Services\"). By accessing or using the Services, you acknowledge that you have read and understood this Privacy Policy. This Policy is designed to comply with applicable data protection laws and with the requirements of the Apple Developer Program and the App Store Review Guidelines."
       },
       "collection": {
         "title": "1.2 Information We Collect",
@@ -403,7 +405,7 @@
       },
       "rights": {
         "title": "1.7 Your Rights and Choices",
-        "intro": "Depending on your jurisdiction, you may exercise the following rights by contacting us at contact@barkosem.com. We respond to verified requests within the timeframes required by applicable law:",
+        "intro": "Depending on your jurisdiction, you may exercise the following rights by contacting us at contact@neobytech.net. We respond to verified requests within the timeframes required by applicable law:",
         "items": [
           "Access, correct, or request the deletion of your personal information.",
           "Request a portable copy of your data.",
@@ -426,18 +428,18 @@
       },
       "contact": {
         "title": "1.11 Contact Us",
-        "body": "For any question, request, or concern regarding this Privacy Policy or our data practices, contact us at contact@barkosem.com."
+        "body": "For any question, request, or concern regarding this Privacy Policy or our data practices, contact us at contact@neobytech.net."
       }
     },
     "terms": {
       "title": "2. Terms of Service",
       "acceptance": {
         "title": "2.1 Acceptance of Terms",
-        "body": "By accessing or using the Services of Neobyte Technology, you agree to be bound by these Terms of Service (the \"Terms\") and our Privacy Policy. If you do not agree with these Terms, you must not access or use the Services."
+        "body": "By accessing or using the Services of NeoByte Technology, you agree to be bound by these Terms of Service (the \"Terms\") and our Privacy Policy. If you do not agree with these Terms, you must not access or use the Services."
       },
       "description": {
         "title": "2.2 Description of the Services",
-        "body": "Neobyte provides software development, IT consulting, cloud deployment, system integration, mobile applications, and related digital solutions. Specific deliverables, timelines, and service levels are defined in project contracts, proposals, statements of work (SOWs), or service-level agreements (SLAs)."
+        "body": "NeoByte provides software development, IT consulting, cloud deployment, system integration, mobile applications, and related digital solutions. Specific deliverables, timelines, and service levels are defined in project contracts, proposals, statements of work (SOWs), or service-level agreements (SLAs)."
       },
       "obligations": {
         "title": "2.3 User Obligations",
@@ -452,7 +454,7 @@
       },
       "ip": {
         "title": "2.4 Intellectual Property",
-        "body": "All software, source code, documentation, designs, and materials developed by Neobyte remain our exclusive intellectual property unless otherwise agreed in a written contract. Subject to these Terms, clients and end users receive a limited, non-exclusive, non-transferable license to use the deliverables and applications for their intended business or personal purposes."
+        "body": "All software, source code, documentation, designs, and materials developed by NeoByte remain our exclusive intellectual property unless otherwise agreed in a written contract. Subject to these Terms, clients and end users receive a limited, non-exclusive, non-transferable license to use the deliverables and applications for their intended business or personal purposes."
       },
       "payments": {
         "title": "2.5 Payments, Subscriptions, and In-App Purchases",
@@ -468,7 +470,7 @@
       },
       "liability": {
         "title": "2.8 Limitation of Liability",
-        "body": "To the maximum extent permitted by law, Neobyte shall not be liable for any indirect, consequential, incidental, or special damages, including loss of profits, data, or business opportunities. Our total liability shall not exceed the fees paid for the specific service giving rise to the claim."
+        "body": "To the maximum extent permitted by law, NeoByte shall not be liable for any indirect, consequential, incidental, or special damages, including loss of profits, data, or business opportunities. Our total liability shall not exceed the fees paid for the specific service giving rise to the claim."
       },
       "termination": {
         "title": "2.9 Termination",
@@ -480,13 +482,13 @@
       },
       "law": {
         "title": "2.11 Governing Law",
-        "body": "These Terms are governed by the laws of the jurisdiction in which Neobyte Technology is primarily registered, without regard to conflict-of-law principles. Any dispute shall be submitted to the competent courts of that jurisdiction, unless mandatory consumer protection laws provide otherwise."
+        "body": "These Terms are governed by the laws of the jurisdiction in which NeoByte Technology is primarily registered, without regard to conflict-of-law principles. Any dispute shall be submitted to the competent courts of that jurisdiction, unless mandatory consumer protection laws provide otherwise."
       },
       "apple": {
         "title": "2.12 Additional Terms for Applications Distributed via the Apple App Store",
         "intro": "For any application distributed through the Apple App Store, the following terms apply:",
         "items": [
-          "These Terms are concluded between you and Neobyte only, and not with Apple. Neobyte, not Apple, is solely responsible for the application and its content.",
+          "These Terms are concluded between you and NeoByte only, and not with Apple. NeoByte, not Apple, is solely responsible for the application and its content.",
           "Apple has no obligation to provide any maintenance or support services for the application.",
           "In the event of any failure of the application to conform to an applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) in accordance with its policies; to the maximum extent permitted by law, Apple has no other warranty obligation with respect to the application.",
           "Apple is not responsible for addressing any claims relating to the application or your use of it, including product liability claims, claims that the application fails to conform to legal or regulatory requirements, and consumer protection claims.",
@@ -497,14 +499,14 @@
       },
       "contact": {
         "title": "2.13 Contact",
-        "body": "For any question regarding these Terms, contact us at contact@barkosem.com."
+        "body": "For any question regarding these Terms, contact us at contact@neobytech.net."
       }
     },
     "cookies": {
       "title": "3. Cookie Policy",
       "introduction": {
         "title": "3.1 Introduction",
-        "body": "This Cookie Policy explains how Neobyte Technology uses cookies and similar tracking technologies on its websites and digital platforms, and the choices available to you regarding their use."
+        "body": "This Cookie Policy explains how NeoByte Technology uses cookies and similar tracking technologies on its websites and digital platforms, and the choices available to you regarding their use."
       },
       "what": {
         "title": "3.2 What Are Cookies?",
@@ -539,7 +541,7 @@
       },
       "contact": {
         "title": "3.7 Contact",
-        "body": "For any question regarding this Cookie Policy, contact us at contact@barkosem.com."
+        "body": "For any question regarding this Cookie Policy, contact us at contact@neobytech.net."
       }
     }
   }

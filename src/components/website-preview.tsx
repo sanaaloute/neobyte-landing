@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useCallback, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { ProductMockup } from "@/components/product-mockup";
+import { ProductMockup, PhoneFrame } from "@/components/product-mockup";
 import { cn } from "@/lib/utils";
 import type { Product } from "@/data/products";
 
@@ -154,11 +154,133 @@ interface ProductVisualProps {
   className?: string;
 }
 
-// Real screenshots when the product has a public URL, abstract mockup
-// otherwise (e.g. messaging-based products). Prefers checked-in local
-// screenshots; falls back to a live Microlink capture when none exist.
+// Phone-frame gallery of real app screenshots. Falls back to the abstract
+// phone mockup if every image fails to load.
+function ProductPhoneGallery({
+  images,
+  visual,
+  className,
+}: {
+  images: string[];
+  visual: Product["visual"];
+  className?: string;
+}) {
+  const [index, setIndex] = useState(0);
+  const [failedAll, setFailedAll] = useState(false);
+
+  const go = useCallback(
+    (dir: 1 | -1) =>
+      setIndex((i) => (i + dir + images.length) % images.length),
+    [images.length]
+  );
+
+  if (failedAll) {
+    return (
+      <ProductMockup visual={visual} formFactor="phone" className={className} />
+    );
+  }
+
+  return (
+    <div
+      role="region"
+      aria-roledescription="carousel"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "ArrowLeft") go(-1);
+        if (e.key === "ArrowRight") go(1);
+      }}
+      className="group relative outline-none focus-visible:ring-2 focus-visible:ring-ring"
+    >
+      <PhoneFrame className={className}>
+        <div className="relative h-full w-full overflow-hidden">
+          <div
+            className="flex h-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none"
+            style={{ transform: `translateX(-${index * 100}%)` }}
+          >
+            {images.map((src, i) => (
+              <div key={src} className="relative h-full w-full shrink-0">
+                <Image
+                  src={src}
+                  alt=""
+                  fill
+                  sizes="(max-width: 1024px) 80vw, 300px"
+                  className="object-cover"
+                  loading={i === 0 ? "eager" : "lazy"}
+                  onError={() => {
+                    if (images.length === 1) setFailedAll(true);
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </PhoneFrame>
+
+      {images.length > 1 && (
+        <>
+          <button
+            type="button"
+            aria-label="Previous image"
+            onClick={() => go(-1)}
+            className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full border border-border bg-background/90 p-1.5 text-muted-foreground shadow-sm transition-all hover:bg-background hover:text-foreground sm:opacity-0 sm:group-hover:opacity-100"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            aria-label="Next image"
+            onClick={() => go(1)}
+            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border border-border bg-background/90 p-1.5 text-muted-foreground shadow-sm transition-all hover:bg-background hover:text-foreground sm:opacity-0 sm:group-hover:opacity-100"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+          <div className="absolute bottom-2.5 left-1/2 flex -translate-x-1/2 gap-1.5">
+            {images.map((src, i) => (
+              <button
+                key={src}
+                type="button"
+                aria-label={`Go to image ${i + 1}`}
+                aria-current={i === index}
+                onClick={() => setIndex(i)}
+                className={cn(
+                  "h-1.5 rounded-full transition-all duration-300",
+                  i === index
+                    ? "w-5 bg-brand"
+                    : "w-1.5 bg-foreground/25 hover:bg-foreground/40"
+                )}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+// Real screenshots when available, abstract mockup otherwise. Web products
+// render in browser chrome, mobile-app products in a phone frame. Prefers
+// checked-in local screenshots; falls back to a live Microlink capture for
+// web products when none exist.
 export function ProductVisual({ product, className }: ProductVisualProps) {
   const label = product.label ?? product.link?.replace(/^https?:\/\//, "");
+  if (product.formFactor === "phone") {
+    if (product.screenshots?.length) {
+      return (
+        <ProductPhoneGallery
+          images={product.screenshots}
+          visual={product.visual}
+          className={className}
+        />
+      );
+    }
+    return (
+      <ProductMockup
+        visual={product.visual}
+        formFactor="phone"
+        className={className}
+      />
+    );
+  }
   const images =
     product.screenshots?.length
       ? product.screenshots

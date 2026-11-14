@@ -133,7 +133,8 @@
           "Couverture du droit OHADA et des législations nationales",
           "Réponses contextuelles avec références citées",
           "Assistance à la rédaction de documents",
-          "Suivi d'usage pour les équipes et organisations"
+          "Suivi d'usage pour les équipes et organisations",
+          "Disponible sur le web, Android et iOS"
         ],
         "stack": [
           "LLM",
@@ -163,22 +164,23 @@
           "Gestion fournisseurs"
         ]
       },
-      "brvmAgent": {
-        "name": "Agent IA BRVM",
-        "tagline": "L'intelligence du marché BRVM dans vos messageries",
-        "description": "Un agent IA qui rend la BRVM — la Bourse Régionale des Valeurs Mobilières — accessible par la conversation, sur Telegram et WhatsApp.",
+      "koraBourse": {
+        "name": "Kora Bourse",
+        "tagline": "L'intelligence du marché BRVM, dans votre poche",
+        "description": "Une application mobile qui rend la BRVM — la Bourse Régionale des Valeurs Mobilières — accessible par la conversation : suivez le marché, posez vos questions en langage naturel et recevez des analyses par IA, sur Android et iOS.",
         "features": [
           "Accès conversationnel aux informations du marché BRVM",
           "Questions en langage naturel sur les entreprises cotées",
-          "Fonctionne dans Telegram et WhatsApp — aucune application à installer",
+          "Analyses par IA sur les titres et le marché",
+          "Applications natives Android et iOS",
           "Conçu pour les investisseurs de la zone UEMOA et au-delà"
         ],
         "stack": [
           "Agents IA",
           "LLM",
           "Données de marché",
-          "Telegram",
-          "WhatsApp"
+          "Android",
+          "iOS"
         ]
       },
       "aiWebBuilder": {
@@ -353,14 +355,14 @@
     "copyright": "Tous droits réservés."
   },
   "policy": {
-    "companyName": "Neobyte Technology",
+    "companyName": "NeoByte Technology",
     "title": "Politique de confidentialité, Conditions d'utilisation et Politique relative aux cookies",
     "lastUpdated": "Dernière mise à jour : 26 août 2026",
     "privacy": {
       "title": "1. Politique de confidentialité",
       "introduction": {
         "title": "1.1 Introduction",
-        "body": "La présente Politique de confidentialité décrit la manière dont Neobyte Technology (« Neobyte », « nous », « notre » ou « nos ») collecte, utilise, stocke et protège les informations personnelles lorsque vous utilisez nos sites web, applications mobiles (y compris les applications distribuées via l'App Store d'Apple), logiciels et services associés (collectivement, les « Services »). En accédant aux Services ou en les utilisant, vous reconnaissez avoir lu et compris la présente Politique de confidentialité. Cette Politique est conçue pour être conforme aux lois applicables en matière de protection des données ainsi qu'aux exigences du Programme des développeurs Apple et des directives de révision de l'App Store."
+        "body": "La présente Politique de confidentialité décrit la manière dont NeoByte Technology (« NeoByte », « nous », « notre » ou « nos ») collecte, utilise, stocke et protège les informations personnelles lorsque vous utilisez nos sites web, applications mobiles (y compris les applications distribuées via l'App Store d'Apple), logiciels et services associés (collectivement, les « Services »). En accédant aux Services ou en les utilisant, vous reconnaissez avoir lu et compris la présente Politique de confidentialité. Cette Politique est conçue pour être conforme aux lois applicables en matière de protection des données ainsi qu'aux exigences du Programme des développeurs Apple et des directives de révision de l'App Store."
       },
       "collection": {
         "title": "1.2 Informations que nous collectons",
@@ -403,7 +405,7 @@
       },
       "rights": {
         "title": "1.7 Vos droits et vos choix",
-        "intro": "Selon votre juridiction, vous pouvez exercer les droits suivants en nous contactant à contact@barkosem.com. Nous répondons aux demandes vérifiées dans les délais prévus par la loi applicable :",
+        "intro": "Selon votre juridiction, vous pouvez exercer les droits suivants en nous contactant à contact@neobytech.net. Nous répondons aux demandes vérifiées dans les délais prévus par la loi applicable :",
         "items": [
           "Accéder à vos informations personnelles, les rectifier ou demander leur suppression.",
           "Demander une copie portable de vos données.",
@@ -426,18 +428,18 @@
       },
       "contact": {
         "title": "1.11 Nous contacter",
-        "body": "Pour toute question, demande ou préoccupation concernant la présente Politique de confidentialité ou nos pratiques en matière de données, contactez-nous à contact@barkosem.com."
+        "body": "Pour toute question, demande ou préoccupation concernant la présente Politique de confidentialité ou nos pratiques en matière de données, contactez-nous à contact@neobytech.net."
       }
     },
     "terms": {
       "title": "2. Conditions d'utilisation",
       "acceptance": {
         "title": "2.1 Acceptation des conditions",
-        "body": "En accédant aux Services de Neobyte Technology ou en les utilisant, vous acceptez d'être lié par les présentes Conditions d'utilisation (les « Conditions ») ainsi que par notre Politique de confidentialité. Si vous n'acceptez pas ces Conditions, vous ne devez pas accéder aux Services ni les utiliser."
+        "body": "En accédant aux Services de NeoByte Technology ou en les utilisant, vous acceptez d'être lié par les présentes Conditions d'utilisation (les « Conditions ») ainsi que par notre Politique de confidentialité. Si vous n'acceptez pas ces Conditions, vous ne devez pas accéder aux Services ni les utiliser."
       },
       "description": {
         "title": "2.2 Description des services",
-        "body": "Neobyte fournit des services de développement logiciel, de conseil informatique, de déploiement cloud, d'intégration de systèmes, des applications mobiles et des solutions numériques associées. Les livrables, délais et niveaux de service spécifiques sont définis dans les contrats de projet, propositions, cahiers des charges (SOW) ou accords de niveau de service (SLA)."
+        "body": "NeoByte fournit des services de développement logiciel, de conseil informatique, de déploiement cloud, d'intégration de systèmes, des applications mobiles et des solutions numériques associées. Les livrables, délais et niveaux de service spécifiques sont définis dans les contrats de projet, propositions, cahiers des charges (SOW) ou accords de niveau de service (SLA)."
       },
       "obligations": {
         "title": "2.3 Obligations des utilisateurs",
@@ -452,7 +454,7 @@
       },
       "ip": {
         "title": "2.4 Propriété intellectuelle",
-        "body": "L'ensemble des logiciels, codes source, documentations, conceptions et éléments développés par Neobyte demeure notre propriété intellectuelle exclusive, sauf accord écrit contraire. Sous réserve des présentes Conditions, les clients et utilisateurs finaux bénéficient d'une licence limitée, non exclusive et non transférable leur permettant d'utiliser les livrables et applications aux fins professionnelles ou personnelles prévues."
+        "body": "L'ensemble des logiciels, codes source, documentations, conceptions et éléments développés par NeoByte demeure notre propriété intellectuelle exclusive, sauf accord écrit contraire. Sous réserve des présentes Conditions, les clients et utilisateurs finaux bénéficient d'une licence limitée, non exclusive et non transférable leur permettant d'utiliser les livrables et applications aux fins professionnelles ou personnelles prévues."
       },
       "payments": {
         "title": "2.5 Paiements, abonnements et achats intégrés",
@@ -468,7 +470,7 @@
       },
       "liability": {
         "title": "2.8 Limitation de responsabilité",
-        "body": "Dans toute la mesure permise par la loi, Neobyte ne saurait être tenue responsable de dommages indirects, consécutifs, accessoires ou spéciaux, y compris la perte de bénéfices, de données ou d'opportunités commerciales. Notre responsabilité totale est limitée aux frais payés pour le service spécifique à l'origine de la réclamation."
+        "body": "Dans toute la mesure permise par la loi, NeoByte ne saurait être tenue responsable de dommages indirects, consécutifs, accessoires ou spéciaux, y compris la perte de bénéfices, de données ou d'opportunités commerciales. Notre responsabilité totale est limitée aux frais payés pour le service spécifique à l'origine de la réclamation."
       },
       "termination": {
         "title": "2.9 Résiliation",
@@ -480,13 +482,13 @@
       },
       "law": {
         "title": "2.11 Droit applicable",
-        "body": "Les présentes Conditions sont régies par les lois de la juridiction du siège principal d'immatriculation de Neobyte Technology, sans égard aux principes de conflit de lois. Tout litige sera soumis aux tribunaux compétents de cette juridiction, sauf disposition impérative contraire des lois de protection des consommateurs."
+        "body": "Les présentes Conditions sont régies par les lois de la juridiction du siège principal d'immatriculation de NeoByte Technology, sans égard aux principes de conflit de lois. Tout litige sera soumis aux tribunaux compétents de cette juridiction, sauf disposition impérative contraire des lois de protection des consommateurs."
       },
       "apple": {
         "title": "2.12 Conditions supplémentaires pour les applications distribuées via l'App Store d'Apple",
         "intro": "Pour toute application distribuée via l'App Store d'Apple, les conditions suivantes s'appliquent :",
         "items": [
-          "Les présentes Conditions sont conclues entre vous et Neobyte uniquement, et non avec Apple. Neobyte, et non Apple, est seule responsable de l'application et de son contenu.",
+          "Les présentes Conditions sont conclues entre vous et NeoByte uniquement, et non avec Apple. NeoByte, et non Apple, est seule responsable de l'application et de son contenu.",
           "Apple n'a aucune obligation de fournir des services de maintenance ou d'assistance pour l'application.",
           "En cas de non-conformité de l'application à une garantie applicable, vous pouvez en informer Apple, qui vous remboursera le prix d'achat (le cas échéant) conformément à ses politiques ; dans toute la mesure permise par la loi, Apple n'a aucune autre obligation de garantie concernant l'application.",
           "Apple n'est pas responsable du traitement des réclamations relatives à l'application ou à son utilisation, y compris les réclamations en responsabilité produit, les réclamations de non-conformité aux exigences légales ou réglementaires et les réclamations au titre de la protection des consommateurs.",
@@ -497,14 +499,14 @@
       },
       "contact": {
         "title": "2.13 Contact",
-        "body": "Pour toute question concernant les présentes Conditions, contactez-nous à contact@barkosem.com."
+        "body": "Pour toute question concernant les présentes Conditions, contactez-nous à contact@neobytech.net."
       }
     },
     "cookies": {
       "title": "3. Politique relative aux cookies",
       "introduction": {
         "title": "3.1 Introduction",
-        "body": "La présente Politique relative aux cookies explique comment Neobyte Technology utilise les cookies et technologies de suivi similaires sur ses sites web et plateformes numériques, ainsi que les choix dont vous disposez concernant leur utilisation."
+        "body": "La présente Politique relative aux cookies explique comment NeoByte Technology utilise les cookies et technologies de suivi similaires sur ses sites web et plateformes numériques, ainsi que les choix dont vous disposez concernant leur utilisation."
       },
       "what": {
         "title": "3.2 Que sont les cookies ?",
@@ -539,7 +541,7 @@
       },
       "contact": {
         "title": "3.7 Contact",
-        "body": "Pour toute question concernant la présente Politique relative aux cookies, contactez-nous à contact@barkosem.com."
+        "body": "Pour toute question concernant la présente Politique relative aux cookies, contactez-nous à contact@neobytech.net."
       }
     }
   }

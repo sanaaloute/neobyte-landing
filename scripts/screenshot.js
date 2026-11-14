@@ -13,7 +13,7 @@ const puppeteer = require("puppeteer-core");
     await page.evaluateOnNewDocument((t) => {
       try {
         localStorage.setItem("theme", t);
-      } catch (e) {}
+      } catch {}
     }, theme);
     await page.emulateMediaFeatures([
       { name: "prefers-color-scheme", value: theme },
